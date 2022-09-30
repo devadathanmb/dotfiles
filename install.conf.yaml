@@ -9,6 +9,7 @@
     ~/.bashrc: bashrc
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
     ~/.config/alacritty: alacritty
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
