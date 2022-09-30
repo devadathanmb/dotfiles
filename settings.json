@@ -1,0 +1,24 @@
+{
+  "workbench.colorTheme": "Monokai",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "keyboard.dispatch": "keyCode",
+  "editor.fontFamily": "JetBrains Mono",
+  "github.gitAuthentication": false,
+  "git.terminalAuthentication": false,
+  "editor.minimap.enabled": false,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "cmake.configureOnOpen": true,
+}

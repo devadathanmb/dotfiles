@@ -1,8 +1,22 @@
 - clean: ['~']
+  
+- defaults:
+    link:
+      create: true
+      force: true
 
 - link:
     ~/.bashrc: bashrc
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
-
+    ~/.config/alacritty: alacritty
+    ~/.config/kitty: kitty
+    ~/.config/nvim: nvim
+    ~/.config/neofetch: neofetch
+    ~/.config/cava: cava
+    ~/.config/vis: vis
+    ~/.config/mpv: mpv
+    ~/.config/btop: btop
+    ~/.config/bpytop: bpytop
+    ~/.config/Code/User/settings.json: settings.json
 
