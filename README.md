@@ -1,7 +1,7 @@
 # My dotfiles 🏠
 
 Dotfiles are how you customize your machine. These are mine.  
-These dotfiles are managed up using [Dotbot](https://github.com/anishathalye/dotbot)
+These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
 ## Quick Setup
 
