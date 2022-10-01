@@ -7,14 +7,13 @@ clear
 echo "Installing flatpaks"
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# Install telegram
 flatpak install -y org.telegram.desktop
 
-# Install postman
 flatpak install -y com.getpostman.Postman
 
-# Install Login Manager Settings
 flatpak install -y io.github.realmazharhusain.GdmSettings
+
+flatpak install -y flathub io.github.mimbrero.WhatsAppDesktop
 
 # Node js installation
 clear
