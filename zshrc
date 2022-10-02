@@ -133,6 +133,7 @@ alias conf="cd /home/devadathan/.config"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias dict="python3 ~/.local/bin/project.py -w"
 alias tldr="tldr --theme base16"
+alias dots="cd ~/.dotfiles"
 
 # Check if it's a tty or not
 
