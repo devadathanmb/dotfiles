@@ -21,4 +21,5 @@
     "editor.wordBasedSuggestions": false
   },
   "cmake.configureOnOpen": true,
+  "editor.lineNumbers": "relative"
 }
