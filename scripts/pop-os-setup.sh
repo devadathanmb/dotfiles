@@ -1,5 +1,16 @@
 #! /bin/bash
 
+# _____                       _                               _       _   
+#|  __ \                     | |                             (_)     | |  
+#| |__) |__  _ __    ___  ___| |_ _   _ _ __    ___  ___ _ __ _ _ __ | |_ 
+#|  ___/ _ \| '_ \  / __|/ _ \ __| | | | '_ \  / __|/ __| '__| | '_ \| __|
+#| |  | (_) | |_) | \__ \  __/ |_| |_| | |_) | \__ \ (__| |  | | |_) | |_ 
+#|_|   \___/| .__/  |___/\___|\__|\__,_| .__/  |___/\___|_|  |_| .__/ \__|
+#           | |                        | |                     | |        
+#           |_|                        |_|                     |_|        
+
+
+           
 # Run this script as root
 if [ "$EUID" -ne 0 ]
 then
@@ -17,6 +28,7 @@ mkdir -p $download_path
 # Update system repositories and upgrade them
 apt update && apt upgrade -y
 
+# Installing packages
 apt install firefox -y
 
 apt install code -y
