@@ -134,6 +134,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias dict="python3 ~/.local/bin/project.py -w"
 alias tldr="tldr --theme base16"
 alias dots="cd ~/.dotfiles"
+alias s="kitty +kitten ssh" # Use ssh kitten to ssh into remote machines
 
 # Check if it's a tty or not
 
