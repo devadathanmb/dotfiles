@@ -26,7 +26,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+if [[ -e ~/.oh-my-zsh ]]
+then
+    export ZSH="$HOME/.oh-my-zsh"
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -96,7 +99,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions vi-mode zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+
+if [[ -e ~/.oh-my-zsh ]]
+then
+    source $ZSH/oh-my-zsh.sh
+fi
+
+
 
 # User configuration
 
@@ -153,5 +162,15 @@ bindkey -v
 export EDITOR=nvim
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH=$PATH:/home/devadathan/.local/bin:/home/devadathan/.spicetify
-export PATH=$PATH:/opt/flutter/bin
+
+if [[ -e ~/.spicetify ]]
+then
+    export PATH=$PATH:/home/devadathan/.local/bin:/home/devadathan/.spicetify
+fi
+
+if [[ -e /opt/flutter/bin ]]
+then
+    export PATH=$PATH:/opt/flutter/bin
+fi
+
+
