@@ -10,7 +10,7 @@ makepkg -si
 
 # Install packages
 clear
-pacman -S --noconfirm firefox code btop neofetch vlc mpv gnome-tweaks gnome-themes-extra transmission-gtk zsh simplescreenrecorder bat neovim gparted cmatrix jdk-openjdk flatpak nodejs lsd man alacritty kitty npm libreoffice-still
+pacman -S --noconfirm firefox code btop neofetch vlc mpv gnome-tweaks gnome-themes-extra transmission-gtk zsh simplescreenrecorder bat neovim gparted cmatrix jdk-openjdk flatpak nodejs lsd man alacritty kitty npm libreoffice-still obsidian
 
  yay --noconfirm -S discord
  yay --noconfirm -S visual-studio-code-bin  
