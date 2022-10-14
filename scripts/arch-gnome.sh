@@ -20,3 +20,4 @@ pacman -S --noconfirm firefox code btop neofetch vlc mpv gnome-tweaks gnome-them
  yay --noconfirm -S ventoy-bin 
  yay --noconfirm -S discord
  yay --noconfirm -S onlyoffice-bin
+ yay --noconfirm -S timeshift 
