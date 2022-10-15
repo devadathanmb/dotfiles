@@ -41,9 +41,10 @@ call plug#begin()
  Plug 'mhinz/vim-startify'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'norcalli/nvim-colorizer.lua'
- Plug 'navarasu/onedark.nvim'
+" Plug 'navarasu/onedark.nvim'
  Plug 'vim-airline/vim-airline'
  Plug 'vim-airline/vim-airline-themes' 
+ Plug 'tanvirtin/monokai.nvim'
 call plug#end()
 
 " Setup colorizer
@@ -55,19 +56,19 @@ lua require'colorizer'.setup()
 " set termguicolors
 " syntax enable
 " Vim
-let g:onedark_config = {
-  \ 'style': 'cool',
-  \ 'toggle_style_key': '<leader>ts',
-  \ 'ending_tildes': v:true,
-  \ 'transparent': v:true,
-  \ 'diagnostics': {
-    \ 'darker': v:false,
-    \ 'background': v:false,
-  \ },
-\ }
-
-colorscheme onedark
-
-
+"let g:onedark_config = {
+"  \ 'style': 'cool',
+"  \ 'toggle_style_key': '<leader>ts',
+"  \ 'ending_tildes': v:true,
+"  \ 'transparent': v:true,
+"  \ 'diagnostics': {
+"    \ 'darker': v:false,
+"    \ 'background': v:false,
+"  \ },
+"\ }
+"
+"colorscheme onedark
+"
+colorscheme monokai
 "startify config
 let g:startify_bookmarks = ["~/Documents/"]
