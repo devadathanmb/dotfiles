@@ -161,17 +161,18 @@ bindkey -v
 
 # Always use nvim as the editor
 export EDITOR=nvim
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Spicetify path
 if [[ -e ~/.spicetify ]]
 then
     export PATH=$PATH:/home/devadathan/.local/bin:/home/devadathan/.spicetify
 fi
 
+# Flutter path
 if [[ -e /opt/flutter/bin ]]
 then
     export PATH=$PATH:/opt/flutter/bin
 fi
 
-
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k.zsh.
+[[ ! -f ~/dotfiles/p10k.zsh ]] || source ~/dotfiles/p10k.zsh
