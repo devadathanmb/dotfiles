@@ -5,12 +5,15 @@
 
 
 # Pfetch on start
-if [ "$TERM" = "xterm-kitty" ]
-then
-    neofetch --kitty ~/Pictures/Logo/logo-rainbow.png --image_size 20% | lolcat
-else
-    neofetch
-fi
+#if [ "$TERM" = "xterm-kitty" ]
+#then
+#    neofetch --kitty ~/Pictures/Logo/logo-rainbow.png --image_size 20% | lolcat
+#else
+#    neofetch
+#fi
+
+# Neofetch on start
+neofetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
