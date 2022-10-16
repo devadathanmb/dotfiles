@@ -11,7 +11,6 @@ makepkg -si
 # Install packages
 clear
 pacman -S --noconfirm firefox \
-	code \
 	btop \
 	neofetch \
 	vlc \
@@ -35,7 +34,8 @@ pacman -S --noconfirm firefox \
 	npm \
 	libreoffice-still \
 	obsidian \
-	python-pip
+	python-pip \
+    grub-btrfs
 
  yay --noconfirm -S discord
  yay --noconfirm -S visual-studio-code-bin  
