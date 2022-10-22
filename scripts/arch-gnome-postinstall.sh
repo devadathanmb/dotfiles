@@ -1,5 +1,10 @@
 #! /bin/bash
 
+# Setting up mirror for faster downloads
+pacman -S --noconfirm reflector
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector -c India --verbose --sort rate -l 10 --save /etc/pacman.d/mirrorlist
+
 # Install yay
 clear
 echo "Instlling yay"
@@ -35,8 +40,9 @@ pacman -S --noconfirm firefox \
 	libreoffice-still \
 	obsidian \
 	python-pip \
-    	grub-btrfs
+    grub-btrfs
 
+# AUR installs
  yay --noconfirm -S ttf-indic-otf
  yay --noconfirm -S gnome-browser-connector 
  yay --noconfirm -S discord
@@ -46,6 +52,7 @@ pacman -S --noconfirm firefox \
  yay --noconfirm -S telegram-desktop-bin 
  yay --noconfirm -S ventoy-bin 
  yay --noconfirm -S onlyoffice-bin
+ yay --noconfirm -S auto-cpufreq
  yay --noconfirm -S timeshift 
 # yay --noconfirm -S system76-power
 # yay --noconfirm -s gnome-shell-extension-system76-power
