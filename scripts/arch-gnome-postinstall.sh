@@ -35,15 +35,16 @@ pacman -S --noconfirm firefox \
 	libreoffice-still \
 	obsidian \
 	python-pip \
-    grub-btrfs
+    	grub-btrfs
 
+ yay --noconfirm -S ttf-indic-otf
+ yay --noconfirm -S gnome-browser-connector 
  yay --noconfirm -S discord
  yay --noconfirm -S visual-studio-code-bin  
  yay --noconfirm -S google-chrome 
  yay --noconfirm -S brave-bin 
  yay --noconfirm -S telegram-desktop-bin 
  yay --noconfirm -S ventoy-bin 
- yay --noconfirm -S discord
  yay --noconfirm -S onlyoffice-bin
  yay --noconfirm -S timeshift 
 # yay --noconfirm -S system76-power
