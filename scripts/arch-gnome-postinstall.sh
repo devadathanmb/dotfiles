@@ -37,7 +37,7 @@ pacman -S --noconfirm firefox \
 	alacritty \
 	kitty \
 	npm \
-	libreoffice-still \
+	libreoffice-fresh \
 	obsidian \
 	python-pip \
     grub-btrfs
@@ -51,8 +51,9 @@ pacman -S --noconfirm firefox \
  yay --noconfirm -S brave-bin 
  yay --noconfirm -S telegram-desktop-bin 
  yay --noconfirm -S ventoy-bin 
- yay --noconfirm -S onlyoffice-bin
+# yay --noconfirm -S onlyoffice-bin
  yay --noconfirm -S auto-cpufreq
  yay --noconfirm -S timeshift 
+ yay --noconfirm -S ttf-ms-fonts
 # yay --noconfirm -S system76-power
 # yay --noconfirm -s gnome-shell-extension-system76-power
