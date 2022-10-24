@@ -22,7 +22,7 @@ then
 fi
 
 # Oh-my-zsh theme name
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 # Oh-my-zsh plugins
