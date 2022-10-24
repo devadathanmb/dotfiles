@@ -149,11 +149,6 @@ alias tldr="tldr --theme base16"
 alias dots="cd ~/.dotfiles"
 alias s="kitty +kitten ssh" # Use ssh kitten to ssh into remote machines
 
-# Check if it's a tty or not
-
-if [ `tput colors` != "256" ]; then
-  exec bash -l;
-fi
 
 # Disable auto title
 DISABLE_AUTO_TITLE="true"
