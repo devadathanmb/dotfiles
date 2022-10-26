@@ -40,7 +40,9 @@ pacman -S --noconfirm firefox \
 	libreoffice-fresh \
 	obsidian \
 	python-pip \
-    grub-btrfs
+    grub-btrfs \
+    wget \
+    curl
 
 # AUR installs
  yay --noconfirm -S ttf-indic-otf
