@@ -1,71 +1,61 @@
+#!/bin/sh
+
 # ░▀▀█░█▀▀░█░█░█▀▄░█▀▀
 # ░▄▀░░▀▀█░█▀█░█▀▄░█░░
 # ░▀▀▀░▀▀▀░▀░▀░▀░▀░▀▀▀
 
-# My zshrc config
 
-# Neofetch on start
 neofetch
 
-# p10k instant prompt - This should always stay on top of zshrc
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+export ZDOTDIR=$HOME/.config/zsh
+# HISTFILE=~/.zsh_history
+setopt appendhistory
 
-# If you come from bash you might have to change your $PATH.
- export PATH=$HOME/.local/bin:/usr/local/bin:/.$PATH
+# some useful options (man zshoptions)
+setopt autocd extendedglob nomatch menucomplete
+setopt interactive_comments
+stty stop undef		# Disable ctrl-s to freeze terminal.
+zle_highlight=('paste:none')
 
-# Path to your oh-my-zsh installation.
-if [[ -e ~/.oh-my-zsh ]]
-then
-    export ZSH="$HOME/.oh-my-zsh"
-fi
+# completions
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+# zstyle ':completion::complete:lsof:*' menu yes select
+zmodload zsh/complist
+# compinit
+_comp_options+=(globdots)		# Include hidden files.
 
-# Oh-my-zsh theme name
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
-
-# Oh-my-zsh plugins
-plugins=(git zsh-autosuggestions vi-mode zsh-syntax-highlighting)
-
-# Load oh-my-zsh
-if [[ -e ~/.oh-my-zsh ]]
-then
-    source $ZSH/oh-my-zsh.sh
-fi
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
 
 
-# User aliases
-alias ls="lsd"
-# alias cat="batcat"
-alias cat="bat"
-alias python="python3"
-# alias lc="colorls"
-alias work="cd /home/devadathan/Documents"
-alias down="cd /home/devadathan/Downloads/"
-alias conf="cd /home/devadathan/.config"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-# alias dict="python3 ~/.local/bin/project.py -w"
-alias tldr="tldr --theme base16"
-alias dots="cd ~/.dotfiles"
-alias s="kitty +kitten ssh" # Use ssh kitten to ssh into remote machines
+# Useful Functions
+source "$ZDOTDIR/zsh-functions"
 
+# Normal files to source
+zsh_add_file "zsh-exports"
+zsh_add_file "zsh-vim-mode"
+zsh_add_file "zsh-aliases"
+# zsh_add_file "zsh-prompt"
 
-# Disable auto title
-DISABLE_AUTO_TITLE="true"
+# Plugins
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "hlissner/zsh-autopair"
+# For more plugins: https://github.com/unixorn/awesome-zsh-plugins
+# More completions https://github.com/zsh-users/zsh-completions
 
+# FZF 
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
+[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
+# export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
+compinit
 
-# Enable vim key bindings
-bindkey -v
+eval "$(starship init zsh)"
 
-# Always use nvim as the editor
-export EDITOR=nvim
-
-# Flutter path
-if [[ -e /opt/flutter/bin ]]
-then
-    export PATH=$PATH:/opt/flutter/bin
-fi
-
-# To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k.zsh.
-[[ ! -f ~/dotfiles/p10k.zsh ]] || source ~/dotfiles/p10k.zsh
