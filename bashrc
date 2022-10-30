@@ -121,11 +121,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # If starship is installed launch starship bash
-if command -v starship &> /dev/null 
-then
-    eval "$(starship init bash)"
-fi
-
+#if command -v starship &> /dev/null 
+#then
+#    eval "$(starship init bash)"
+#fi
+#
 if [[ -f ~/.cargo/env ]]
 then
     . "$HOME/.cargo/env"
