@@ -1,0 +1,23 @@
+right_format = "$cmd_duration $jobs $time"
+
+[character]
+success_symbol = "[❯](white)[❯](#FF69B4)[❯](green)"
+vimcmd_symbol = "[❮](white)[❮](#FF69B4)[❮](green)"
+error_symbol = "[❯](red)[❯](red)[❯](red)" 
+
+[directory]
+read_only = " 🔒"
+home_symbol = "  ~"
+#style = "bold #11CBD7"
+
+[git_branch]
+style = "bold #7C83FD"
+
+[git_metrics]
+disabled = false
+
+[git_status]
+style = "red"
+
+[sudo]
+disabled = false
