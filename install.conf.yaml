@@ -9,7 +9,7 @@
     ~/.bashrc: bashrc
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
-    ~/.p10k.zsh: p10k.zsh
+#    ~/.p10k.zsh: p10k.zsh
     ~/.config/alacritty: alacritty
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
@@ -20,4 +20,4 @@
     ~/.config/btop: btop
     ~/.config/bpytop: bpytop
     ~/.config/Code/User/settings.json: settings.json
-
+    ~/.config/starship.toml: starship.toml
