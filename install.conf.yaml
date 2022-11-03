@@ -21,3 +21,4 @@
     ~/.config/bpytop: bpytop
     ~/.config/Code/User/settings.json: settings.json
     ~/.config/starship.toml: starship.toml
+    ~/.config/zsh: zsh

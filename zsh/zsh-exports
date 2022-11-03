@@ -1,0 +1,8 @@
+#!/bin/sh
+# HISTFILE="$XDG_DATA_HOME"/zsh/history
+export PATH="$HOME/.local/bin":$PATH
+export PATH="/opt/flutter/bin":$PATH
+# eval "`pip completion --zsh`"
+
+
+

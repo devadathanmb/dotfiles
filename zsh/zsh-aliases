@@ -1,0 +1,39 @@
+#!/bin/sh
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+
+# get fastest mirrors
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# easier to read disk
+alias df='df -h'     # human-readable sizes
+alias free='free -m' # show sizes in MB
+
+# For when keys break
+alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
+
+# Update arch mirrorlist
+alias update-mirrors="sudo reflector -c India --verbose --sort rate -l 10 --save /etc/pacman.d/mirrorlist"
+
+# Use kitten ssh if kitty is used
+if [[ $TERM == "xterm-kitty" ]]; then
+  alias ssh="kitty +kitten ssh"
+fi
+
+# other alias
+alias ls="lsd"
+alias work="cd ~/Documents/"
+alias cat="bat"
+alias conf="cd ~/.config"
+alias home="cd ~"
+alias neofetch="neofetch --no_config"
+alias tldr="tldr --theme base16"
+alias python="python3"
+alias down="cd /home/devadathan/Downloads/"
+alias la="ls -a"
+alias ll="ls -l"
+alias lsa="ls -la"
+
