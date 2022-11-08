@@ -1,9 +1,9 @@
 right_format = "$cmd_duration $jobs $time"
 
 [character]
-success_symbol = "[❯](white)[❯](#FF69B4)[❯](green)"
-vimcmd_symbol = "[❮](white)[❮](#FF69B4)[❮](green)"
-error_symbol = "[❯](red)[❯](red)[❯](red)" 
+success_symbol = "[❯](green)"
+vimcmd_symbol = "[❮](green)"
+error_symbol = "[❯](red)"
 
 [directory]
 read_only = " 🔒"
