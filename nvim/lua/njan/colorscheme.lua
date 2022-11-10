@@ -1,8 +1,5 @@
 -- This is the colorscheme name
-local colorscheme = "material"
-
--- Material style
-vim.g.material_style = "darker"
+local colorscheme = "tokyonight-moon"
 
 
 -- Protected call to load colorscheme
