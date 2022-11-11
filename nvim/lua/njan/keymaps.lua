@@ -42,3 +42,8 @@ keymap("v", ">", ">gv", opts)
 
 -- Don't yank stuff that has been replaced
 keymap("v", "p", '"_dP', opts)
+
+-- Telescope keybindings
+keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+

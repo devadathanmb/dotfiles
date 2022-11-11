@@ -5,4 +5,3 @@ end
 
 require "njan.lsp.mason"
 require("njan.lsp.handlers").setup()
-require "njan.lsp.null-ls"
