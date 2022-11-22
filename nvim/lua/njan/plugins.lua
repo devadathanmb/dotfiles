@@ -45,6 +45,12 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+  use "akinsho/toggleterm.nvim"
 
   -- Colorscheme plugin
   use 'folke/tokyonight.nvim' -- Automatically set up your configuration after cloning packer.nvim
@@ -75,6 +81,8 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim' -- Telescope file browser plugin
+
 
   -- Treesitter
   use {
@@ -82,6 +90,14 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+
+  -- Git signs
+  use "lewis6991/gitsigns.nvim"
+
+  -- Dashboard
+  use "glepnir/dashboard-nvim"
 
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

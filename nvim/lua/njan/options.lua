@@ -33,3 +33,6 @@ vim.opt.termguicolors = true
 
 -- Consider string-string as whole word
 vim.opt.iskeyword:append("-") 
+
+-- Disbale showing messages below
+vim.opt.showmode = false
