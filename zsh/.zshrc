@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# Do neofetch at startup
+neofetch ~/.config/neofetch/config.conf
+
 export ZDOTDIR=$HOME/.config/zsh
 HISTFILE=~/.zsh_history
 setopt appendhistory
@@ -45,18 +49,7 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
 
-# Key-bindings
-bindkey -s '^o' 'ranger^M'
-bindkey '^[[P' delete-char
-bindkey "^p" up-line-or-beginning-search # Up
-bindkey "^n" down-line-or-beginning-search # Down
-bindkey "^k" up-line-or-beginning-search # Up
-bindkey "^j" down-line-or-beginning-search # Down
-bindkey -r "^u"
-bindkey -r "^d"
-
 # FZF 
-# TODO update for mac
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
 [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
@@ -66,9 +59,25 @@ bindkey -r "^d"
 # export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
 compinit
 
+
+# Key-bindings
+bindkey -s '^o' 'ranger^M' # Ranger key binding
+bindkey -s '^f' 'nvim $(fzf)^M' # Fuzzy finder keybinding
+# bindkey -s '^v' 'nvim^M' # Neovim keybinding
+bindkey '^[[P' delete-char
+bindkey "^p" up-line-or-beginning-search # Up
+bindkey "^n" down-line-or-beginning-search # Down
+bindkey "^k" up-line-or-beginning-search # Up
+bindkey "^j" down-line-or-beginning-search # Down
+bindkey "^a" beginning-of-line # Move to beginning of the line
+bindkey "^e" end-of-line # Move to the end of the line
+bindkey -r "^u"
+bindkey -r "^d"
+
+
 # Environment variables set everywhere
 export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="brave"
 
-
+eval "$(starship init zsh)"
