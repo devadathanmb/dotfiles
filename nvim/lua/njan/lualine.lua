@@ -4,8 +4,10 @@ if not status_ok then
     return
 end
 
+-- Lualine colorscheme
+local colorscheme = "tokyonight"
 lualine.setup {
     options = {
-        theme = "material"
+        theme = colorscheme,
     }
 }

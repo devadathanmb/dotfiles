@@ -1,5 +1,5 @@
 -- This is the colorscheme name
-local colorscheme = "tokyonight-moon"
+local colorscheme = "tokyonight-storm"
 
 
 -- Protected call to load colorscheme

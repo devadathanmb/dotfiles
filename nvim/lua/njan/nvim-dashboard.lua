@@ -6,7 +6,7 @@ end
 local db = dashboard
 
 -- File browser command to open .config directory
-local dots_action = "lua require'telescope'.extensions.file_browser.file_browser({path = vim.fn.expand('$HOME/.config/')})"
+local dots_action = "lua require'telescope'.extensions.file_browser.file_browser({path = vim.fn.expand('$HOME/dotfiles')})"
 
 db.custom_header = {
     '',

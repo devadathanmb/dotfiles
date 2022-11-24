@@ -63,7 +63,11 @@ nvim_tree.setup {
         relativenumber = false,
     },
     actions = {
-        window_picker = { enable = true },
+        open_file = {
+            window_picker = {
+                enable = true
+            }
+        }
     },
     renderer = {
         highlight_git = true,
