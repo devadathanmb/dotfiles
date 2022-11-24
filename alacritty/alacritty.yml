@@ -951,4 +951,4 @@ cursor:
 # Print all received window events.
 #print_events: false
 import:
-  - ~/.alacritty-colorscheme/themes/papercolor_dark.yaml
+  - ~/.config/alacritty/onedark.yml
