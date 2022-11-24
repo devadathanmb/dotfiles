@@ -1,14 +1,16 @@
-right_format = "$cmd_duration $jobs $time"
+add_newline = true
+format = "$directory$git_branch$git_status$character"
+right_format = """$all"""
 
 [character]
-success_symbol = "[❯](green)"
-vimcmd_symbol = "[❮](green)"
-error_symbol = "[❯](red)"
+success_symbol = "[»](green)"
+error_symbol = "[»](red)"
+vicmd_symbol = "[«](green)"
 
 [directory]
-read_only = " 🔒"
-home_symbol = "  ~"
-#style = "bold #11CBD7"
+format = "[$path]($style)[  ](bold blue)[$read_only]($read_only_style) "
+truncation_length = 1
+home_symbol = "  "
 
 [git_branch]
 style = "bold #7C83FD"
