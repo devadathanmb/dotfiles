@@ -19,7 +19,9 @@
     ~/.config/mpv: mpv
     ~/.config/btop: btop
     ~/.config/bpytop: bpytop
-    ~/.config/Code/User/settings.json: settings.json
+    ~/.config/Code/User/settings.json: vscode/settings.json
+    ~/.config/Code/User/keybindings.json: vscode/keybindings.json
+    ~/.config/Code/User/settings.vim: vscode/settings.vim
     ~/.config/starship.toml: starship.toml
     ~/.config/zsh: zsh
     ~/.tmux.conf: tmux.conf
