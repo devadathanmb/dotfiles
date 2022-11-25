@@ -47,4 +47,4 @@ keymap("n", "<leader>f",
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Formatting keymap
-keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
+keymap("n", "<leader>fl", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
