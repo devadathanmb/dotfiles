@@ -22,11 +22,14 @@ db.custom_header = {
 db.custom_center = {
   { icon = '  ', desc = 'Find files', action = 'Telescope find_files' },
   { icon = '  ', desc = 'New file', action = 'enew' },
+  { icon = '  ', desc = 'Recent files', action = 'Telescope oldfiles' },
   { icon = '  ', desc = 'File browser', action = 'Telescope file_browser' },
   { icon = '  ', desc = 'Open configs', action = dots_action },
   { icon = '  ', desc = 'Quit', action = 'q' },
 
 }
+
+db.custom_footer  = {"Happy hacking!"}
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "dashboard",
