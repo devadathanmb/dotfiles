@@ -29,7 +29,7 @@ db.custom_center = {
 
 }
 
-db.custom_footer  = {"Happy hacking!"}
+db.custom_footer  = {desc = "   Happy Hacking!   ", fg = "#F06292"}
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "dashboard",
