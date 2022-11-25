@@ -82,6 +82,9 @@ return packer.startup(function(use)
   -- Java
   use "mfussenegger/nvim-jdtls" -- jdtls for java development
 
+  -- Flutter development stuff 
+  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
