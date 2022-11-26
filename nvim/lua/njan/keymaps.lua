@@ -14,11 +14,15 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Remap cutting using d
+keymap("n", "<leader>d", "d", opts)
+
 -- Put deleting using c and d to blackhole register
 keymap("n", "d", "\"_d", opts)
 keymap("v", "d", "\"_d", opts)
 keymap("n", "c", "\"_c", opts)
 keymap("v", "c", "\"_c", opts)
+
 
 -- Manage buffers
 keymap("n", "<C-x>", ":Bdelete<CR>", opts)
