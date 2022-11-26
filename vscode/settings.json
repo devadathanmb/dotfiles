@@ -3,6 +3,7 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/Code/User/settings.vim",
   "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/settings.vim",
+  "keyboard.dispatch": "keyCode",
   "whichkey.sortOrder": "alphabetically",
   "whichkey.bindings": [
     {
@@ -700,5 +701,7 @@
     },
   },
   "workbench.editor.showTabs": false,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "security.workspace.trust.untrustedFiles": "open"
 }

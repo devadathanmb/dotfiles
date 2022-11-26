@@ -1,6 +1,16 @@
 "VSCode
+
 " Use system clipboard
 set clipboard=unnamedplus
+
+
+" Do not yank for d or c movements
+nnoremap d "_d
+nnoremap D "_D
+
+nnoremap c "_c
+nnoremap C "_C
+
 
 function! s:split(...) abort
     let direction = a:1
