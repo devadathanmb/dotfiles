@@ -11,6 +11,8 @@ nnoremap D "_D
 nnoremap c "_c
 nnoremap C "_C
 
+" Stop autocommenting
+set formatoptions-=cro
 
 function! s:split(...) abort
     let direction = a:1
