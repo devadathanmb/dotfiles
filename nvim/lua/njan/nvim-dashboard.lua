@@ -6,7 +6,7 @@ end
 local db = dashboard
 
 -- File browser command to open .config directory
-local dots_action = "lua require'telescope'.extensions.file_browser.file_browser({path = vim.fn.expand('$HOME/dotfiles')})"
+--[[ local dots_action = "lua require'telescope'.extensions.file_browser.file_browser({path = vim.fn.expand('$HOME/dotfiles/nvim/')})" ]]
 
 db.custom_header = {
     '',
@@ -24,7 +24,7 @@ db.custom_center = {
   { icon = '  ', desc = 'New file', action = 'enew' },
   { icon = '  ', desc = 'Recent files', action = 'Telescope oldfiles' },
   { icon = '  ', desc = 'File browser', action = 'Telescope file_browser' },
-  { icon = '  ', desc = 'Open configs', action = dots_action },
+  { icon = '  ', desc = 'Open config', action = 'e ~/.config/nvim/' },
   { icon = '  ', desc = 'Quit', action = 'q' },
 
 }
