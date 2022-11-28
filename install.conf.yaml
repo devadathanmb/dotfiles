@@ -12,7 +12,7 @@
 #    ~/.p10k.zsh: p10k.zsh
     ~/.config/alacritty: alacritty
     ~/.config/kitty: kitty
-    ~/.config/nvim: nvim
+    # ~/.config/nvim: nvim
     ~/.config/neofetch: neofetch
     ~/.config/cava: cava
     ~/.config/vis: vis
