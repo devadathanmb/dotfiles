@@ -5,18 +5,19 @@ pacman -S --noconfirm reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo reflector -c India --verbose --sort rate -l 10 --save /etc/pacman.d/mirrorlist
 
-# Install yay
+# Install paru
 clear
-echo "Instlling yay"
-pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
+echo "Instlling paru"
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -siakepkg -si
 
 # Install packages
 clear
 pacman -S --noconfirm firefox \
 	btop \
+    htop \
 	neofetch \
 	vlc \
 	mpv \
@@ -31,31 +32,32 @@ pacman -S --noconfirm firefox \
 	cmatrix \
 	jdk-openjdk \
 	flatpak \
-	nodejs \
 	lsd \
 	man \
 	alacritty \
 	kitty \
-	npm \
 	libreoffice-fresh \
 	obsidian \
 	python-pip \
     grub-btrfs \
     wget \
-    curl
+    curl \
+    ranger \
+    gvim
+
 
 # AUR installs
- yay --noconfirm -S ttf-indic-otf
- yay --noconfirm -S gnome-browser-connector 
- yay --noconfirm -S discord
- yay --noconfirm -S visual-studio-code-bin  
- yay --noconfirm -S google-chrome 
- yay --noconfirm -S brave-bin 
- yay --noconfirm -S telegram-desktop-bin 
- yay --noconfirm -S ventoy-bin 
-# yay --noconfirm -S onlyoffice-bin
- yay --noconfirm -S auto-cpufreq
- yay --noconfirm -S timeshift 
- yay --noconfirm -S ttf-ms-fonts
-# yay --noconfirm -S system76-power
-# yay --noconfirm -s gnome-shell-extension-system76-power
+ paru --noconfirm -S ttf-indic-otf
+ paru --noconfirm -S gnome-browser-connector 
+ paru --noconfirm -S discord
+ paru --noconfirm -S visual-studio-code-bin  
+ paru --noconfirm -S google-chrome 
+ paru --noconfirm -S brave-bin 
+ paru --noconfirm -S telegram-desktop-bin 
+ paru --noconfirm -S ventoy-bin 
+# paru --noconfirm -S onlyoffice-bin
+ paru --noconfirm -S auto-cpufreq
+ paru --noconfirm -S timeshift 
+ paru --noconfirm -S ttf-ms-fonts
+# paru --noconfirm -S system76-power
+# paru --noconfirm -s gnome-shell-extension-system76-power
