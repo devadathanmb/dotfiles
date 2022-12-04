@@ -202,3 +202,6 @@ exec nitrogen --restore
 
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Laucn picom 
+exec_always --no-startup-id "picom"
