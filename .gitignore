@@ -1,3 +1,4 @@
 *.log
 zsh/plugins/
 nvim/plugin/ 
+zsh/.zcompdump
