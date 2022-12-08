@@ -210,6 +210,10 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
+# Bind mod+tab to switch windows on all workspaces.
+bindsym $mod+Tab exec ~/.config/i3/scripts/i3-alt-tab.py next all
+bindsym $mod+Shift+Tab exec ~/.config/i3/scripts/i3-alt-tab.py prev all
+
 # Restore the wallpaper
 exec nitrogen --restore
 
