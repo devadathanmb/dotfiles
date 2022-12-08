@@ -25,3 +25,9 @@
     ~/.config/starship.toml: starship.toml
     ~/.config/zsh: zsh
     ~/.tmux.conf: tmux.conf
+    ~/.config/i3: i3
+    ~/.config/picom: picom
+    ~/.config/rofi: rofi
+    ~/.config/polybar/: polybar
+    ~/.profile: profile
+    ~/.Xresources: Xresources
