@@ -221,10 +221,7 @@ exec nitrogen --restore
 exec_always --no-startup-id "picom"
 
 # Launch polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --docky
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# set desktop background with custom effect
-exec --no-startup-id betterlockscreen -w blur
-
-# Alternative (set last used background)
-exec --no-startup-id source ~/.fehbg
+# Run gnome policy kit as daemon
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
