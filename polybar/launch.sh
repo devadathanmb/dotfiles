@@ -10,8 +10,7 @@ launch_bar() {
 	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 	# Launch the bar
-    polybar -q main -c "$dir/$style/config.ini" &	
+    polybar -q main -c "$dir/config.ini" &	
 }
 
-style="gruvbox"
 launch_bar
