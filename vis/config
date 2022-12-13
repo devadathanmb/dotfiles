@@ -96,4 +96,4 @@ visualizer.spectrum.bar.width=2
 #colors.override.terminal=false
 
 ##Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/ directory. The default scheme is "colors".
-colors.scheme=purple
+colors.scheme=neon

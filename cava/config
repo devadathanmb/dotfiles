@@ -145,10 +145,10 @@
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
 gradient_count = 4
-gradient_color_1 = '#460C68'
-gradient_color_2 = '#7F167F'
-gradient_color_3 = '#CB1C8D'
-gradient_color_4 = '#F56EB3'
+gradient_color_1 = '#A555EC'
+gradient_color_2 = '#D09CFA'
+gradient_color_3 = '#F3CCFF'
+gradient_color_4 = '#FFFFD0'
 
 [smoothing]
 
