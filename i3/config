@@ -107,7 +107,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -191,6 +191,7 @@ bindsym $mod+r mode "resize"
 # bar {
 #         status_command i3status
 # }
+
 
 # Hide the title bar
  default_border pixel 3
