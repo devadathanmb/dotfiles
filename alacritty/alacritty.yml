@@ -951,4 +951,4 @@ cursor:
 # Print all received window events.
 #print_events: false
 import:
-  - ~/.config/alacritty/onedark.yaml
+  - ~/.config/alacritty/vscode.yml
