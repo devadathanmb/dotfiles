@@ -202,7 +202,7 @@ gaps inner 4
 
 # Colors of winodws
 # class                 border  backgr. text    indicator child_border
-client.focused          #689d6a #689d6a #ffffff #689d6a   #689d6a
+client.focused          #F3CCFF #F3CCFF #ffffff #F3CCFF   #F3CCFF
 client.focused_inactive #83a598 #83a598 #ffffff #83a598   #83a598
 client.unfocused        #83a598 #83a598 #ffffff #83a598   #83a598
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
