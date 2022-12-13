@@ -45,7 +45,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -150,7 +150,6 @@ globalkeys = gears.table.join(
               {description = "view next", group = "tag"}),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
-
     awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
@@ -225,7 +224,11 @@ globalkeys = gears.table.join(
 
    -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+   -- Custom bindings
+    awful.key({modkey}, "d", function() awful.spawn(os.getenv("HOME") .. "/.config/rofi/launcher/launcher.sh") end, {description='run rofi', group='launcher'})
+
 )
 
 clientkeys = gears.table.join(
@@ -466,6 +469,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- Gaps
 beautiful.useless_gap = 5
+
+-- Custom bindings
+awful.key({modkey}, "d", function() awful.spawn('rofi -show drun') end, {description='run rofi', group='launcher'})
 
 -- Auto launch
 awful.spawn.with_shell("picom")
