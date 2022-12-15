@@ -14,3 +14,9 @@ if [[ -e "/opt/flutter" ]]
 then
     export PATH=$PATH:"/opt/flutter/bin"
 fi
+
+# Spicetify
+if [[ -e "$HOME/.spicetify/" ]]
+then
+    export PATH=$PATH:"$HOME/.spicetify/"
+fi
