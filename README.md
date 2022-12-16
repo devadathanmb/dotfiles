@@ -1,6 +1,6 @@
 # My dotfiles 🏠
 
-This branch contains my config files for my i3wm gruvbox rice.  
+My minmial i3-gaps config which I daily drive.
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
 ## Previews
@@ -12,14 +12,19 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 <br>
 ## Quick Setup
 
-Install the things  
+1. Manual setup :
+
+- Install the needed tools
 ```bash
-pacman -S i3 polybar rofi nitrogen picom
+paru -S i3-gaps polybar rofi nitrogen picom betterlockscreen zscroll nm-applet playerctl
 ```
 
-Setup the symlinks  
+- Setup the symlinks  
 ```bash
 git clone https://github.com/devadathanmb/dotfiles.git
 cd dotfiles
 ./install
 ```
+
+2. Automated setup :
+
