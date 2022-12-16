@@ -81,3 +81,7 @@ export TERMINAL="kitty"
 export BROWSER="brave"
 
 eval "$(starship init zsh)"
+
+# Pywal
+(/usr/bin/cat ~/.cache/wal/sequences &)
+

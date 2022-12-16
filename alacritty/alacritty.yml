@@ -950,5 +950,5 @@ cursor:
 
 # Print all received window events.
 #print_events: false
-import:
-  - ~/.config/alacritty/vscode.yml
+# import:
+#   - ~/.config/alacritty/vscode.yml
