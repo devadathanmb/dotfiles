@@ -25,3 +25,4 @@
     ~/.config/polybar/: polybar
     ~/.profile: profile
     ~/.Xresources: Xresources
+    ~/.config/dunst/: dunst

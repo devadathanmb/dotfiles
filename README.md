@@ -39,13 +39,11 @@ xclip
 ```bash
 git clone https://github.com/devadathanmb/dotfiles.git
 cd dotfiles
-./setup
+./install
 ```
 
-2. Automated setup :
-
-- Clone the repository and run the script
+2. Quick setup (For fresh arch or arch based installs only):
 ```bash
-git clone https://github.com/devadathanmb/dotfiles.git
-cd dotfiles && ./setup.sh
+cd scripts
+./setup.sh
 ```
