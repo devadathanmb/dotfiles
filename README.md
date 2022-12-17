@@ -16,8 +16,6 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 ## Quick Setup
 
-1. Manual setup :
-
 - Install the needed tools
 ```bash
 paru -S i3-gaps \
@@ -40,10 +38,4 @@ xclip
 git clone https://github.com/devadathanmb/dotfiles.git
 cd dotfiles
 ./install
-```
-
-2. Quick setup (For fresh arch or arch based installs only):
-```bash
-cd scripts
-./setup.sh
 ```
