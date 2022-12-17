@@ -4,12 +4,16 @@ My minmial i3-gaps config which I daily drive.
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
 ## Previews
-![Screenshot_2022-12-08-14-48-38_1920x1080](https://user-images.githubusercontent.com/84301852/206455555-16948458-baf4-4033-adc6-2671aa983e46.png)
-<br>
-![Screenshot_2022-12-08-14-54-05_1920x1080](https://user-images.githubusercontent.com/84301852/206455561-adc798dd-78fd-42bd-8f9d-7b82be948dc7.png)
-<br>
-![Screenshot_2022-12-08-14-54-32_1920x1080](https://user-images.githubusercontent.com/84301852/206455568-ccb763b2-5b2a-43f6-bf2a-5b076244cbfa.png)
-<br>
+
+![Screenshot_2022-12-17-15-19-50_1920x1080](https://user-images.githubusercontent.com/84301852/208236425-96da6d6a-0fee-4b90-b382-9532603b5436.png)
+
+
+![Screenshot_2022-12-17-15-18-54_1920x1080](https://user-images.githubusercontent.com/84301852/208236447-1f179234-9775-4061-9e6d-08770314da11.png)
+
+
+![Screenshot_2022-12-17-15-20-29_1920x1080](https://user-images.githubusercontent.com/84301852/208236449-c4ff06dc-b7f9-4ddd-87af-e6252e4f32ea.png)
+
+
 ## Quick Setup
 
 1. Manual setup :
