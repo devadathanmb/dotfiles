@@ -16,15 +16,32 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 - Install the needed tools
 ```bash
-paru -S i3-gaps polybar rofi nitrogen picom betterlockscreen zscroll nm-applet playerctl
+paru -S i3-gaps \
+polybar\
+rofi\
+nitrogen\
+picom\
+betterlockscreen\
+zscroll\
+nm-applet\
+playerctl\
+maim\
+xrandr\
+dunst\
+xclip
 ```
 
 - Setup the symlinks  
 ```bash
 git clone https://github.com/devadathanmb/dotfiles.git
 cd dotfiles
-./install
+./setup
 ```
 
 2. Automated setup :
 
+- Clone the repository and run the script
+```bash
+git clone https://github.com/devadathanmb/dotfiles.git
+cd dotfiles && ./setup.sh
+```
