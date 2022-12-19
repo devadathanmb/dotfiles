@@ -1,6 +1,5 @@
 ## Configuration file for CAVA. Default values are commented out. Use either ';' or '#' for commenting.
 
-
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
@@ -145,10 +144,10 @@
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
 gradient_count = 4
-gradient_color_1 = '#A555EC'
-gradient_color_2 = '#D09CFA'
-gradient_color_3 = '#F3CCFF'
-gradient_color_4 = '#FFFFD0'
+gradient_color_1 = '#857C86'
+gradient_color_2 = '#7786A1'
+gradient_color_3 = '#99979D'
+gradient_color_4 = '#AEAEB5'
 
 [smoothing]
 

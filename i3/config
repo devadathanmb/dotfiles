@@ -228,7 +228,8 @@ bindsym $mod+Shift+Tab exec ~/.config/i3/scripts/i3-alt-tab.py prev all
 # Keybinding to change wallpaper on the fly using pywal
 bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wall-dump/
 
-# Restore the wallpaper
+# Restore the wallpaper using pywal
+exec_always --no-startup-id wal -R
 # exec nitrogen --restore
 
 # Laucn picom 
