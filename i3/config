@@ -238,5 +238,7 @@ exec_always --no-startup-id "picom --config /home/devadathan/.config/picom/pyjul
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Launcg autotiling scripts
+exec_always --no-startup-id autotiling 
 # Run gnome policy kit as daemon
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
