@@ -24,6 +24,7 @@ pacman_packages=(
     "gvim"
     "ranger"
     "jdk-openjdk"
+    "python-pywal"
 )
 
 # AUR packages to be installed
