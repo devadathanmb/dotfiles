@@ -25,4 +25,5 @@
     ~/.config/polybar/: polybar
     ~/.profile: profile
     ~/.Xresources: Xresources
+    ~/.xinitrc: xintirc
     ~/.config/dunst/: dunst
