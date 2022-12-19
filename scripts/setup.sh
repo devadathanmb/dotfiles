@@ -39,6 +39,7 @@ aur_packages=(
     "telegram-desktop-bin"
     "ventoy-bin"
     "timeshift"
+    "autotiling"
     "ttf-ms-fonts"
 )
 
