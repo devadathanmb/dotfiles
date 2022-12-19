@@ -219,7 +219,7 @@ bindsym $mod+Shift+Tab exec ~/.config/i3/scripts/i3-alt-tab.py prev all
 exec nitrogen --restore
 
 # Laucn picom 
-exec_always --no-startup-id "picom"
+exec_always --no-startup-id "picom --config /home/devadathan/.config/picom/pyjulias-picom.conf"
 
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
