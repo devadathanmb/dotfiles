@@ -40,6 +40,9 @@ set formatoptions-=cro
 "search as characters are entered
 set incsearch
 
+" Fix the delay while switching to normal mode
+set noesckeys
+
 "leader key
 let mapleader = " "
 
