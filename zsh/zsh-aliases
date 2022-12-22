@@ -47,3 +47,9 @@ alias la="ls -a"
 alias lsa="ls -la"
 alias down="cd ~/Downloads/"
 alias work="cd ~/Documents/"
+
+# Use pywal generated colors for cava 
+if [[ -e ~/.cache/wal/cava ]]
+then
+  alias cava="cava -p ~/.cache/wal/cava"
+fi
