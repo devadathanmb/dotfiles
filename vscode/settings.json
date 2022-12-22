@@ -697,11 +697,11 @@
     "terminal.ansiBrightMagenta": "#c678dd",
     "terminal.ansiBrightRed": "#e06c75",
     "terminal.ansiBrightWhite": "#ffffff",
-    "terminal.ansiBrightYellow": "#d19a66",
-    },
+    "terminal.ansiBrightYellow": "#d19a66"
+    }
   },
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Wal Bordered",
   "security.workspace.trust.untrustedFiles": "open"
 }
