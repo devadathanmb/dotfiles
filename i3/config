@@ -201,6 +201,10 @@ bindsym $mod+r mode "resize"
 gaps outer 4
 gaps inner 4
 
+# Kybindings to control gaps
+bindsym $mod+g gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+g gaps inner all set 4; gaps outer all set 4
+
 # Colors of winodws - pywal
 
 # Set colors from Xresources
