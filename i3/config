@@ -49,8 +49,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+t exec kitty
+bindsym $mod+Return exec kitty
+bindsym $mod+t exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -224,10 +224,16 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
 
+# Keybinding to navingate between workspaces
+bindsym $mod+u workspace prev
+bindsym $mod+i workspace next
 
 # Bind mod+tab to switch windows on all workspaces.
-bindsym $mod+Tab exec ~/.config/i3/scripts/i3-alt-tab.py next all
-bindsym $mod+Shift+Tab exec ~/.config/i3/scripts/i3-alt-tab.py prev all
+
+# bindsym $mod+Tab exec ~/.config/i3/scripts/i3-alt-tab.py next all
+# bindsym $mod+Shift+Tab exec ~/.config/i3/scripts/i3-alt-tab.py prev all
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # Keybinding to change wallpaper on the fly using pywal
 bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wall-dump/
