@@ -25,6 +25,9 @@ pacman_packages=(
     "ranger"
     "jdk-openjdk"
     "python-pywal"
+    "zathura"
+    "zathura"
+    "zathura-pdf-poppler"
 )
 
 # AUR packages to be installed
