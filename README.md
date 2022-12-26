@@ -1,17 +1,16 @@
-# My dotfiles 🏠
+# My dotfiles 🖤
 
-My minmial i3-gaps config which I daily drive.
+My minmial `i3-gaps` config which I daily drive.  
+  
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
 ## Previews
 
-![Screenshot_2022-12-17-15-19-50_1920x1080](https://user-images.githubusercontent.com/84301852/208236425-96da6d6a-0fee-4b90-b382-9532603b5436.png)
+
+![Screenshot_2022-12-26-19-00-31_1920x1080](https://user-images.githubusercontent.com/84301852/209554163-78811273-6cab-4f20-9524-c7e7889f445b.png)
 
 
-![Screenshot_2022-12-17-15-18-54_1920x1080](https://user-images.githubusercontent.com/84301852/208236447-1f179234-9775-4061-9e6d-08770314da11.png)
-
-
-![Screenshot_2022-12-17-15-20-29_1920x1080](https://user-images.githubusercontent.com/84301852/208236449-c4ff06dc-b7f9-4ddd-87af-e6252e4f32ea.png)
+![Screenshot_2022-12-26-18-59-05_1920x1080](https://user-images.githubusercontent.com/84301852/209554166-c5cce4ce-ea2b-42b1-86c7-f050a7c443b4.png)
 
 
 ## Quick Setup
