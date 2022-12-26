@@ -228,6 +228,9 @@ client.background       $bg
 bindsym $mod+u workspace prev
 bindsym $mod+i workspace next
 
+# Keybinding to create a new workspace 
+bindsym $mod+n exec --no-startup-id ~/.config/i3/scripts/i3-new-workspace
+
 # Bind mod+tab to switch windows on all workspaces.
 
 # bindsym $mod+Tab exec ~/.config/i3/scripts/i3-alt-tab.py next all
