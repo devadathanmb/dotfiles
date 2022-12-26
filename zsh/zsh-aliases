@@ -48,6 +48,12 @@ alias lsa="ls -la"
 alias down="cd ~/Downloads/"
 alias work="cd ~/Documents/"
 
+# Function to open pdf files in zathura
+function pdf(){
+  zathura "$@" &;
+  disown;
+}
+
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
 then
