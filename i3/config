@@ -241,6 +241,9 @@ bindsym $mod+Shift+Tab workspace prev
 # Keybinding to change wallpaper on the fly using pywal
 bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wall-dump/
 
+# Keybinding to toggle polybar on and off
+bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
+
 # Restore the wallpaper using pywal
 exec_always --no-startup-id wal -R
 # exec nitrogen --restore
