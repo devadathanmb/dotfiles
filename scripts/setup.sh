@@ -4,6 +4,7 @@
 
 pacman_packages=(
     "firefox"
+    "cmatrix"
     "mpv" 
     "vlc" 
     "zsh" 
@@ -30,6 +31,7 @@ pacman_packages=(
     "zathura-pdf-poppler"
     "pcmanfm"
     "system-config-printer"
+    "lxappearance"
 )
 
 # AUR packages to be installed
@@ -46,6 +48,7 @@ aur_packages=(
     "timeshift"
     "autotiling"
     "ttf-ms-fonts"
+    "maya"
 )
 
 # Packages needed for i3-gaps setup
@@ -117,17 +120,10 @@ install_packages(){
    
  }
 
- # Setup the symlinks using dotbot
-
- symlinking (){
-    ./install
- }
-
  # Main
  main(){
      update_mirrors
      install_packages
-     symlinking
  }
 
  main

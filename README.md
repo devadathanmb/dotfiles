@@ -15,34 +15,12 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 ## Quick Setup
 
-1. Manual setup :
+1. Quick setup :
 
-- Install the needed tools
-```bash
-paru -S i3-gaps \
-polybar\
-rofi\
-nitrogen\
-picom\
-betterlockscreen\
-zscroll\
-nm-applet\
-playerctl\
-maim\
-xrandr\
-dunst\
-xclip
-```
-
-- Setup the symlinks  
 ```bash
 git clone https://github.com/devadathanmb/dotfiles.git
-cd dotfiles
-./install
-```
-
-2. Quick setup (For fresh arch or arch based installs only):
-```bash
-cd scripts
-./setup.sh
+cd dotfiles/scripts/
+./setup.sh # Install necessary packages
+cd ../
+./install # Setup symlinks
 ```
