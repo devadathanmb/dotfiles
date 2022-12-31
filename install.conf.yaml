@@ -1,5 +1,5 @@
 - clean: ['~']
-  
+
 - defaults:
     link:
       create: true
@@ -27,3 +27,4 @@
     ~/.Xresources: Xresources
     ~/.xinitrc: xintirc
     ~/.config/dunst/: dunst
+    ~/.config/zathura/: zathura
