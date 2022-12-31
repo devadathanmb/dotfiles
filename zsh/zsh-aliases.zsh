@@ -54,6 +54,12 @@ function pdf(){
   disown;
 }
 
+# Function to open pptx files in zaread
+function ppt(){
+  zaread "$@" &;
+  disown;
+}
+
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
 then
