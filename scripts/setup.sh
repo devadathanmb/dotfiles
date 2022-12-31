@@ -28,6 +28,8 @@ pacman_packages=(
     "zathura"
     "zathura"
     "zathura-pdf-poppler"
+    "pcmanfm"
+    "system-config-printer"
 )
 
 # AUR packages to be installed
