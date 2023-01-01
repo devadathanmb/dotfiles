@@ -215,14 +215,14 @@ bindsym $mod+Shift+g gaps inner all set 4; gaps outer all set 4
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 
-# class                 border  backgr. text indicator child_border
-client.focused          $fg     $fg     $fg  $fg       $fg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
+# class                 border  backgr.   text   indicator child_border
+client.focused          $bg     $bg       $bg      $bg         $bg
+client.focused_inactive $fg     $fg       $fg      $fg         $fg
+client.unfocused        $fg     $fg       $fg      $fg         $fg
+client.urgent           $fg     $fg       $fg      $fg         $fg
+client.placeholder      $fg     $fg       $fg      $fg         $fg
 
-client.background       $bg
+client.background       $fg
 
 # Keybinding to navingate between workspaces
 bindsym $mod+u workspace prev
@@ -270,7 +270,7 @@ mode "$mode_gaps_outer" {
 }
 
 # Keybinding to change wallpaper on the fly using pywal
-bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wall-dump/
+bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wall-dump/ --saturate 0.8
 
 # Keybinding to toggle polybar on and off
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
