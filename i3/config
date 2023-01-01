@@ -56,7 +56,7 @@ bindsym $mod+t exec alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher/launcher.sh 
+bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -64,7 +64,7 @@ bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher/launcher.sh
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # Screenshot
-bindsym $mod+p exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh 
+bindsym $mod+p exec --no-startup-id rofi-screenshot
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -286,7 +286,8 @@ exec_always --no-startup-id "picom --config /home/devadathan/.config/picom/pyjul
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Launcg autotiling scripts
+# Launch autotiling scripts
 exec_always --no-startup-id autotiling 
-# Run gnome policy kit as daemon
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Launch polkit agent 
+exec_always --no-startup-id /usr/bin/lxqt-policykit-agent
