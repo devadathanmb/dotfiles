@@ -27,11 +27,8 @@ pacman_packages=(
     "jdk-openjdk"
     "python-pywal"
     "zathura"
-    "zathura"
     "zathura-pdf-poppler"
-    "pcmanfm"
     "system-config-printer"
-    "lxappearance"
 )
 
 # AUR packages to be installed
@@ -46,9 +43,7 @@ aur_packages=(
     "telegram-desktop-bin"
     "ventoy-bin"
     "timeshift"
-    "autotiling"
     "ttf-ms-fonts"
-    "maya"
     "ngrok"
     "intellij-idea-ce"
 )
@@ -71,6 +66,10 @@ i3_setup_packages=(
     "nm-applet"
     "zscroll"
     "pavucontrol"
+    "pcmanfm"
+    "lxappearance"
+    "maya"
+    "autotiling"
 )
 
 update_mirrors (){
