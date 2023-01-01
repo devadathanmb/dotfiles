@@ -22,9 +22,10 @@
     ~/.tmux.conf: tmux.conf
     ~/.config/picom: picom
     ~/.config/rofi: rofi
-    ~/.config/polybar/: polybar
+    ~/.config/polybar: polybar
     ~/.profile: profile
     ~/.Xresources: Xresources
-    ~/.xinitrc: xintirc
-    ~/.config/dunst/: dunst
-    ~/.config/zathura/: zathura
+    ~/.xinitrc: xinitrc
+    ~/.config/dunst: dunst
+    ~/.config/zathura: zathura
+    ~/.config/i3 : i3
