@@ -10,6 +10,7 @@ pacman_packages=(
     "zsh" 
     "simplescreenrecorder"
     "man"
+    "neofetch"
     "lsd"
     "bat"
     "kitty"
@@ -22,6 +23,7 @@ pacman_packages=(
     "wget"
     "curl"
     "git"
+    "unzip"
     "gvim"
     "ranger"
     "jdk-openjdk"
@@ -29,13 +31,14 @@ pacman_packages=(
     "zathura"
     "zathura-pdf-poppler"
     "system-config-printer"
+    "network-manager-applet"
+    "fzf"
 )
 
 # AUR packages to be installed
 
 aur_packages=(
     "indic-otf"
-    "gnome-browser-connector"
     "discord"
     "visual-studio-code-bin"
     "google-chrome"
@@ -70,6 +73,7 @@ i3_setup_packages=(
     "lxappearance"
     "maya"
     "autotiling"
+    "maim"
 )
 
 update_mirrors (){
