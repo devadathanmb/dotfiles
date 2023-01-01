@@ -33,6 +33,9 @@ pacman_packages=(
     "system-config-printer"
     "network-manager-applet"
     "fzf"
+    "noto-fonts"
+    "noto-fonts-extra"
+    "noto-fonts-emoji"
 )
 
 # AUR packages to be installed
