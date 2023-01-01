@@ -270,7 +270,7 @@ mode "$mode_gaps_outer" {
 }
 
 # Keybinding to change wallpaper on the fly using pywal
-bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wall-dump/ --saturate 0.8
+bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wallpapers/ --saturate 0.8
 
 # Keybinding to toggle polybar on and off
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
