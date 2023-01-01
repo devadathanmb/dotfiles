@@ -49,13 +49,15 @@ aur_packages=(
     "autotiling"
     "ttf-ms-fonts"
     "maya"
+    "ngrok"
+    "intellij-idea-ce"
 )
 
 # Packages needed for i3-gaps setup
 
 i3_setup_packages=(
     "i3-gaps"
-    "picom"
+    "picom-pijulius-git"
     "polybar"
     "rofi"
     "betterlockscreen"
@@ -68,6 +70,7 @@ i3_setup_packages=(
     "xrandr"
     "nm-applet"
     "zscroll"
+    "pavucontrol"
 )
 
 update_mirrors (){
