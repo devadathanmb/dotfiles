@@ -64,7 +64,8 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # Screenshot
-bindsym $mod+p exec --no-startup-id rofi-screenshot
+bindsym $mod+p exec --no-startup-id ~/.local/bin/rofi-screenshot
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -214,15 +215,15 @@ bindsym $mod+Shift+g gaps inner all set 4; gaps outer all set 4
 # it fails to get colors from Xresources.
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
-
+set $transp       #00000000
 # class                 border  backgr.   text   indicator child_border
 client.focused          $bg     $bg       $bg      $bg         $bg
-client.focused_inactive $fg     $fg       $fg      $fg         $fg
-client.unfocused        $fg     $fg       $fg      $fg         $fg
-client.urgent           $fg     $fg       $fg      $fg         $fg
-client.placeholder      $fg     $fg       $fg      $fg         $fg
+client.focused_inactive $transp     $transp       $fg      $transp         $transp
+client.unfocused        $transp     $transp       $fg      $transp         $transp
+client.urgent           $transp     $transp       $fg      $transp         $transp
+client.placeholder      $transp     $transp       $fg      $transp         $transp
 
-client.background       $fg
+client.background       $transp
 
 # Keybinding to navingate between workspaces
 bindsym $mod+u workspace prev
@@ -270,7 +271,7 @@ mode "$mode_gaps_outer" {
 }
 
 # Keybinding to change wallpaper on the fly using pywal
-bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wallpapers/ --saturate 0.8
+bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wallpapers/ --saturate 0.7
 
 # Keybinding to toggle polybar on and off
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
