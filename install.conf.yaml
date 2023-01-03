@@ -29,3 +29,5 @@
     ~/.config/dunst: dunst
     ~/.config/zathura: zathura
     ~/.config/i3 : i3
+    ~/.local/bin/rofi-screenshot : scripts/rofi-screenshot
+    ~/.local/bin/powermenu : scripts/powermenu
