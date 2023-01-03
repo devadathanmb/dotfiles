@@ -77,6 +77,7 @@ i3_setup_packages=(
     "maya"
     "autotiling"
     "maim"
+	"flameshot"
 )
 
 update_mirrors (){
