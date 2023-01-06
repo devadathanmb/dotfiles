@@ -75,6 +75,8 @@ i3_setup_packages=(
     "nm-applet"
     "zscroll"
     "pavucontrol"
+    "udisk2"
+    "udiskie"
     "pcmanfm"
     "lxappearance"
     "maya"
