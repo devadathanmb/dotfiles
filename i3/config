@@ -292,3 +292,6 @@ exec_always --no-startup-id autotiling
 
 # Launch polkit agent 
 exec_always --no-startup-id /usr/bin/lxqt-policykit-agent
+
+# Launch udiskie
+exec_always --no-startup-id udiskie
