@@ -28,6 +28,6 @@ export TERMINAL="kitty"
 export BROWSER="brave"
 
 # Set colors with pywal
-(/bin/cat ~/.cache/wal/sequences &)
+# (/bin/cat ~/.cache/wal/sequences &)
 
 # eval "$(starship init zsh)"
