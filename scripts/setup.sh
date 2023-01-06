@@ -68,6 +68,7 @@ i3_setup_packages=(
     "dunst"
     "main"
     "nitrogen"
+    "lxqt-policykit"
     "xclip"
     "playerctl"
     "xrandr"
