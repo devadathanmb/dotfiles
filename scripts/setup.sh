@@ -22,6 +22,7 @@ pacman_packages=(
     "obsidian"
     "wget"
     "curl"
+    "tmux"
     "git"
     "unzip"
     "gvim"
