@@ -10,6 +10,7 @@ pacman_packages=(
     "zsh" 
     "simplescreenrecorder"
     "man"
+    "transmission-gtk"
     "neofetch"
     "lsd"
     "bat"
