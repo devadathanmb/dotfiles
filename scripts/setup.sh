@@ -58,7 +58,7 @@ aur_packages=(
 # Packages needed for i3-gaps setup
 
 i3_setup_packages=(
-    "i3-gaps"
+    "i3"
     "picom-pijulius-git"
     "polybar"
     "rofi"
@@ -123,7 +123,7 @@ install_packages(){
     done
 
     clear
-    echo "Installing i3-gaps-setup packages"
+    echo "Installing i3-setup packages"
     for package in ${i3_setup_packages[@]}; do
         paru -S --noconfirm $package
     done
