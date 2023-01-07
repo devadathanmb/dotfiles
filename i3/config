@@ -276,6 +276,11 @@ bindsym $mod+w exec --no-startup-id wal -i ~/Pictures/wallpapers/ --saturate 0.7
 # Keybinding to toggle polybar on and off
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
 
+# Keybinding for rofi calc
+bindsym $mod+c exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+
+# Keybinding for rofi emoji
+bindsym $mod+m exec --no-startup-id rofi -modi emoji -show emoji
 
 # Restore the wallpaper using pywal
 exec_always --no-startup-id wal -R
