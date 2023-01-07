@@ -23,11 +23,11 @@
     ~/.config/picom: picom
     ~/.config/rofi: rofi
     ~/.config/polybar: polybar
-    ~/.profile: profile
+    ~/.xprofile: profile
     ~/.Xresources: Xresources
     ~/.xinitrc: xinitrc
     ~/.config/dunst: dunst
     ~/.config/zathura: zathura
     ~/.config/i3 : i3
-    ~/.local/bin/rofi-screenshot : scripts/rofi-screenshot
-    ~/.local/bin/powermenu : scripts/powermenu
+    ~/.local/bin/rofi-screenshot : scripts/rofi/rofi-screenshot
+    ~/.local/bin/powermenu : scripts/rofi/powermenu
