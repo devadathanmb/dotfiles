@@ -6,21 +6,7 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 ## Previews
 
+![2023-01-07-091617](https://user-images.githubusercontent.com/84301852/211129911-2e2f2332-9bb4-4c99-822e-a75e7aeef6f3.png)
 
-![Screenshot_2022-12-26-19-00-31_1920x1080](https://user-images.githubusercontent.com/84301852/209554163-78811273-6cab-4f20-9524-c7e7889f445b.png)
+![2023-01-07-091847](https://user-images.githubusercontent.com/84301852/211129915-22212ffc-7503-4e16-9abc-2da9fa41e450.png)
 
-
-![Screenshot_2022-12-26-18-59-05_1920x1080](https://user-images.githubusercontent.com/84301852/209554166-c5cce4ce-ea2b-42b1-86c7-f050a7c443b4.png)
-
-
-## Quick Setup
-
-1. Quick setup :
-
-```bash
-git clone https://github.com/devadathanmb/dotfiles.git
-cd dotfiles/scripts/
-./setup.sh # Install necessary packages
-cd ../
-./install # Setup symlinks
-```
