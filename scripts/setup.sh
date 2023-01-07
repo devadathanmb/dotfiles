@@ -6,6 +6,7 @@ pacman_packages=(
     "firefox"
     "cmatrix"
     "mpv" 
+    "yt-dlp"
     "vlc" 
     "zsh" 
     "simplescreenrecorder"
