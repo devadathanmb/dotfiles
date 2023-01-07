@@ -20,7 +20,6 @@ pacman_packages=(
     "neovim"
     "python-pip"
     "libreoffice-fresh"
-    "obsidian"
     "wget"
     "curl"
     "tmux"
@@ -50,10 +49,10 @@ aur_packages=(
     "brave-bin"
     "telegram-desktop-bin"
     "ventoy-bin"
+    "mirage" # Minimal gui photo viewer
     "timeshift"
     "ttf-ms-fonts"
     "ngrok"
-    "intellij-idea-ce"
 )
 
 # Packages needed for i3-gaps setup
@@ -63,6 +62,8 @@ i3_setup_packages=(
     "picom-pijulius-git"
     "polybar"
     "rofi"
+    "rofi-calc"
+    "rofi-emoji"
     "betterlockscreen"
     "nitrogen"
     "dunst"
@@ -79,7 +80,6 @@ i3_setup_packages=(
     "udiskie"
     "pcmanfm"
     "lxappearance"
-    "maya"
     "autotiling"
     "maim"
 	"flameshot"
