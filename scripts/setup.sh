@@ -68,6 +68,7 @@ i3_setup_packages=(
     "betterlockscreen"
     "nitrogen"
     "dunst"
+    "xdotool"
     "main"
     "nitrogen"
     "lxqt-policykit"
