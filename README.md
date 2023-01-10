@@ -1,6 +1,6 @@
 # My dotfiles 🖤
 
-My minmial `i3-wm` config which I daily drive.  
+My minimal `i3-wm` config which I daily drive.  
   
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
