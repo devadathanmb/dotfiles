@@ -20,7 +20,7 @@ hypr_packages=(
   polkit-kde-agent
   udisk2
   udiske
-  pcmanfm
+  pcmanfm-qt
 )
 
 my_packages=(
