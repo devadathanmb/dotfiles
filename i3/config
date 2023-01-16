@@ -218,10 +218,10 @@ set_from_resource $bg i3wm.color2 #f0f0f0
 set $transp       #00000000
 # class                 border  backgr.   text   indicator child_border
 client.focused          $bg     $bg       $bg      $bg         $bg
-client.focused_inactive $transp     $transp       $fg      $transp         $transp
-client.unfocused        $transp     $transp       $fg      $transp         $transp
-client.urgent           $transp     $transp       $fg      $transp         $transp
-client.placeholder      $transp     $transp       $fg      $transp         $transp
+client.focused_inactive $transp     $transp       $transp      $transp         $transp
+client.unfocused        $transp     $transp       $transp      $transp         $transp
+client.urgent           $transp     $transp       $transp      $transp         $transp
+client.placeholder      $transp     $transp       $transp      $transp         $transp
 
 client.background       $transp
 
