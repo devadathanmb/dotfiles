@@ -91,7 +91,7 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "ﱝ Muted",
-    "on-click": "~/.config/hypr/scripts/volume_ctl.sh",
+    "on-click": "pavucontrol",
     "scroll-step": 1,
     "format-icons": {
       "headphone": "",

@@ -4,7 +4,7 @@
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
 # Do neofetch at startup
-neofetch ~/.config/neofetch/config.conf
+# neofetch ~/.config/neofetch/config.conf
 
 # Plugins
 plug "zsh-users/zsh-autosuggestions"

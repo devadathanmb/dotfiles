@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: #1e1e2e;
+  background: transparent;
   color: #cdd6f4;
 }
 
@@ -44,7 +44,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background: #696969;
+  background: #5d5b75;
   color: #cdd6f4;
 }
 
@@ -56,7 +56,7 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-  background: #545353;
+  background: #464559;
   padding: 0px 10px;
   margin: 3px 0px;
 }
@@ -68,7 +68,7 @@ tooltip {
 }
 
 #workspaces {
-  background: #434242;
+  background: #464559;
   border-radius: 10px;
   padding-right: 0px;
   padding-left: 5px;
@@ -99,4 +99,9 @@ tooltip {
 #backlight {
   border-radius: 20px 0 0 20px;
   color: #cba6f7;
+}
+
+#custom-exit{
+  border-radius: 20px;
+
 }

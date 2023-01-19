@@ -20,16 +20,10 @@
     ~/.config/starship.toml: starship.toml
     ~/.config/zsh: zsh
     ~/.tmux.conf: tmux.conf
-    # ~/.config/picom: picom
     ~/.config/rofi: rofi
     ~/.config/polybar: polybar
-    # ~/.xprofile: profile
-    # ~/.Xresources: Xresources
-    # ~/.xinitrc: xinitrc
     ~/.config/dunst: dunst
     ~/.config/zathura: zathura
     ~/.config/hypr: hypr
     ~/.config/waybar: waybar
-    # ~/.config/i3 : i3
-    # ~/.local/bin/rofi-screenshot : scripts/rofi/rofi-screenshot
-    # ~/.local/bin/powermenu : scripts/rofi/powermenu
+    ~/.local/bin/rofi-grimblast : scripts/rofi-wayland/rofi-grimblast

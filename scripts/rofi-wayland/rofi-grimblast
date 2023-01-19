@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+screen='  Capture screen'
+area='  Capture area'
+window='  Capture current window'
+
+chosen=$(printf '%s\n%s\n%s\n' "$screen" "$area" "$window" \
+    | rofi -dmenu \ 
+)
+
+
+case "$chosen" in
+    "$screen") extra_args='output' ;;
+    "$area")   extra_args='area' ;;
+    "$window") extra_args='active' ;;
+    *)         exit 1 ;;
+esac
+
+sleep 1 && grimblast --notify copysave $extra_args 
