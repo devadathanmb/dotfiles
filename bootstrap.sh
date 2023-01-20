@@ -25,7 +25,7 @@ hypr_packages=(
   adwaita-qt5
   adwaita-qt6
   wf-recorder
-  webcord
+  webcord-git
   pavucontrol
   nm-applet
   grimblast
