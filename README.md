@@ -10,7 +10,7 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 <br>
 
-![2023-01-21T18:54:57,259055020+05:30](https://user-images.githubusercontent.com/84301852/213874770-13217dfd-9ef9-487d-bde8-2864a499f9d1.png)
+![2023-01-21T22:54:38,722168167+05:30](https://user-images.githubusercontent.com/84301852/213879372-a82a07d0-61e0-4d46-aeb5-baf291ba75f2.png)
 
 <br>
 
