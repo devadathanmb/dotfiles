@@ -20,7 +20,7 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 ## Quick setup:
 
-*These dotfiles are configured to work on my system, these may or may not work the same out of the box on your system. So make needed changes."
+*These dotfiles are configured to work on my system, these may or may not work the same out of the box on your system. So make needed changes.*
 <br>
 
 1. Clone the repo:
