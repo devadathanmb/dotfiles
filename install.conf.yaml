@@ -27,3 +27,4 @@
     ~/.config/hypr: hypr
     ~/.config/waybar: waybar
     ~/.local/bin/rofi-grimblast : scripts/rofi-wayland/rofi-grimblast
+    ~/.local/bin/wrappedhl : scripts/hypr/wrappedhl

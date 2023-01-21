@@ -1,5 +1,4 @@
-#!/bin/sh
-# A wrapper script to launch hyprland
+#!/usr/bin/env bash
 
 cd ~
 

@@ -37,6 +37,7 @@ hypr_packages=(
 
 devel_packages=(
     firefox
+    stylua
     python-pip
     libreoffice-fresh
     neovim
