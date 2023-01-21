@@ -10,11 +10,12 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 <br>
 
-![2023-01-21T14:41:21,948514801+05:30](https://user-images.githubusercontent.com/84301852/213860654-28dfeba9-55cb-456e-838b-9d39737091d4.png)
+![2023-01-21T18:54:57,259055020+05:30](https://user-images.githubusercontent.com/84301852/213874770-13217dfd-9ef9-487d-bde8-2864a499f9d1.png)
 
 <br>
 
-![2023-01-21T14:48:44,131720763+05:30](https://user-images.githubusercontent.com/84301852/213860664-9c1daf9b-d4d5-4f65-912e-5169a1335395.png)
+![2023-01-21T18:55:29,316430039+05:30](https://user-images.githubusercontent.com/84301852/213874786-9efdabd8-d15e-4706-ab39-3d2663376299.png)
+
 ------
 
 ## Quick setup:
