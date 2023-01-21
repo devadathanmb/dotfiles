@@ -67,7 +67,8 @@ necessary_packages=(
     ventoy-bin
     vlc
     flameshot
-    transmission-gtk
+    deluge
+    deluge-git
     alacritty
     noto-fonts
     noto-fonts-extra
