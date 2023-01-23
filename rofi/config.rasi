@@ -4,16 +4,22 @@ configuration {
   drun-display-format: "{name}";
   font: "JetBrainsMono Nerd Font 16";
   modi: "window,run,drun,emoji,calc";
+  kb-remove-to-eol:"";
+  kb-accept-entry: "Return,KP_Enter";
+  kb-secondary-copy: "";
+  kb-cancel: "Escape,Control+c";
+  kb-row-up: "Control+k";
+  kb-row-down: "Control+j";
 }
 
 @theme "/dev/null"
 
 * {
-  bg: #11121D;
-  bg-alt: #444b6a;
+  bg: #2C3539;
+  bg-alt: #3B608C;
 
   fg: #FFFFFF;
-  fg-alt: #787c99;
+  fg-alt: #8A93A6;
 
   background-color: @bg;
   
@@ -75,4 +81,3 @@ prompt {
   text-color: @fg;
 }
 
-/* vim: ft=sass

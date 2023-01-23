@@ -16,6 +16,8 @@ hypr_packages=(
   qt6-wayland
   waybar-hyprland-git
   swaybg
+  swayimg
+  vimiv
   rofi-lbonn-wayland-git
   rofi-emoji
   rofi-calc
@@ -63,6 +65,7 @@ devel_packages=(
 necessary_packages=(
     telegram-desktop-bin
     mpv
+    yt-dlp
     timeshift
     ventoy-bin
     vlc
@@ -81,7 +84,6 @@ other_packages=(
     cmatrix
     cava
     cli-visualizer
-    yt-dlp
     neofetch
     lsd
     bat
