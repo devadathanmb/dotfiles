@@ -81,3 +81,8 @@ prompt {
   text-color: @fg;
 }
 
+textbox{
+  text-color: @fg;
+  padding: 15;
+}
+

@@ -22,7 +22,8 @@ hypr_packages=(
   rofi-emoji
   rofi-calc
   hyprpicker
-  sddm-git
+  greetd
+  greetd-tuigreet
   gnome-themes-extra
   adwaita-qt5
   adwaita-qt6

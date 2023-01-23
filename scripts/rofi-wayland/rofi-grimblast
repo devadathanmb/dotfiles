@@ -1,13 +1,19 @@
 #!/usr/bin/env bash
 
+# Kill if any other rofi instance is running
+if pgrep -x "rofi"
+then
+    killall rofi
+    exit
+fi
+
 screen='  Capture screen'
 area='  Capture area'
 window='  Capture current window'
 
 chosen=$(printf '%s\n%s\n%s\n' "$screen" "$area" "$window" \
-    | rofi -dmenu \ 
+    | rofi -dmenu -l 3 -p "Screenshot:"\ 
 )
-
 
 case "$chosen" in
     "$screen") extra_args='output' ;;
