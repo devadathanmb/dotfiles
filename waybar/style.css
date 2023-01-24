@@ -34,7 +34,6 @@ tooltip {
 #workspaces button.focused {
   color: #cdd6f4;
   background: #eba0ac;
-  border-radius: 10px;
 }
 
 #workspaces button.urgent {
@@ -44,8 +43,8 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background: #445157;
-  color: #cdd6f4;
+  color: #ffffff;
+  background: none;
 }
 
 #custom-exit,
@@ -59,6 +58,7 @@ tooltip {
   background: #2C3539;
   padding: 0px 10px;
   margin: 3px 0px;
+  border: 1.5px solid white;
 }
 
 #tray {
@@ -95,14 +95,16 @@ tooltip {
   color: #a6e3a1;
   border-radius: 0 20px 20px 0;
   margin-right: 5px;
+  border-left: none;
 }
 
 #backlight {
   border-radius: 20px 0 0 20px;
   color: #cba6f7;
+  border-right: none;
 }
 
 #custom-exit{
   border-radius: 20px;
-
+  padding-right: 13px;
 }
