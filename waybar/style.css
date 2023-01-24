@@ -3,7 +3,7 @@
   border-radius: 0;
   font-family: JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   min-height: 0;
 }
 
@@ -22,9 +22,9 @@ tooltip {
 }
 
 #workspaces button {
-  padding: 3px;
+  padding: 2px;
   color: #cdd6f4;
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 #workspaces button.active {
