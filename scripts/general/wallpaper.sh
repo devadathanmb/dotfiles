@@ -12,17 +12,40 @@
 WALL_DIR="$HOME/Pictures/wallpapers"
 CACHE_DIR="$HOME/.cache"
 
-function set_symlink(){
-
-  current_wall=$(find "$CACHE_DIR/" -maxdepth 1 -name "current-wall.*")
-  echo $current_wall
+# Function to remove existing symlink if any
+function remove_symlink(){
+  current_wall=$(find "$CACHE_DIR/" -maxdepth 1 -name "current-wall.*" -print -quit)
   if [[ ! -z "$current_wall" ]]
   then
-    echo "Yess sir"
-  else
-    echo "No sirr"
+    rm $current_wall
   fi
-
 }
 
-set_symlink
+# Function to pick a random wallpaper from the wallpaper directory
+function pick_random(){
+  random_wall=$( find "$WALL_DIR/" -type f -print0 | shuf -z -n 1 )
+}
+
+# Function to set new symlink
+function set_new_link(){
+  extension=$(echo "$random_wall" | cut -d "." --fields=2 )
+  ln -s "$random_wall" "$CACHE_DIR/current-wall.$extension"
+}
+
+# Function to set the wallpaper
+function set_wallpaper(){
+  if pgrep -x "swaybg"
+  then
+    killall swaybg
+  fi
+  notify-send -t 350 "🐧 Changing wallpaper"
+  swaybg -i "$CACHE_DIR/current-wall.$extension" &
+}
+
+function main(){
+  remove_symlink
+  pick_random
+  set_new_link
+  set_wallpaper
+}
+main
