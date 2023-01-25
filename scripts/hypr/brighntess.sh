@@ -6,12 +6,12 @@ increase_brighntess(){
 
     echo $1
        light -A $1
-       notify-send -t 400 "🌞 Increasing brightness to $(light -G)"
+       notify-send -t 500 "🌞 Increasing brightness to $(light -G)"
 }
 
 decrease_brighntess(){
     light -U $1 
-    notify-send -t 400 "🌞 Decreasing brightness to $(light -G)"
+    notify-send -t 500 "🌞 Decreasing brightness to $(light -G)"
 }
 
 while getopts i:d: flag

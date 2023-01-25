@@ -14,7 +14,7 @@ CACHE_DIR="$HOME/.cache"
 
 # Function to remove existing symlink if any
 function remove_symlink(){
-  current_wall=$(find "$CACHE_DIR/" -maxdepth 1 -name "current-wall.*" -print -quit)
+  current_wall=$(find "$CACHE_DIR/" -maxdepth 1 -name "current-wall" -print -quit)
   if [[ ! -z "$current_wall" ]]
   then
     rm $current_wall
@@ -24,12 +24,15 @@ function remove_symlink(){
 # Function to pick a random wallpaper from the wallpaper directory
 function pick_random(){
   random_wall=$( find "$WALL_DIR/" -type f -print0 | shuf -z -n 1 )
+  while [[ $current_wall = $random_wall ]]
+  do
+    random_wall=$( find "$WALL_DIR/" -type f -print0 | shuf -z -n 1 )
+  done
 }
 
 # Function to set new symlink
 function set_new_link(){
-  extension=$(echo "$random_wall" | cut -d "." --fields=2 )
-  ln -s "$random_wall" "$CACHE_DIR/current-wall.$extension"
+  ln -s "$random_wall" "$CACHE_DIR/current-wall"
 }
 
 # Function to set the wallpaper
@@ -39,7 +42,13 @@ function set_wallpaper(){
     killall swaybg
   fi
   notify-send -t 350 "🐧 Changing wallpaper"
-  swaybg -i "$CACHE_DIR/current-wall.$extension" &
+  swaybg -i "$CACHE_DIR/current-wall" &
+}
+
+# Function to cycle through wallpapers
+function cycle_wallpaper(){
+  original_wall=$(readlink "$current_wall")
+  next_wall=$()
 }
 
 function main(){

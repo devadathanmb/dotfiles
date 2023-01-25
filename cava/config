@@ -22,7 +22,7 @@
 # The number of bars (0-512). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
 ; bars = 0
-; bar_width = 2
+ bar_width = 3
 ; bar_spacing = 1
 # bar_height is only used for output in "noritake" format
 ; bar_height = 32
@@ -147,7 +147,7 @@
 # enable alacritty synchronized updates. 1 = on, 0 = off
 # removes flickering in alacritty terminal emeulator.
 # defaults to off since the behaviour in other terminal emulators is unknown
-; alacritty_sync = 0
+ alacritty_sync = 0
 
 # Shaders for sdl_glsl, located in $HOME/.config/cava/shaders
 ; vertex_shader = pass_through.vert
@@ -175,11 +175,11 @@
 # You can define as many as 8 different colors. They range from bottom to top of screen
  gradient = 1
  gradient_count = 5
- gradient_color_1 = '#2F5C93'
- gradient_color_2 = '#349EF6'
- gradient_color_3 = '#68D7FE'
- gradient_color_4 = '#A2769E'
- gradient_color_5 = '#FCDAF2'
+ gradient_color_1 = '#443D66'
+ gradient_color_2 = '#6A6384'
+ gradient_color_3 = '#7B7490'
+ gradient_color_4 = '#F98A87'
+ gradient_color_5 = '#FEA052'
 
 
 [smoothing]

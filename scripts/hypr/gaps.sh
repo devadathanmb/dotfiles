@@ -4,7 +4,7 @@
 
 # Get the current gaps values
 gaps_in=$(hyprctl getoption general:gaps_in -j | jq ".int")
-gaps_out=$(hyprctl getoption general:gaps_out | jq ".int")
+gaps_out=$(hyprctl getoption general:gaps_out -j | jq ".int")
 
 # Toggle gaps
 

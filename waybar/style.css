@@ -3,7 +3,7 @@
   border-radius: 0;
   font-family: JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   min-height: 0;
 }
 
@@ -58,7 +58,7 @@ tooltip {
   background: #2C3539;
   padding: 0px 10px;
   margin: 3px 0px;
-  border: 1.5px solid #83CFF7;
+  border: 1.8px solid #83CFF7;
 }
 
 #tray {
