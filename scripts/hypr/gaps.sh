@@ -3,8 +3,8 @@
 
 
 # Get the current gaps values
-gaps_in=$(hyprctl getoption general:gaps_in | grep int | cut -d ":" -f 2 | xargs) 
-gaps_out=$(hyprctl getoption general:gaps_out | grep int | cut -d ":" -f 2 | xargs) 
+gaps_in=$(hyprctl getoption general:gaps_in -j | jq ".int")
+gaps_out=$(hyprctl getoption general:gaps_out | jq ".int")
 
 # Toggle gaps
 

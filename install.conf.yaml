@@ -26,5 +26,6 @@
     ~/.config/zathura: zathura
     ~/.config/hypr: hypr
     ~/.config/waybar: waybar
-    ~/.local/bin/rofi-grimblast : scripts/rofi-wayland/rofi-grimblast
+    ~/.config/swaylock: swaylock
+    ~/.config/wlogout: wlogout
     ~/.local/bin/wrappedhl : scripts/hypr/wrappedhl
