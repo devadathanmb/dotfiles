@@ -48,7 +48,7 @@ devel_packages=(
     curl
     tmux
     zathura
-    zathura-pdf-poppler
+    zathura-pdf-mupdf
     system-config-printer
     network-manager-applet
     fzf
@@ -145,8 +145,11 @@ install_packages(){
      update_mirrors
      install_packages
      clear
-     paru --clean 
+     paru --noconfirm
+     paru --clean --noconfirm
+     paru -Sc --noconfirm
      echo "Bootstrap complete. Please reboot the system."
+     neofetch
  }
 
  main

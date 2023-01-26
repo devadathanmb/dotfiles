@@ -22,4 +22,4 @@ case "$chosen" in
     *)         exit 1 ;;
 esac
 
-sleep 1 && grimblast --notify copysave $extra_args 
+sleep 0.3 && grimblast --notify copysave $extra_args 

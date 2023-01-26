@@ -42,7 +42,7 @@ function set_wallpaper(){
     killall swaybg
   fi
   notify-send -t 350 "🐧 Changing wallpaper"
-  swaybg -i "$CACHE_DIR/current-wall" &
+  swaybg -i "$CACHE_DIR/current-wall" --mode fit &
 }
 
 # Function to cycle through wallpapers
