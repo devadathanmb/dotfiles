@@ -2,13 +2,6 @@
 
 # A simple bash script to change wallpaper using swaybg
 
-# We should be able to cycle through wallpaper through a keybinding
-# So for that we can make use of symlinks
-# Set a symlink to the cache dir for the current wallpaper
-# When key pressed, remove the symlink, choose a file from the wallpaper dir
-# Set the new file to the symlink
-# Use swaybg to use that symlink
-
 WALL_DIR="$HOME/Pictures/wallpapers"
 CACHE_DIR="$HOME/.cache"
 
@@ -32,7 +25,7 @@ function pick_random(){
 
 # Function to set new symlink
 function set_new_link(){
-  ln -s "$random_wall" "$CACHE_DIR/current-wall"
+  ln -s "$1" "$CACHE_DIR/current-wall"
 }
 
 # Function to set the wallpaper
@@ -47,14 +40,30 @@ function set_wallpaper(){
 
 # Function to cycle through wallpapers
 function cycle_wallpaper(){
-  original_wall=$(readlink "$current_wall")
-  next_wall=$()
+  original_wall=$(find "$CACHE_DIR/" -maxdepth 1 -name "current-wall" -exec readlink {} \;)
+  next_wall=$(ls -1 -d $WALL_DIR/* | grep "$original_wall" -A 1 | tail -1)
+   
+   if [[ $next_wall  == $original_wall ]]
+   then
+     next_wall=$(ls -d $WALL_DIR/* | head -1)
+   fi
+   remove_symlink
+   set_new_link $next_wall
+   set_wallpaper
 }
 
-function main(){
+# Function to set a random wallpaper
+function random_wallpaper(){
   remove_symlink
   pick_random
-  set_new_link
+  set_new_link $random_wall
   set_wallpaper
 }
-main
+
+while getopts rc flag
+do
+    case "${flag}" in
+        r) random_wallpaper ;;
+        c) cycle_wallpaper ;;
+    esac
+done
