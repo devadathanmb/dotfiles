@@ -103,7 +103,7 @@ install_paru (){
     then
         clear
         sudo pacman -S --needed base-devel
-        git clone https://aur.archlinux.org/paru-bin.git ~
+        git clone https://aur.archlinux.org/paru-bin.git $HOME/paru-bin
         cd ~/paru-bin
         makepkg -si
         cd ..
