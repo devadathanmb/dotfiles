@@ -15,6 +15,7 @@ plug "zap-zsh/vim"
 plug "zap-zsh/fzf"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/atmachine-prompt"
+plug "Rishabh672003/zsh-autoswitch-virtualenv"
 
 # Normal files to source
 plug "$HOME/.config/zsh/zsh-exports.zsh"

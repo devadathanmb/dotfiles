@@ -139,11 +139,20 @@ install_packages(){
     done
  }
 
+ # Setup fonts
+ install_fonts(){
+   mkdir -p ~/.local/share/fonts
+   cp ~/dotfiles/fonts/* ~/.local/share/fonts
+   fc-cache -fv
+   fc-list | grep -i jetbrains
+ }
+
  # Main
  main(){
      clear
      update_mirrors
      install_packages
+     install_fonts
      clear
      paru --noconfirm
      paru --clean --noconfirm
