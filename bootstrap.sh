@@ -57,6 +57,7 @@ devel_packages=(
     brave-bin
     ngrok
     zsh
+    docker
     man
     kitty
     tldr
@@ -102,7 +103,7 @@ install_paru (){
     if ! command -v paru &> /dev/null
     then
         clear
-        sudo pacman -S --needed base-devel
+        sudo pacman -S --noconfirm --needed base-devel
         git clone https://aur.archlinux.org/paru-bin.git $HOME/paru-bin
         cd ~/paru-bin
         makepkg -si
