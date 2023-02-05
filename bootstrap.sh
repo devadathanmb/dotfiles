@@ -15,6 +15,7 @@ hypr_packages=(
   qt5-wayland
   qt6-wayland
   waybar-hyprland-git
+  waybar-mpris-git
   swaybg
   swayimg
   vimiv
