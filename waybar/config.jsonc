@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "height": 30,
-  "modules-left": ["wlr/workspaces"],
+  "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
     "network",
@@ -106,5 +106,20 @@
   "custom/exit": {
     "format": "<span color='#F38BA8'>⏻</span>",
     "on-click": "~/dotfiles/scripts/hypr/wlogout.sh"
+  },
+  "custom/waybar-mpris": {
+    "return-type": "json",
+    "exec": "waybar-mpris --position --autofocus",
+    "on-click": "waybar-mpris --send toggle",
+    "max-length" : 50,
+    // This option will switch between players on right click.
+    "on-click-right": "waybar-mpris --send next",
+    // The options below will switch the selected player on scroll
+    // "on-scroll-up": "waybar-mpris --send player-next",
+    // "on-scroll-down": "waybar-mpris --send player-prev",
+    // The options below will go to next/previous track on scroll
+     "on-scroll-up": "waybar-mpris --send player-next",
+     "on-scroll-down": "waybar-mpris --send prev",
+    "escape": true
   }
 }

@@ -702,6 +702,6 @@
   },
   "workbench.editor.showTabs": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "workbench.colorTheme": "Wal Bordered",
+  "workbench.colorTheme": "Visual Studio Dark",
   "security.workspace.trust.untrustedFiles": "open"
 }

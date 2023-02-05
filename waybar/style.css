@@ -35,6 +35,7 @@ tooltip {
   background: none;
 }
 
+#custom-waybar-mpris,
 #custom-exit,
 #clock,
 #battery,
@@ -95,4 +96,10 @@ tooltip {
   color: #F38BA8;
   border-radius: 20px;
   padding-right: 13px;
+}
+
+#custom-waybar-mpris{
+  margin-left: 10px;
+  border-radius: 20px;
+  color: #FAB387;
 }
