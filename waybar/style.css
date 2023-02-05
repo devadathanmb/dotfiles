@@ -9,21 +9,20 @@
 
 window#waybar {
   background: transparent;
-  color: #cdd6f4;
+  color: #A5ADCE;
 }
 
 tooltip {
-  background: #1e1e2e;
-  border-radius: 10px;
-  border-width: 2px;
+  background: #1E1E2E;
+  border-radius: 3px;
   font-size: 16px;
-  border-style: solid;
-  border-color: #11111b;
+  padding: 10px;
+  border: 2px solid #31C3EE;
 }
 
 #workspaces button {
   padding: 2px;
-  color: #cdd6f4;
+  color: #A5ADCE;
   margin-right: 1px;
 }
 
@@ -31,19 +30,8 @@ tooltip {
   color: #ffffff;
 }
 
-#workspaces button.focused {
-  color: #cdd6f4;
-  background: #eba0ac;
-}
-
-#workspaces button.urgent {
-  color: #11111b;
-  background: #a6e3a1;
-  border-radius: 10px;
-}
-
 #workspaces button:hover {
-  color: #ffffff;
+  color: #F5E0DC;
   background: none;
 }
 
@@ -55,7 +43,7 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-  background: #2C3539;
+  background: #1E1E2E;
   padding: 0px 10px;
   margin: 3px 0px;
   border: 1.8px solid #83CFF7;
@@ -68,8 +56,7 @@ tooltip {
 }
 
 #workspaces {
-  /* background: #36454f; */
-  background: #2C3539;
+  background: #1E1E2E;
   border-radius: 10px;
   padding-right: 0px;
   padding-left: 5px;
@@ -77,22 +64,22 @@ tooltip {
 }
 
 #clock {
-  color: #f9e2af;
+  color: #F9E2AF;
   border-radius: 10px;
 }
 
 #network {
-  color: #fab387;
+  color: #F5C2E7;
   margin-right: 10px;
   border-radius: 20px;
 }
 
 #pulseaudio {
-  color: #89b4fa;
+  color: #89B4FA;
 }
 
 #battery {
-  color: #a6e3a1;
+  color: #A6E3A1;
   border-radius: 0 20px 20px 0;
   margin-right: 5px;
   border-left: none;
@@ -100,11 +87,12 @@ tooltip {
 
 #backlight {
   border-radius: 20px 0 0 20px;
-  color: #cba6f7;
+  color: #94E2D5;
   border-right: none;
 }
 
 #custom-exit{
+  color: #F38BA8;
   border-radius: 20px;
   padding-right: 13px;
 }

@@ -7,9 +7,9 @@ window {
 }
 button {
     color: #FFFFFF;
-	background-color: #1E1E1E;
+	background-color: #181825;
 	border-style: solid;
-    border-color: #CDD6F4;
+    border-color: #EBA0AC;
 	border-width: 2px;
     border-radius: 10px;
     margin: 10px;
@@ -19,7 +19,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #2C3539;
+	background-color: #313244;
 	outline-style: none;
 }
 

@@ -15,8 +15,8 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #2C3539;
-  bg-alt: #3B608C;
+  bg: #1e1e2e;
+  bg-alt: #89B4FA;
 
   fg: #FFFFFF;
   fg-alt: #8A93A6;
@@ -55,11 +55,13 @@ element-icon {
 entry {
   background-color: @bg-alt;
   padding: 12;
-  text-color: @fg;
+  text-color: #1D1D2D;
+  font: "JetBrainsMono Nerd Font Bold 16";
 }
 
 inputbar {
   children: [prompt, entry];
+
 }
 
 listview {
@@ -72,13 +74,16 @@ listview {
 mainbox {
   background-color: @bg;
   children: [inputbar, listview];
+  border: 2px;
+  border-color: #EBA0AC;
 }
 
 prompt {
   background-color: @bg-alt;
   enabled: true;
   padding: 12 0 0 12;
-  text-color: @fg;
+  text-color: #1D1D2D;
+  font: "JetBrainsMono Nerd Font Bold 16";
 }
 
 textbox{
