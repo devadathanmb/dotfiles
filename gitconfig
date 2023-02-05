@@ -1,0 +1,10 @@
+[user]
+	email = devadathanmb@gmail.com
+	name = Devadathan M B
+
+[alias]
+    graph = log --all --graph --decorate
+    cm = commit -m
+    pom = push origin main
+    po = push origin
+

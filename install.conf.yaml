@@ -29,3 +29,4 @@
     ~/.config/swaylock: swaylock
     ~/.config/wlogout: wlogout
     ~/.local/bin/wrappedhl : scripts/hypr/wrappedhl
+    ~/.gitconfig: gitconfig
