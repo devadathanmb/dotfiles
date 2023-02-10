@@ -34,8 +34,8 @@ hypr_packages=(
   nm-applet
   grimblast
   polkit-kde-agent
-  udisk2
-  udiske
+  udisks2
+  udiskie
   pcmanfm-qt
 )
 
