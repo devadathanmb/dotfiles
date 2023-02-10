@@ -36,7 +36,7 @@ hypr_packages=(
   polkit-kde-agent
   udisks2
   udiskie
-  pcmanfm-qt
+  thunar
 )
 
 devel_packages=(
