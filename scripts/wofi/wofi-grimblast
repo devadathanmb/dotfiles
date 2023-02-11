@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Kill if any other rofi instance is running
+if pgrep -x "wofi"
+then
+    killall wofi
+    exit
+fi
+
+screen='  Capture screen'
+area='  Capture area'
+window='  Capture current window'
+
+chosen=$(printf '%s\n%s\n%s\n' "$screen" "$area" "$window" \
+    | wofi -dmenu -l 3 -p "Screenshot:"\ 
+)
+
+case "$chosen" in
+    "$screen") extra_args='output' ;;
+    "$area")   extra_args='area' ;;
+    "$window") extra_args='active' ;;
+    *)         exit 1 ;;
+esac
+
+sleep 0.5 && grimblast --notify copysave $extra_args 
