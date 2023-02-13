@@ -16,6 +16,7 @@ hypr_packages=(
   qt6-wayland
   waybar-hyprland-git
   waybar-mpris-git
+  wlogout
   swaybg
   swayimg
   vimiv
@@ -23,13 +24,11 @@ hypr_packages=(
   rofi-emoji
   rofi-calc
   hyprpicker
-  greetd
-  greetd-tuigreet
+  ly
   gnome-themes-extra
   adwaita-qt5
   adwaita-qt6
   wf-recorder
-  webcord-git
   pavucontrol
   nm-applet
   grimblast
@@ -43,10 +42,13 @@ devel_packages=(
     firefox
     stylua
     python-pip
+    unzip
+    zip
+    curl
+    wget
     libreoffice-fresh
     neovim
     vim
-    curl
     tmux
     zathura
     zathura-pdf-mupdf
@@ -61,20 +63,22 @@ devel_packages=(
     docker
     man
     kitty
-    tldr
     jdk-openjdk
 )
 
 necessary_packages=(
+    bat-asus-battery-bin 
+    epson-inkjet-printer-escpr
+    epson-inkjet-printer-escpr2
+    htop
+    btop
     telegram-desktop-bin
     mpv
     yt-dlp
     timeshift
     ventoy-bin
-    vlc
-    flameshot
     deluge
-    deluge-git
+    deluge-gtk
     alacritty
     noto-fonts
     noto-fonts-extra
@@ -90,6 +94,7 @@ other_packages=(
     neofetch
     lsd
     bat
+    cowsay
 )
 
 

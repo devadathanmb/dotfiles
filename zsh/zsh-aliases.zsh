@@ -60,6 +60,9 @@ function ppt(){
   disown;
 }
 
+# Lofi girl
+alias lofi="exec $HOME/dotfiles/scripts/general/lofi.sh"
+
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
 then

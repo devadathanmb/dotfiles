@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+CONFIG_DIR="$HOME/dotfiles/waybar/newbar"
 launch_bar() {
 	# Terminate already running bar instances
 	killall -q waybar
@@ -8,7 +9,7 @@ launch_bar() {
 	while pgrep -u $UID -x waybar >/dev/null; do sleep 1; done
 
 	# Launch the bar
-  waybar &
+  waybar --config "$CONFIG_DIR/config.jsonc" --style "$CONFIG_DIR/style.css" &
 }
 
 launch_bar

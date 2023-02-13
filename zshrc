@@ -14,7 +14,7 @@ plug "zap-zsh/vim"
 # plug "zap-zsh/zap-prompt"
 plug "zap-zsh/fzf"
 plug "zsh-users/zsh-syntax-highlighting"
-plug "zap-zsh/atmachine-prompt"
+# plug "zap-zsh/atmachine-prompt"
 plug "Rishabh672003/zsh-autoswitch-virtualenv"
 
 # Normal files to source
@@ -31,4 +31,4 @@ export BROWSER="brave"
 # Set colors with pywal
 # (/bin/cat ~/.cache/wal/sequences &)
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"

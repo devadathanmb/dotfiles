@@ -1,0 +1,102 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: RobotoMono Nerd Font;
+  font-weight: 500;
+  font-size: 14;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(17, 17, 27, 0.7);
+  color: #A5ADCE;
+}
+
+tooltip {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #31C3EE;
+}
+
+#workspaces button {
+  padding: 1px;
+  color: #bac2de;
+  margin-right: 6px;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  border-top: 1px solid white;
+}
+
+#workspaces button:hover {
+  color: #F5E0DC;
+}
+
+#custom-waybar-mpris,
+#custom-exit,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {
+  margin: 3px 5px;
+}
+
+#tray {
+  margin-right: 4px;
+  font-size: 16px;
+  border-right: 1px solid white;
+  padding-right: 12px;
+}
+
+#workspaces {
+  padding-right: 0px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+#clock {
+  color: #F9E2AF;
+  margin-right: 70px;
+  /* padding-right: 20px; */
+}
+
+#network {
+  color: #F5C2E7;
+  margin-right: 12px;
+}
+
+#pulseaudio {
+  color: #89B4FA;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#battery {
+  color: #A6E3A1;
+  padding-right: 12px;
+  border-right: 1px solid white;
+}
+
+#backlight {
+  color: #94E2D5;
+}
+
+#custom-exit{
+  color: #F38BA8;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#custom-waybar-mpris{
+  color: #FAB387;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding-left: 13px;
+  padding-right: 10px;
+}

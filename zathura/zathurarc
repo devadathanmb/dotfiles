@@ -1,6 +1,6 @@
 set default-fg                "#CDD6F4"
-set default-bg 			          "#1E1E2E"
-
+set default-bg 			          "#181825"
+set font "JetBrainsMono 15"
 set completion-bg		          "#313244"
 set completion-fg		          "#CDD6F4"
 set completion-highlight-bg	  "#575268"
