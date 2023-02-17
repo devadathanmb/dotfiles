@@ -52,6 +52,20 @@ function cycle_wallpaper(){
    set_wallpaper
 }
 
+# Function to reverse cycle through wallpapers
+function cycle_rev_wallpaper(){
+  original_wall=$(find "$CACHE_DIR/" -maxdepth 1 -name "current-wall" -exec readlink {} \;)
+  next_wall=$(ls -1 -d $WALL_DIR/* | grep "$original_wall" -B 1 | head -1)
+   
+   if [[ $next_wall  == $original_wall ]]
+   then
+     next_wall=$(ls -d $WALL_DIR/* | tail -1)
+   fi
+   remove_symlink
+   set_new_link $next_wall
+   set_wallpaper
+}
+
 # Function to set a random wallpaper
 function random_wallpaper(){
   remove_symlink
@@ -60,10 +74,11 @@ function random_wallpaper(){
   set_wallpaper
 }
 
-while getopts rc flag
+while getopts rcb flag
 do
     case "${flag}" in
         r) random_wallpaper ;;
         c) cycle_wallpaper ;;
+        b) cycle_rev_wallpaper ;;
     esac
 done
