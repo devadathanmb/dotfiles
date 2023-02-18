@@ -3,9 +3,8 @@
   "position": "top",
   "height": 28,
   "modules-left": ["wlr/workspaces"],
-  "modules-center": ["clock"],
+  "modules-center": ["custom/waybar-mpris", "clock"],
   "modules-right": [
-    "custom/waybar-mpris",
     "backlight",
     "pulseaudio",
     "battery",
@@ -41,7 +40,7 @@
     "on-click": "",
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": [" ", " ", " "],
+    "format-icons": ["", "", ""],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-",
     "min-length": 6
@@ -53,13 +52,13 @@
       "critical": 20
     },
     "format": "{icon} {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": [
-      "CHARGE-IMMEDIATELY-NOW  ",
-      "Charge-immediately  ",
-      "Charge-quickly  ",
+      "CHARGE-IMMEDIATELY-NOW ",
+      "Charge-immediately ",
+      "Charge-quickly ",
       "",
       "",
       "",
@@ -72,8 +71,8 @@
   },
   "clock": {
     "interval": 1,
-    "format": "{: %R   %d/%m}",
-    "format-alt": "{: %H:%M:%S    %a, %b %d, %G}",
+    "format": "{: %R}",
+    "format-alt": "{: %H:%M:%S   %a, %b %d, %G}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
     "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
     "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%U}</b></span>",
@@ -92,15 +91,16 @@
     "format": "{icon} {volume}%",
     "format-muted": "ﱝ Muted",
     "on-click": "pavucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 1,
     "format-icons": {
-      "headphone": " ",
-      "hands-free": " ",
-      "headset": " ",
-      "phone": " ",
-      "portable": " ",
-      "car": " ",
-      "default": [" ", " ", "墳", " "]
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "墳", ""]
     }
   },
   "custom/exit": {
@@ -113,12 +113,12 @@
     "on-click": "waybar-mpris --send toggle",
     "max-length": 50,
     // This option will switch between players on right click.
-    "on-click-right": "waybar-mpris --send next",
+    "on-scroll-up": "waybar-mpris --send next",
     // The options below will switch the selected player on scroll
     // "on-scroll-up": "waybar-mpris --send player-next",
     // "on-scroll-down": "waybar-mpris --send player-prev",
     // The options below will go to next/previous track on scroll
-    "on-scroll-up": "waybar-mpris --send player-next",
+    "on-click-right": "waybar-mpris --send player-next",
     "on-scroll-down": "waybar-mpris --send prev",
     "escape": true
   }

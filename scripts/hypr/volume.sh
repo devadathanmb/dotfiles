@@ -14,10 +14,16 @@ function decrease_volume(){
   notify-send -t 400 "🔊 Decreasing volume to $new_volume%" 
 }
 
-while getopts i:d: flag
+function toggle_mute(){
+  notify-send "🔇 Muted"
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+}
+
+while getopts i:d:m: flag
 do
     case "${flag}" in
         i) value=${OPTARG}; increase_volume "$value";;
         d) value=${OPTARG}; decrease_volume "$value";;
+        m) value=${OPTARG}; toggle_mute "$value";;
     esac
 done

@@ -15,11 +15,11 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #1e1e2e;
-  bg-alt: #B4BEFE;
+  bg: #252629;
+  bg-alt: #569CD6;
 
   fg: #FFFFFF;
-  fg-alt: #8A93A6;
+  fg-alt: #808080;
 
   background-color: @bg;
   
@@ -75,7 +75,7 @@ mainbox {
   background-color: @bg;
   children: [inputbar, listview];
   border: 2px;
-  border-color: #EBA0AC;
+  border-color: #2FC4ED;
 }
 
 prompt {

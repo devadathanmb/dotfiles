@@ -81,8 +81,7 @@ endif
 " Plugins go here 
 call plug#begin('~/.vim/plugged')
 
-Plug 'flazz/vim-colorschemes'
-
+Plug 'tomasiser/vim-code-dark'
 Plug 'scrooloose/nerdtree'
 
 Plug 'https://github.com/machakann/vim-highlightedyank'
@@ -93,9 +92,11 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Colorscheme
-colorscheme gruvbox
+colorscheme codedark
 set background=dark
-let g:airline_theme='behelit'
+let g:airline_theme = 'codedark'
+" Activates italicized comments (make sure your terminal supports italics)
+let g:codedark_italics=1
 
 " Nerdtree keymappings
 
