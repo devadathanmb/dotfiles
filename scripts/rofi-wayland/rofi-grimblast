@@ -12,8 +12,8 @@ area='  Capture area'
 window='  Capture current window'
 
 chosen=$(printf '%s\n%s\n%s\n' "$screen" "$area" "$window" \
-    | rofi -dmenu -l 3 -p "Screenshot:"\ 
-)
+        | rofi -dmenu -l 3 -p "Screenshot:"\
+    )
 
 case "$chosen" in
     "$screen") extra_args='output' ;;
@@ -22,4 +22,4 @@ case "$chosen" in
     *)         exit 1 ;;
 esac
 
-sleep 0.5 && grimblast --notify copysave $extra_args 
+sleep 0.5 && grimblast --notify copysave $extra_args
