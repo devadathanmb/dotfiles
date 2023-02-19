@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "/home/devadathan/.config/hypr/scripts/lock.sh",
+    "action" : "/home/devadathan/dotfiles/scripts/hypr/lock.sh",
     "text" : "Lock",
     "keybind" : "l"
 }

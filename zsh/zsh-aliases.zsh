@@ -47,6 +47,7 @@ alias la="ls -a"
 alias lsa="ls -la"
 alias down="cd ~/Downloads/"
 alias work="cd ~/Documents/"
+alias hypr="nvim ~/.config/hypr"
 
 # Function to open pdf files in zathura
 function pdf(){
