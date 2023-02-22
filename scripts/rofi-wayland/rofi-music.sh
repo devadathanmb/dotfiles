@@ -29,13 +29,13 @@ function music(){
 
     if [[ "$chosen" == "$play_lofi" ]]
     then
-        exec -a "rofi-music" mpv --no-video $LOFI_STREAM
+        exec -a "rofi-music" mpv --no-video $LOFI_STREAM --volume=70
     elif [[ "$chosen" == "$play_chill_hits" ]]
     then
-        exec -a "rofi-music" mpv --no-video "$ALL_TIME_CHILL_HITS" --shuffle
+        exec -a "rofi-music" mpv --no-video "$ALL_TIME_CHILL_HITS" --shuffle --volume=70
     elif [[ "$chosen" == "$play_malayalam_hits" ]]
     then
-        exec -a "rofi-music" mpv --no-video "$ALL_TIME_MALAYALAM_HITS" --shuffle
+        exec -a "rofi-music" mpv --no-video "$ALL_TIME_MALAYALAM_HITS" --shuffle --volume=70
     fi
 }
 
