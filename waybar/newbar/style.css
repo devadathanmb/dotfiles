@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(30, 30, 30, 0.87);
+  background: rgba(30, 30, 30, 0.75);
   color: #A5ADCE;
 }
 
@@ -102,6 +102,7 @@ tooltip {
 #custom-waybar-mpris{
   color: #93E0E3;
   border-left: 2px solid #FFFBF5;
+  border-right: 2px solid #FFFBF5;
   padding-left: 13px;
   padding-right: 10px;
 }

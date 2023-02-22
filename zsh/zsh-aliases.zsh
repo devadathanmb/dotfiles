@@ -63,6 +63,7 @@ function ppt(){
 
 # Lofi girl
 alias lofi="exec $HOME/dotfiles/scripts/general/lofi.sh"
+alias moosic="exec $HOME/dotfiles/scripts/general/moosic.sh"
 
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
