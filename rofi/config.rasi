@@ -16,7 +16,7 @@ configuration {
 
 * {
   bg: #252629;
-  bg-alt: #569CD6;
+  bg-alt: #BB80C5;
 
   fg: #FFFFFF;
   fg-alt: #808080;
@@ -75,7 +75,8 @@ mainbox {
   background-color: @bg;
   children: [inputbar, listview];
   border: 2px;
-  border-color: #2FC4ED;
+  border-color: #FFFFFF;
+  border-radius: 8px;
 }
 
 prompt {

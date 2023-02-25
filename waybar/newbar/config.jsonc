@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 28,
+    "height": 29,
     "modules-left": [
         "wlr/workspaces"
     ],
@@ -118,7 +118,7 @@
         }
     },
     "custom/exit": {
-        "format": "<span color='#F38BA8'>⏻</span>",
+        "format": "<span>⏻</span>",
         "on-click": "~/dotfiles/scripts/hypr/wlogout.sh"
     },
     "custom/waybar-mpris": {

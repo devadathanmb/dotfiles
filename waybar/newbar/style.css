@@ -15,7 +15,7 @@ window#waybar {
 tooltip {
   font-size: 16px;
   padding: 10px;
-  border: 2px solid #FFFBF5;
+  border: 1px solid #E9E9E9;
 }
 
 #workspaces button {
@@ -26,7 +26,7 @@ tooltip {
 
 #workspaces button.active {
   color: #ffffff;
-  /* border-top: 2px solid #FFFBF5; */
+  /* border-bottom: 1px solid #E9E9E9; */
 }
 
 #workspaces button:hover {
@@ -48,8 +48,8 @@ tooltip {
 
 #tray {
   margin-right: 4px;
+  border-right: 1px solid #dcdcaa;
   font-size: 16px;
-  border-right: 2px solid #FFFBF5;
   padding-right: 12px;
 }
 
@@ -60,11 +60,11 @@ tooltip {
 }
 
 #clock {
-  color: #FEE779;
-  border-right: 2px solid #FFFBF5;
-  border-left: 2px solid #FFFBF5;
+  color: #e9e9e9;
   padding-right: 12px;
   padding-left: 12px;
+  border-right: 1px solid #dcdcaa;
+  border-left: 1px solid #dcdcaa;
 
   /* margin-right: 70px; */
   /* padding-right: 20px; */
@@ -76,33 +76,34 @@ tooltip {
 }
 
 #pulseaudio {
-  color: #78DCE8;
+  color: #e9e9e9;
   padding-right: 12px;
   padding-left: 12px;
-  border-right: 2px solid #FFFBF5;
-  border-left: 2px solid #FFFBF5;
+  border-right: 1px solid #dcdcaa;
+  border-left: 1px solid #dcdcaa;
 }
 
 #battery {
-  color: #A9DC76;
+  /* color: #A9DC76; */
+  color: #e9e9e9;
   padding-right: 12px;
-  border-right: 2px solid #FFFBF5;
+  border-right: 1px solid #dcdcaa;
 }
 
 #backlight {
-  color: #E5A2E0;
+  color: #e9e9e9;
 }
 
 #custom-exit{
-  color: #FF8BBA;
+  color: #e9e9e9;
   padding-right: 10px;
   padding-left: 10px;
 }
 
 #custom-waybar-mpris{
-  color: #93E0E3;
-  border-left: 2px solid #FFFBF5;
-  border-right: 2px solid #FFFBF5;
+  color: #e9e9e9 ;
+  border-left: 1px solid #dcdcaa;
+  border-right: 1px solid #dcdcaa;
   padding-left: 13px;
   padding-right: 10px;
 }

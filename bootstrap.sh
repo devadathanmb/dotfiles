@@ -39,6 +39,7 @@ hypr_packages=(
 )
 
 devel_packages=(
+    lazygit
     firefox
     stylua
     python-pip
