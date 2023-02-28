@@ -585,7 +585,7 @@
   "editor.scrollbar.vertical": "hidden",
   "kite.showWelcomeNotificationOnStartup": true,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Cascadia Code",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -703,5 +703,8 @@
   "workbench.editor.showTabs": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "workbench.colorTheme": "Visual Studio Dark",
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }

@@ -12,7 +12,7 @@ schemes:
     normal:
       black:   '#1e1e1e'
       red:     '#c72e0f'
-      green:   '#009000'
+      green:   '#83b869'
       yellow:  '#795e25'
       blue:    '#007acc'
       magenta: '#af00db'
@@ -22,7 +22,7 @@ schemes:
     bright:
       black:   '#1e1e1e'
       red:     '#c72e0f'
-      green:   '#009000'
+      green:   '#83b869'
       yellow:  '#795e25'
       blue:    '#007acc'
       magenta: '#af00db'
@@ -42,7 +42,7 @@ schemes:
     normal:
       black:   '#1e1e1e'
       red:     '#f44747'
-      green:   '#608b4e'
+      green:   '#83b869'
       yellow:  '#dcdcaa'
       blue:    '#569cd6'
       magenta: '#c678dd'
@@ -52,7 +52,7 @@ schemes:
     bright:
       black:   '#545454'
       red:     '#f44747'
-      green:   '#608b4e'
+      green:   '#83b869'
       yellow:  '#dcdcaa'
       blue:    '#569cd6'
       magenta: '#c678dd'

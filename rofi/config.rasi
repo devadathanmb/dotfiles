@@ -69,14 +69,15 @@ listview {
   background-color: @bg;
   columns: 1;
   lines: 8;
+  margin: 2px;
 }
 
 mainbox {
   background-color: @bg;
-  children: [inputbar, listview];
+  children: [inputbar, message, listview];  // add message as a child here
   border: 2px;
   border-color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 prompt {
@@ -92,3 +93,11 @@ textbox{
   padding: 15;
 }
 
+message {
+  text-color: @fg;
+  background-color: @bg;
+  border: 1px;
+  border-radius: 4px;
+  margin: 8px;
+  border-color: white;
+}
