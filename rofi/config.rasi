@@ -2,7 +2,7 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{name}";
-  font: "JetBrainsMono Nerd Font 16";
+  font: "RobotoMono Nerd Font 16";
   modi: "window,run,drun,emoji,calc";
   kb-remove-to-eol:"";
   kb-accept-entry: "Return,KP_Enter";
@@ -16,7 +16,8 @@ configuration {
 
 * {
   bg: #252629;
-  bg-alt: #BB80C5;
+  bg-alt: #D4D4D4;
+
 
   fg: #FFFFFF;
   fg-alt: #808080;
@@ -56,7 +57,7 @@ entry {
   background-color: @bg-alt;
   padding: 12;
   text-color: #1D1D2D;
-  font: "JetBrainsMono Nerd Font Bold 16";
+  font: "RobotoMono Nerd Font Regular 16";
 }
 
 inputbar {
@@ -75,8 +76,8 @@ listview {
 mainbox {
   background-color: @bg;
   children: [inputbar, message, listview];  // add message as a child here
-  border: 2px;
-  border-color: #FFFFFF;
+  border: 3px;
+  border-color: #9CDCFE;
   border-radius: 4px;
 }
 
@@ -85,7 +86,7 @@ prompt {
   enabled: true;
   padding: 12 0 0 12;
   text-color: #1D1D2D;
-  font: "JetBrainsMono Nerd Font Bold 16";
+  font: "RobotoMono Nerd Font Bold 16";
 }
 
 textbox{
