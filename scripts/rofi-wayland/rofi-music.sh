@@ -29,12 +29,15 @@ function music(){
 
     if [[ "$chosen" == "$play_lofi" ]]
     then
+        notify-send "🎹 Playing lofi girl"
         exec -a "rofi-music" mpv --no-video $LOFI_STREAM --volume=70
     elif [[ "$chosen" == "$play_chill_hits" ]]
     then
+        notify-send "🎹 Playing all time chill hits"
         exec -a "rofi-music" mpv --no-video "$ALL_TIME_CHILL_HITS" --shuffle --volume=70
     elif [[ "$chosen" == "$play_malayalam_hits" ]]
     then
+        notify-send "🎹 Playing malayalam hits"
         exec -a "rofi-music" mpv --no-video "$ALL_TIME_MALAYALAM_HITS" --shuffle --volume=70
     fi
 }
@@ -79,11 +82,3 @@ then
 else
     music
 fi
-
-# Alright I'll tell you what's my plan
-# So there should be basically two rofi menus
-# One for music choosing
-# The other for player controls
-# When music is being played the music chooser should not load
-# Rather the controls should load
-# Similarly when music is not being played the controls shall not load
