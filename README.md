@@ -31,6 +31,7 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 - [Wlogout](https://github.com/ArtsyMacaw/wlogout) - Logout menu
 - [Vimiv](https://github.com/karlch/vimiv) - Image viewer
 - [Mpv](https://github.com/mpv-player/mpv) - Video player
+- [Dunst](https://github.com/dunst-project/dunst) - A light weight notification daemon
 - [Zathura](https://github.com/pwmt/zathura) - Document viewer
 - [Ranger](https://github.com/ranger/ranger) - TUI filemanager
 - [Thunar](https://github.com/xfce-mirror/thunar) - GUI filemanager
