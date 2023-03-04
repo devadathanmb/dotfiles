@@ -1,6 +1,6 @@
 # My dotfiles 🖤
 
-My `hyprland` configs which I daily drive.
+My hyprland configs which I daily drive.
 
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
@@ -37,7 +37,7 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 ## Quick setup:
 
-_These dotfiles are configured to work on my system, these may or may not work the same out of the box on your system. So make needed the changes._
+_These dotfiles are configured to work on my system, these may or may not work the same out of the box on your system. So make needed the changes. Checkout **bootstrap.sh** script for the required tools and packages._
 <br>
 
 1. Clone the repo:
