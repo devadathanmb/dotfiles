@@ -40,6 +40,8 @@ function count_down(){
     then
         mkdir -p "$OUTPUT_DIR"
     fi
+    notify-send -t 450 "🎥 Starting recording"
+    sleep 0.5
 }
 
 function start_recording(){
