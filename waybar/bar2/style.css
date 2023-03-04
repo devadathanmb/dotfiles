@@ -42,14 +42,14 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-  margin: 3px 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #tray {
   margin-right: 4px;
-  border-right: 1px solid #9CDCFE;
+  /* border-right: 1px solid #9CDCFE; */
   font-size: 16px;
-  padding-right: 12px;
 }
 
 #workspaces {
@@ -62,8 +62,8 @@ tooltip {
   color: #e9e9e9;
   padding-right: 12px;
   padding-left: 12px;
-  border-right: 1px solid #9CDCFE;
-  border-left: 1px solid #9CDCFE;
+  /* border-right: 1px solid #9CDCFE; */
+  /* border-left: 1px solid #9CDCFE; */
 
   /* margin-right: 70px; */
   /* padding-right: 20px; */
@@ -76,17 +76,14 @@ tooltip {
 
 #pulseaudio {
   color: #e9e9e9;
-  padding-right: 12px;
-  padding-left: 12px;
-  border-right: 1px solid #9CDCFE;
-  border-left: 1px solid #9CDCFE;
+  /* border-right: 1px solid #9CDCFE; */
+  /* border-left: 1px solid #9CDCFE; */
 }
 
 #battery {
   /* color: #A9DC76; */
   color: #e9e9e9;
-  padding-right: 12px;
-  border-right: 1px solid #9CDCFE;
+  /* border-right: 1px solid #9CDCFE; */
 }
 
 #backlight {
@@ -101,9 +98,9 @@ tooltip {
 
 #custom-waybar-mpris{
   color: #e9e9e9 ;
-  border-left: 1px solid #9CDCFE;
-  border-right: 1px solid #9CDCFE;
-  padding-left: 13px;
-  padding-right: 10px;
 }
 
+
+#custom-separator{
+    color: #9cdcfe;
+}
