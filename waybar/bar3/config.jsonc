@@ -106,7 +106,7 @@
   },
   "tray": {
     "icon-size": 18,
-    "spacing": 5
+    "spacing": 10
   },
   "custom/waybar-mpris": {
     "return-type": "json",
