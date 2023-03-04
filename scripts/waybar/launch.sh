@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CONFIG_DIR="$HOME/dotfiles/waybar/newbar"
+CONFIG_DIR="$HOME/dotfiles/waybar/bar3"
 launch_bar() {
 	# Terminate already running bar instances
 	killall -q waybar

@@ -1,7 +1,7 @@
 #! /bin/bash
 # Hacky script to hide bar
 
-CONFIG_DIR="$HOME/dotfiles/waybar/newbar"
+CONFIG_DIR="$HOME/dotfiles/waybar/bar3"
 
 if pgrep -x "waybar"
 then
