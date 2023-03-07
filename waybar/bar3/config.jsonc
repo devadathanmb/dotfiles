@@ -65,7 +65,7 @@
     "on-click": "",
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": [" ", " ", " "],
+    "format-icons": ["", "", ""],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"
   },
@@ -79,7 +79,7 @@
     "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>"
   },
   "network": {
-    "format-wifi": "  {essid}",
+    "format-wifi": " {essid}",
     "format-ethernet": " {essid}",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "睊 Disc.",
@@ -95,9 +95,9 @@
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 1,
     "format-icons": {
-      "headphone": " ",
-      "hands-free": " ",
-      "headset": " ",
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
       "phone": "",
       "portable": "",
       "car": "",
