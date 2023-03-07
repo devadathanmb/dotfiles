@@ -41,12 +41,14 @@ hypr_packages=(
 devel_packages=(
     lazygit
     firefox
+    ripgrep
     stylua
     python-pip
     unzip
     zip
     curl
     wget
+    httpie
     libreoffice-fresh
     neovim
     vim
