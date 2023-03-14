@@ -46,7 +46,6 @@
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
-    "format-alt": "{time} {icon}",
     "format-icons": [
       "",
       "",
@@ -72,7 +71,7 @@
   "clock": {
     "interval": 1,
     "format": "{: %R}",
-    "format-alt": "{: %H:%M:%S   %a, %b %d, %G}",
+    "format-alt": "{: %a, %b %d, %G}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
     "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
     "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%U}</b></span>",
@@ -112,7 +111,7 @@
     "return-type": "json",
     "exec": "waybar-mpris --position --autofocus",
     "on-click": "waybar-mpris --send toggle",
-    "max-length": 50,
+    "max-length": 35,
     // This option will switch between players on right click.
     "on-scroll-up": "waybar-mpris --send next",
     // The options below will switch the selected player on scroll

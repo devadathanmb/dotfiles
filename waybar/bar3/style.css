@@ -3,12 +3,12 @@
   border-radius: 0;
   min-height: 0;
   font-family: "RobotoMono Nerd Font", "Font Awesome 6 Free";
-  font-size: 15;
+  font-size: 16;
   font-weight: 500;
 }
 
 window#waybar {
-  background: rgba(30, 30, 30, 0.8);
+  background: rgba(30, 30, 30, 0.95);
 }
 
 tooltip {
@@ -68,7 +68,7 @@ tooltip {
 }
 
 #workspaces button {
-  padding: 1px;
+  padding: 0px 1px;
   color: #808080;
   margin-right: 4px;
 }
