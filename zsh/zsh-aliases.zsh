@@ -48,6 +48,7 @@ alias lsa="ls -la"
 alias down="cd ~/Downloads/"
 alias work="cd ~/Documents/"
 alias hypr="nvim ~/.config/hypr"
+alias repos="cd $HOME/repos/"
 
 # Function to open pdf files in zathura
 function pdf(){
@@ -64,6 +65,15 @@ function ppt(){
 # Lofi girl
 alias lofi="exec $HOME/dotfiles/scripts/general/lofi.sh"
 alias moosic="exec $HOME/dotfiles/scripts/general/moosic.sh"
+
+# Notes
+alias notes="cd $HOME/notes"
+alias notesup="cd $HOME/notes;git commit -am \"Update notes\"; git push origin master"
+
+# Dotfiles
+alias dotdir="cd $HOME/dotfiles/"
+alias dots="nvim $HOME/dotfiles/"
+alias vimdots="nvim $HOME/entevim/"
 
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
