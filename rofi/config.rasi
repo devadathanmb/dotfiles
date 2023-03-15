@@ -76,7 +76,7 @@ listview {
 mainbox {
   background-color: @bg;
   children: [inputbar, message, listview];  // add message as a child here
-  border: 3px;
+  /* border: 3px; */
   border-color: #9CDCFE;
   /* border-radius: 4px; */
 }
