@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(30, 30, 30, 0.90);
 }
 
 tooltip {
@@ -44,7 +44,7 @@ tooltip {
 }
 
 #network {
-  color: #9CDCFE;
+  color: #9cdcfe;
 }
 
 #backlight {
@@ -85,4 +85,14 @@ tooltip {
 
 #tray {
   padding-right: 5px;
+}
+
+#clock,
+#custom-waybar-mpris,
+#window,
+#network,
+#backlight,
+#pulseaudio,
+#battery{
+  color: #e9e9e9;
 }
