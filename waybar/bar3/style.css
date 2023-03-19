@@ -44,19 +44,19 @@ tooltip {
 }
 
 #network {
-  color: #00ffff;
+  color: #9CDCFE;
 }
 
 #backlight {
-  color: #87cefa;
+  color: #75bcff;
 }
 
 #pulseaudio {
-  color: #ffa500;
+  color: #d083de;
 }
 
 #battery {
-  color: #9acd32;
+  color: #baf04d;
 }
 
 #custom-waybar-mpris {
@@ -65,7 +65,7 @@ tooltip {
 
 #clock {
   font-weight: bold;
-  color: #ff69b4;
+  color: #f79e79;
 }
 
 #workspaces button {
