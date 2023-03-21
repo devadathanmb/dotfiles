@@ -3,6 +3,7 @@
 LOFI_STREAM="https://www.youtube.com/watch?v=jfKfPfyJRdk"
 ALL_TIME_CHILL_HITS="https://www.youtube.com/playlist?list=PL1FPWPLPHKhysG2trm9RKV8FG3eQ7J4VN"
 ALL_TIME_MALAYALAM_HITS="https://www.youtube.com/playlist?list=PL1FPWPLPHKhyZeoBv-Ws_eRiWiUYKkuDz"
+HAND_PICKED_HITS="https://music.youtube.com/playlist?list=PLAj6caR1_EYHevz9nP5CzbE-z8viVAyI3&feature=share"
 
 # Player menu controls
 play="  Play music"
@@ -17,6 +18,7 @@ decrease_volume="󰝞  Decrease volume"
 play_lofi="  Play lofi girl"
 play_chill_hits="1.   Play All time chill hits"
 play_malayalam_hits="2.   Play All time malayalam hits"
+play_hand_picked_hits="3.   Play hand picked hits"
 
 if pgrep -x "rofi"
 then
@@ -25,7 +27,7 @@ then
 fi
 
 function music(){
-    local chosen=$(printf "%s\n%s\n" "$play_lofi" "$play_chill_hits" "$play_malayalam_hits" | rofi -dmenu -i -l 3 -p "Music time : ")
+    local chosen=$(printf "%s\n%s\n" "$play_lofi" "$play_chill_hits" "$play_malayalam_hits" "$play_hand_picked_hits" | rofi -dmenu -i -l 4 -p "Music time : ")
 
     if [[ "$chosen" == "$play_lofi" ]]
     then
@@ -39,6 +41,10 @@ function music(){
     then
         notify-send "🎹 Playing malayalam hits"
         exec -a "rofi-music" mpv --no-video "$ALL_TIME_MALAYALAM_HITS" --shuffle --volume=70
+    elif [[ "$chosen" == "$play_hand_picked_hits" ]]
+    then
+        notify-send "🎹 Playing hand picked hits"
+        exec -a "rofi-music" mpv --no-video "$HAND_PICKED_HITS" --shuffle --volume=70
     fi
 }
 

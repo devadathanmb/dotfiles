@@ -92,6 +92,7 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Colorscheme
+let g:codedark_transparent=1
 colorscheme codedark
 set background=dark
 let g:airline_theme = 'codedark'

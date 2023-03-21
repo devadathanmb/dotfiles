@@ -6,7 +6,6 @@
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
-    "network",
     "backlight",
     "pulseaudio",
     "battery",
