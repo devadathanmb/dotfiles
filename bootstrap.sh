@@ -1,4 +1,6 @@
 hypr_packages=(
+    adwaita-qt-git
+    adwaita-gtk
     hyprland
     qt5ct
     qt6ct
@@ -16,6 +18,7 @@ hypr_packages=(
     qt6-wayland
     waybar-hyprland-git
     waybar-mpris-git
+    mpv-mpris-git
     wlogout
     swaybg
     swayimg
@@ -35,10 +38,13 @@ hypr_packages=(
     polkit-kde-agent
     udisks2
     udiskie
-    thunar
+    # thunar
+    nautilus
 )
 
 devel_packages=(
+    luals
+    obsidian
     lazygit
     firefox
     ripgrep
@@ -98,6 +104,7 @@ other_packages=(
     lsd
     bat
     cowsay
+    pipes.sh
 )
 
 
