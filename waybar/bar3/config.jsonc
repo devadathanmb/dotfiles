@@ -2,9 +2,14 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 30,
-  "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
-  "modules-center": ["hyprland/window"],
+  "height": 29,
+  "modules-left": [
+    "wlr/workspaces",
+    "custom/waybar-mpris"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
   "modules-right": [
     "backlight",
     "pulseaudio",
@@ -42,35 +47,33 @@
       "warning": 30,
       "critical": 20
     },
-    "format": "{icon} {capacity}%",
+    "format": "{icon}  {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
   },
   "backlight": {
     "on-click": "",
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"
   },
   "clock": {
     "interval": 1,
     "format": "{: %R}",
-    "format-alt": "{: %a, %b %d, %G}",
+    "format-alt": "{: %d/%m}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
     "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
     "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%U}</b></span>",
@@ -88,7 +91,7 @@
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-muted": "  Muted",
+    "format-muted": " ",
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 1,
@@ -99,12 +102,17 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", "墳", ""]
+      "default": [
+        "",
+        "",
+        "墳",
+        ""
+      ]
     }
   },
   "tray": {
     "icon-size": 18,
-    "spacing": 10
+    "spacing": 5
   },
   "custom/waybar-mpris": {
     "return-type": "json",
