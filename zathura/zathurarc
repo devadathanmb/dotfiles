@@ -1,6 +1,8 @@
-set font "JetBrainsMono 15"
-# vscode dark zathura colorscheme
+set font "JetBrainsMono 13"
 
+set selection-clipboard clipboard
+
+# vscode dark zathura colorscheme
 set default-bg                  "#1e1e1e"
 set default-fg                  "#d4d4d4"
 
