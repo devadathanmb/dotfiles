@@ -1,6 +1,6 @@
 # My dotfiles 🖤
 
-My hyprland configs which I daily drive.
+I can't live without these files :)
 
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
@@ -32,8 +32,9 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 - [Dunst](https://github.com/dunst-project/dunst) - A light weight notification daemon
 - [Zathura](https://github.com/pwmt/zathura) - Document viewer
 - [Ranger](https://github.com/ranger/ranger) - TUI filemanager
-- [Thunar](https://github.com/xfce-mirror/thunar) - GUI filemanager
+- [Nautilus](https://gitlab.gnome.org/GNOME/nautilus) - GUI filemanager
 - [Neovim](https://github.com/neovim/neovim) - Text editor
+- [ly](https://github.com/fairyglade/ly) - A simple TUI display manager
 
 ## Quick setup:
 
