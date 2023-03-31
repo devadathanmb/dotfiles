@@ -1,11 +1,13 @@
 #! /usr/bin/env bash
 
+OPACITY="0.80"
+
 turn_on_blur(){
   # Change background opacity of kitty
-  sed -i 's/^background_opacity [0-9]\+\(\.[0-9]\+\)\{0,1\}$/background_opacity 0.80/' "$HOME/.config/kitty/kitty.conf"
+  sed -i "s/^background_opacity [0-9]\+\(\.[0-9]\+\)\{0,1\}$/background_opacity $OPACITY/" "$HOME/.config/kitty/kitty.conf"
   
   # Change background opacity of alacritty
-  sed -i 's/ opacity: [0-9]\+\(\.[0-9]\+\)\{0,1\}$/ opacity: 0.80/' "$HOME/.config/alacritty/alacritty.yml"
+  sed -i "s/ opacity: [0-9]\+\(\.[0-9]\+\)\{0,1\}$/ opacity: $OPACITY/" "$HOME/.config/alacritty/alacritty.yml"
 
   # Hyprland blur
   hyprctl keyword decoration:blur 1;
