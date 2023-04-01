@@ -62,6 +62,17 @@ function ppt(){
   disown;
 }
 
+# Function to post stuff to 0x0.st
+function genlink(){
+  # Check if any arguments are passed
+  if [[ $# -eq 0 ]]
+  then
+    curl -F "file=@-" https://0x0.st
+  else
+    curl -F "file=@$1" https://0x0.st
+  fi
+}
+
 # Lazy git
 alias lgit="lazygit"
 
