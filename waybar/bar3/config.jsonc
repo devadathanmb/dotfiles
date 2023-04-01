@@ -7,10 +7,11 @@
     "wlr/workspaces",
     "custom/waybar-mpris"
   ],
-  "modules-center": [
-    "hyprland/window"
-  ],
+  // "modules-center": [
+  //   "hyprland/window"
+  // ],
   "modules-right": [
+    "network",
     "backlight",
     "pulseaudio",
     "battery",
@@ -86,7 +87,8 @@
     "format-disconnected": "睊 Disc.",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     // "on-click": "wofi-wifi-menu",
-    "on-click": "exec ~/dotfiles/scripts/rofi-wayland/wifi-menu.sh",
+    "on-click": "kitty --title 'nmtui' -e nmtui",
+    // "on-click": "exec ~/dotfiles/scripts/rofi-wayland/wifi-menu.sh",
     "max-length": 20
   },
   "pulseaudio": {
