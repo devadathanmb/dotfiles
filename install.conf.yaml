@@ -31,3 +31,4 @@
     ~/.local/bin/wrappedhl : scripts/hypr/wrappedhl
     ~/.gitconfig: gitconfig
     ~/.config/ranger: ranger
+    ~/.config/foot: foot
