@@ -74,11 +74,19 @@ function random_wallpaper(){
   set_wallpaper
 }
 
-while getopts rcb flag
+# Wrapper swaybg : Wrapper script to be used to set up wallpapers
+function wrapper_swaybg(){
+  remove_symlink
+  set_new_link $1
+  set_wallpaper
+} 
+
+while getopts rcbw flag
 do
     case "${flag}" in
         r) random_wallpaper ;;
         c) cycle_wallpaper ;;
         b) cycle_rev_wallpaper ;;
+        w) wrapper_swaybg ;;
     esac
 done
