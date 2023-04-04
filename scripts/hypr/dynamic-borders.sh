@@ -2,7 +2,6 @@
 
 function handle {
     if [[ ${1:0:10} == "openwindow" || ${1:0:10} == "movewindow" ]]; then
-        echo "Triggered"
         window_id=$(echo $1 | cut --delimiter ">" --fields=3 | cut --delimiter "," --fields=1)
         workspace_id=$(echo $1 | cut --delimiter ">" --fields=3 | cut --delimiter "," --fields=2)
         windows=$(hyprctl workspaces -j | jq ".[] | select(.id == $workspace_id) | .windows")
@@ -20,6 +19,15 @@ function handle {
                 fi
             done
         fi
+
+      # Handle all the other workspaces with only one window
+      single_window_workspaces=$(hyprctl workspaces -j | jq '.[] | select(.windows == 1)' | jq ".id")
+      for workspace in $single_window_workspaces
+      do
+        window=$(hyprctl clients -j | jq ".[] | select(.workspace.id == $workspace) | .address")
+        hyprctl setprop address:$(echo $window | xargs) forcenoborder 1 lock
+      done
+
     elif [[ ${1:0:11} == "closewindow" ]]; then
         workspace_id=$(hyprctl activewindow -j | jq ".workspace.id")
         windows=$(hyprctl workspaces -j | jq ".[] | select(.id == $workspace_id) | .windows")
