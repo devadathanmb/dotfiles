@@ -62,14 +62,22 @@ function handle {
 
     elif [[ ${1:0:18} == "changefloatingmode" ]]
     then
-      floating_status=$(echo $1 | cut --delimiter ">" --fields 3 | cut --delimiter "," --fields 2)
-      address=$(echo $1 | cut --delimiter ">" --fields 3 | cut --delimiter "," --fields 1)
-      if [[ $floating_status -eq 1 ]]
-      then
-        hyprctl setprop address:0x$address forcenoborder 0 lock
-      else
-        hyprctl setprop address:0x$address forcenoborder 1 lock
-      fi
+        floating_status=$(echo $1 | cut --delimiter ">" --fields 3 | cut --delimiter "," --fields 2)
+        address="0x$(echo $1 | cut --delimiter ">" --fields 3 | cut --delimiter "," --fields 1)"
+        workspace_id=$(hyprctl clients -j | jq --arg address "$address" '.[] | select(.address == $address) | .workspace.id')
+        if [[ $floating_status -eq 1 ]]
+        then
+            hyprctl setprop address:$address forcenoborder 0 lock
+        else
+            no_windows=$(hyprctl workspaces -j | jq ".[] | select(.id == $workspace_id) | .windows")
+            echo $no_windows
+            if [[ $no_windows -eq 1 ]]
+            then
+                hyprctl setprop address:$address forcenoborder 1 lock
+            else
+                hyprctl setprop address:$address forcenoborder 0 lock
+            fi
+        fi
     fi
 }
 
