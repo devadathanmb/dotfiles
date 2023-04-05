@@ -60,6 +60,16 @@ function handle {
             hyprctl setprop address:$window_id forcenoborder 1 lock
         fi
 
+    elif [[ ${1:0:18} == "changefloatingmode" ]]
+    then
+      floating_status=$(echo $1 | cut --delimiter ">" --fields 3 | cut --delimiter "," --fields 2)
+      address=$(echo $1 | cut --delimiter ">" --fields 3 | cut --delimiter "," --fields 1)
+      if [[ $floating_status -eq 1 ]]
+      then
+        hyprctl setprop address:0x$address forcenoborder 0 lock
+      else
+        hyprctl setprop address:0x$address forcenoborder 1 lock
+      fi
     fi
 }
 
