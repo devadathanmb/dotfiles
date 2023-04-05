@@ -43,6 +43,7 @@ hypr_packages=(
 )
 
 devel_packages=(
+    go
     luals
     obsidian
     lazygit
