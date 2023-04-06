@@ -9,11 +9,17 @@ turn_on_blur(){
   # Change background opacity of alacritty
   sed -i "s/ opacity: [0-9]\+\(\.[0-9]\+\)\{0,1\}$/ opacity: $OPACITY/" "$HOME/.config/alacritty/alacritty.yml"
 
+  # Change background of foot term
+  sed -i "s/alpha=[0-9]\+\(\.[0-9]\+\)\{0,1\}/alpha=$OPACITY/g" "$HOME/.config/foot/foot.ini"
+
   # Hyprland blur
   hyprctl keyword decoration:blur 1;
 
   # Reload kitty
   pkill -USR1 kitty
+
+  # Reload foot
+  pkill -HUP foot
 } 
 
 turn_off_blur(){
@@ -23,8 +29,14 @@ turn_off_blur(){
   # Change background opacity of alacritty
   sed -i 's/ opacity: [0-9]\+\(\.[0-9]\+\)\{0,1\}$/ opacity: 1.00/' "$HOME/.config/alacritty/alacritty.yml"
 
+  # Change background of foot term
+  sed -i 's/alpha=[0-9]\+\(\.[0-9]\+\)\{0,1\}/alpha=1.00/g' "$HOME/.config/foot/foot.ini"
+
   # Hyprland blur
   hyprctl keyword decoration:blur 0;
+
+  # Reload foot
+  pkill -HUP foot
 
   # Reload kitty
   pkill -USR1 kitty
