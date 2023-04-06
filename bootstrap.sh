@@ -43,6 +43,7 @@ hypr_packages=(
 )
 
 devel_packages=(
+    zoxide
     go
     luals
     obsidian
