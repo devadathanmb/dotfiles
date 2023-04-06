@@ -14,6 +14,7 @@
     "network",
     "backlight",
     "pulseaudio",
+    "pulseaudio#microphone",
     "battery",
     "clock",
     "tray"
@@ -111,6 +112,17 @@
         ""
       ]
     }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "tooltip": false,
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "pamixer --default-source -t",
+    "on-click-right" : "pavucontrol -t 4",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
   },
   "tray": {
     "icon-size": 18,

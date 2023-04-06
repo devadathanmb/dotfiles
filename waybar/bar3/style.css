@@ -96,3 +96,8 @@ tooltip {
 #battery{
   color: #ffffff;
 }
+
+#pulseaudio.microphone{
+  color: white;
+  padding-left: 0;
+}
