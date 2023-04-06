@@ -12,5 +12,17 @@ bindkey "^j" down-line-or-beginning-search # Down
 bindkey "^a" beginning-of-line # Move to beginning of the line
 bindkey "^e" end-of-line # Move to the end of the line
 bindkey -r "^u"
-bindkey -r "^d"
+
+
+# Fzf cd 
+fzf-cd() {
+  local dir="$(find $HOME -type d -print 2> /dev/null | fzf +m)"
+  if [ -n "$dir" ]; then
+    cd "$dir"
+  fi
+}
+
+set -o ignoreeof
+zle -N fzf-cd-widget
+bindkey "^d" fzf-cd-widget
 
