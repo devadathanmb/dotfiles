@@ -117,7 +117,7 @@
     "format": "{format_source}",
     "tooltip": false,
     "format-source": " {volume}%",
-    "format-source-muted": " Muted",
+    "format-source-muted": " ",
     "on-click": "pamixer --default-source -t",
     "on-click-right" : "pavucontrol -t 4",
     "on-scroll-up": "pamixer --default-source -i 5",
