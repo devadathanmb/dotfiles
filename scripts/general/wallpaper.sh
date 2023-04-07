@@ -81,12 +81,12 @@ function wrapper_swaybg(){
   set_wallpaper
 } 
 
-while getopts rcbw flag
+while getopts rcbw: flag
 do
     case "${flag}" in
         r) random_wallpaper ;;
         c) cycle_wallpaper ;;
         b) cycle_rev_wallpaper ;;
-        w) wrapper_swaybg ;;
+        w) wrapper_swaybg "$OPTARG" ;;
     esac
 done
