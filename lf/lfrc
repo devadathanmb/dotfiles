@@ -3,3 +3,25 @@ set drawbox true
 set ignorecase true
 set icons
 set previewer ~/.config/lf/preview
+
+# Custom Functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd setwallpaper ${{
+    exec ~/dotfiles/scripts/general/wallpaper.sh -w "$f"
+}}
+
+# Functions
+map bg setwallpaper
+
+# Movement
+map gD cd ~/Djcuments
+map gd cd ~/Downloads
+map gp cd ~/Pictures
+map gc cd ~/.config
+map gr cd ~/repos
+map gv cd ~/Videos
