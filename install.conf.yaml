@@ -32,3 +32,4 @@
     ~/.gitconfig: gitconfig
     ~/.config/ranger: ranger
     ~/.config/foot: foot
+    ~/.config/lf: lf
