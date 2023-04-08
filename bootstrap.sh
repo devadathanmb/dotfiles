@@ -78,6 +78,7 @@ devel_packages=(
 )
 
 necessary_packages=(
+    downgrade
     bat-asus-battery-bin
     epson-inkjet-printer-escpr
     epson-inkjet-printer-escpr2
