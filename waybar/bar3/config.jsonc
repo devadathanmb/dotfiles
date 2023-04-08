@@ -118,8 +118,8 @@
     "tooltip": false,
     "format-source": " {volume}%",
     "format-source-muted": " ",
-    "on-click": "pamixer --default-source -t",
-    "on-click-right" : "pavucontrol -t 4",
+    "on-click-right": "pamixer --default-source -t",
+    "on-click" : "pavucontrol -t 4",
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
     "scroll-step": 5
