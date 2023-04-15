@@ -77,6 +77,10 @@ This cheatsheet contains all the keybindings that I use in my hyprland config. M
 - `CTRL + SUPER + j` - Decrease volume
 - `CTRL + SUPER + k` - Increase volume
 - `SUPER + ALT + l` - Lock screen
+- `CTRL + SUPER + h` - Move to first existing workspace
+- `CTRL + SUPER + h` - Move to last existing workspace
+- `SUPER + V` - Rofi clipboard 
+- `SUPER + SHIFT + o` - Reorganize windows to lower workspaces
 
 ### Submaps
 
