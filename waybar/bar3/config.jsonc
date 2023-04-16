@@ -88,7 +88,7 @@
     "format-disconnected": "睊 Disc.",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     // "on-click": "wofi-wifi-menu",
-    "on-click": "kitty --title 'nmtui' -e nmtui",
+    "on-click": "exec ~/dotfiles/scripts/general/nmtui-wrapper.sh",
     // "on-click": "exec ~/dotfiles/scripts/rofi-wayland/wifi-menu.sh",
     "max-length": 20
   },
