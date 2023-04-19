@@ -95,6 +95,8 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": " ",
+    "format-bluetooth": "{icon}  {volume}%",
+    "format-bluetooth-muted": "   ",
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 1,
@@ -115,7 +117,7 @@
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
-    "tooltip": false,
+    "tooltip": true,
     "format-source": " {volume}%",
     "format-source-muted": " ",
     "on-click-right": "pamixer --default-source -t",
