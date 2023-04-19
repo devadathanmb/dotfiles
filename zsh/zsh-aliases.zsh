@@ -73,6 +73,16 @@ function genlink(){
   fi
 }
 
+# Launch neovim 
+function nv(){
+  if [[ $# -eq 0 ]]
+  then
+    nvim $(pwd)
+  else
+    nvim $1
+  fi
+}
+
 # Lazy git
 alias lgit="lazygit"
 
@@ -91,6 +101,5 @@ alias vimdots="nvim $HOME/entevim/"
 
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
-then
-  alias cava="cava -p ~/.cache/wal/cava"
+then alias cava="cava -p ~/.cache/wal/cava"
 fi
