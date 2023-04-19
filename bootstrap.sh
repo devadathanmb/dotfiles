@@ -43,6 +43,7 @@ hypr_packages=(
 )
 
 devel_packages=(
+    rsync
     zoxide
     go
     luals
