@@ -18,12 +18,13 @@ tooltip {
 }
 
 #workspaces button {
-  color: #f5f5f5;
+  padding: 0px 1px;
+  color: #808080;
+  margin-right: 4px;
 }
 
 #workspaces button.active {
-  color: #fffffa;
-  /* border-bottom: 1px solid #ffffff; */
+  color: #ffffff;
 }
 
 #workspaces button:hover {
@@ -32,73 +33,42 @@ tooltip {
 }
 
 #clock,
-#network,
-#pulseaudio,
-#temperature,
-#custom-waybar-mpris {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-#window {
-  color: #ffd378;
-}
-
-#network {
-  color: #9cdcfe;
-}
-
-#backlight {
-  color: #75bcff;
-}
-
-#pulseaudio {
-  color: #d083de;
-}
-
-#battery {
-  color: #baf04d;
-}
-
-#custom-waybar-mpris {
-  color: #ffffff;
-}
-
-#clock {
-  font-weight: bold;
-  color: #f79e79;
-}
-
-#workspaces button {
-  padding: 0px 1px;
-  color: #808080;
-  margin-right: 4px;
-}
-
-#workspaces button.active {
-  color: #ffffff;
-  /* border-bottom: 1px solid #ffffff; */
-}
-
-#workspaces button:hover {
-  color: #d4d4d4;
-}
-
-#tray {
-  padding-right: 5px;
-}
-
-#clock,
 #custom-waybar-mpris,
 #window,
 #network,
 #backlight,
+#bluetooth,
 #pulseaudio,
+#pulseaudio.microphone
 #battery{
   color: #ffffff;
 }
 
-#pulseaudio.microphone{
-  color: white;
-  padding-left: 0;
+#custom-waybar-mpris{
+  margin-left: 10px;
+}
+
+#backlight{
+  margin-right: 17px;
+}
+
+#pulseaudio{
+  margin-right: 17px;
+}
+
+#battery{
+  margin-right: 17px;
+}
+
+#network,
+#bluetooth{
+  margin-right: 10px;
+}
+
+#tray{
+  margin-right: 10px;
+}
+
+#clock{
+  padding-right: 5px;
 }

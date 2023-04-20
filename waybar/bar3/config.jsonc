@@ -3,20 +3,15 @@
   "layer": "top",
   "position": "top",
   "height": 29,
-  "modules-left": [
-    "wlr/workspaces",
-    "custom/waybar-mpris"
-  ],
-  // "modules-center": [
-  //   "hyprland/window"
-  // ],
+  "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
+  "modules-center": ["clock"],
   "modules-right": [
-    "network",
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
+    "network",
+    "bluetooth",
     "battery",
-    "clock",
     "tray"
   ],
   // Modules
@@ -52,41 +47,41 @@
     "format": "{icon}  {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""]
+  },
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "format": "󰂲",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": "󰂴 ",
+    "tooltip-format": "{controller_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
   },
   "backlight": {
     "on-click": "",
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", ""],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"
   },
   "clock": {
     "interval": 1,
-    "format": "{: %R}",
-    "format-alt": "{: %d/%m}",
+    "format": "{:%R}",
+    "format-alt": "{:%A, %d/%m/%Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
     "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
     "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%U}</b></span>",
     "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>"
   },
   "network": {
-    "format-wifi": " {essid}",
-    "format-ethernet": " {essid}",
+    // "format-wifi": " {essid}",
+    "format-wifi": " ",
+    "format-ethernet": " ",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "睊 Disc.",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "format-disconnected": "睊",
+    "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",
     "on-click": "exec ~/dotfiles/scripts/general/nmtui-wrapper.sh",
     // "on-click": "exec ~/dotfiles/scripts/rofi-wayland/wifi-menu.sh",
@@ -96,7 +91,7 @@
     "format": "{icon} {volume}%",
     "format-muted": " ",
     "format-bluetooth": "{icon}  {volume}%",
-    "format-bluetooth-muted": "   ",
+    "format-bluetooth-muted": "  ",
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 1,
@@ -107,12 +102,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        "",
-        "墳",
-        ""
-      ]
+      "default": ["", "", "墳", ""]
     }
   },
   "pulseaudio#microphone": {
@@ -121,14 +111,14 @@
     "format-source": " {volume}%",
     "format-source-muted": " ",
     "on-click-right": "pamixer --default-source -t",
-    "on-click" : "pavucontrol -t 4",
+    "on-click": "pavucontrol -t 4",
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
     "scroll-step": 5
   },
   "tray": {
     "icon-size": 18,
-    "spacing": 5
+    "spacing": 10
   },
   "custom/waybar-mpris": {
     "return-type": "json",
