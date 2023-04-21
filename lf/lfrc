@@ -15,8 +15,14 @@ cmd setwallpaper ${{
     exec ~/dotfiles/scripts/hypr/wallpaper.sh -w "$f"
 }}
 
+cmd copypicture ${{
+  echo "Picture copied to clipboard"
+  wl-copy --type image/png < $f
+}}
+
 # Functions
 map bg setwallpaper
+map bc copypicture
 
 # Movement
 map gd cd ~/Downloads
