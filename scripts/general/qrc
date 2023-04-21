@@ -3,9 +3,13 @@
 function qrc(){
   if [[ $# -eq 1 ]]
   then
-    qrencode -t ansiutf8 $1
+    link=$1
+    echo $link
+    qrencode -t ansiutf8 $link
   else
-    qrencode -t ansiutf8 $(wl-paste)
+    link=$(wl-paste)
+    echo $link
+    qrencode -t ansiutf8 $link
   fi
 }
 
