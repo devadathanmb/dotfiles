@@ -86,10 +86,6 @@ function nv(){
 # Lazy git
 alias lgit="lazygit"
 
-# Lofi girl
-alias lofi="exec $HOME/dotfiles/scripts/general/lofi.sh"
-alias moosic="exec $HOME/dotfiles/scripts/general/moosic.sh"
-
 # Notes
 alias notes="cd $HOME/notes"
 alias notesup="cd $HOME/notes;git commit -am \"Update notes\"; git push origin master"
