@@ -33,3 +33,4 @@
     ~/.config/ranger: ranger
     ~/.config/foot: foot
     ~/.config/lf: lf
+    ~/.local/bin: scripts/general/*
