@@ -12,7 +12,7 @@ cmd mkdir ${{
 }}
 
 cmd setwallpaper ${{
-    exec ~/dotfiles/scripts/general/wallpaper.sh -w "$f"
+    exec ~/dotfiles/scripts/hypr/wallpaper.sh -w "$f"
 }}
 
 # Functions
