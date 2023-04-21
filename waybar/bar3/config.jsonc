@@ -83,7 +83,7 @@
     "format-disconnected": "睊",
     "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",
-    "on-click": "exec ~/dotfiles/scripts/general/nmtui-wrapper.sh",
+    "on-click": "exec ~/dotfiles/scripts/waybar/nmtui-wrapper.sh",
     // "on-click": "exec ~/dotfiles/scripts/rofi-wayland/wifi-menu.sh",
     "max-length": 20
   },
