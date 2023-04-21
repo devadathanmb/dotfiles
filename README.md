@@ -6,11 +6,15 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 ## Previews
 
-![2023-04-05T14:46:13,163807264+05:30](https://user-images.githubusercontent.com/84301852/230037633-e63038ac-d4e7-4772-bae6-370c4569e933.png)
+![2023-04-21T19:16:48,362310256+05:30](https://user-images.githubusercontent.com/84301852/233652836-654a3c50-9304-4f6c-b9ab-28234a80017d.png)
 
 <br>
 
-![2023-04-05T14:43:19,082732315+05:30](https://user-images.githubusercontent.com/84301852/230037168-5d66e021-2e76-4cc9-b28d-409b6db56dbc.png)
+![2023-04-21T19:14:54,983539899+05:30](https://user-images.githubusercontent.com/84301852/233652916-8d2f689d-4e1a-414e-b2a3-b706da6c5f09.png)
+
+<br>
+
+![2023-04-21T19:16:03,243653518+05:30](https://user-images.githubusercontent.com/84301852/233652860-fe4f56e2-cab6-4fb5-a47a-5f76e943b7d3.png)
 
 <br>
 
