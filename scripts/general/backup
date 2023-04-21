@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 function backup(){
-  backup_name="backup-$(date -u +%Y-%m-%dT%H-%M-%S).tar.gz"
+  backup_name="backup-$(date -u +%Y-%m-%d-T-%H-%M-%S).tar.gz"
   # backup_name="backup.tar.gz"
   if [[ $# -eq 0 ]]
   then
