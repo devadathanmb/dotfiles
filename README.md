@@ -19,6 +19,7 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 - [Hyprland](https://hyprland.org/) - An awesome wl-roots based wayland compositor
 - [Waybar](https://github.com/Alexays/Waybar) - Bar for wl-roots based wayland compositors
 - [Kitty](https://sw.kovidgoyal.net/kitty/) - Terminal emulator
+- [Foot](https://codeberg.org/dnkl/foot) - A minimal wayland native terminal emulator
 - [Zsh](https://www.zsh.org/) - Shell
 - [Zap Zsh](https://github.com/zap-zsh/zap) - Zsh plugin manager
 - [Starship](https://starship.rs/) - Shell prompt
@@ -42,7 +43,8 @@ This cheatsheet contains all the keybindings that I use in my hyprland config. M
 
 ### General
 
-- `SUPER + Enter` - Launch kitty terminal
+- `SUPER + Enter` - Launch terminal
+- `SUPER + T` - Launch terminal
 - `SUPER + space` - Toggle between tiling and floating mode
 - `SUPER + q` - Close active window
 - `SUPER + [1-9]` - Move to nth workspace
