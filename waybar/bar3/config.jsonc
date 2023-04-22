@@ -51,9 +51,10 @@
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-    "format": "󰂲",
-    "format-disabled": "", // an empty format will hide the module
-    "format-connected": "󰂴 ",
+    "format": "",
+    // "format-disabled": "", // an empty format will hide the module
+    "format-connected": "󰂴",
+    "format-disabled": "󰂲",
     "tooltip-format": "{controller_alias}",
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
@@ -63,6 +64,7 @@
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
     "format-icons": ["", "", ""],
+    // "format-icons": ["󰃜", "󰃛", "󰃚"],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"
   },
@@ -77,9 +79,8 @@
   },
   "network": {
     // "format-wifi": " {essid}",
-    "format-wifi": " ",
+    "format-wifi": "󰖩 ",
     "format-ethernet": " ",
-    "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "睊",
     "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",

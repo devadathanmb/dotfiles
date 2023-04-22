@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0.84);
+  background: rgba(0, 0, 0, 0.40);
 }
 
 tooltip {
@@ -19,7 +19,7 @@ tooltip {
 
 #workspaces button {
   padding: 0px 1px;
-  color: #808080;
+  color: #c9c9c9;
   margin-right: 4px;
 }
 
@@ -55,6 +55,7 @@ tooltip {
 #pulseaudio{
   margin-right: 17px;
 }
+
 
 #battery{
   margin-left: 4px;
