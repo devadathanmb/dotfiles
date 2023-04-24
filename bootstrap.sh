@@ -82,6 +82,10 @@ devel_packages=(
 )
 
 necessary_packages=(
+    mtpfs
+    jmtpfs
+    gvfs-mtp
+    gvfs-gphoto2
     downgrade
     calcure
     bat-asus-battery-bin
