@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0.40);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 tooltip {
@@ -21,6 +21,7 @@ tooltip {
   padding: 0px 1px;
   color: #c9c9c9;
   margin-right: 4px;
+  border: none;
 }
 
 #workspaces button.active {
@@ -28,7 +29,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  color: #d4d4d4;
+  color: #f0f0f0;
   background: inherit;
 }
 
@@ -39,38 +40,32 @@ tooltip {
 #backlight,
 #bluetooth,
 #pulseaudio,
-#pulseaudio.microphone
-#battery{
+#pulseaudio.microphone #battery {
   color: #ffffff;
 }
 
-#custom-waybar-mpris{
+#custom-waybar-mpris {
   margin-left: 10px;
 }
 
-#backlight{
+#backlight {
   margin-right: 17px;
 }
 
-#pulseaudio{
+#pulseaudio {
   margin-right: 17px;
 }
 
-
-#battery{
-  margin-left: 4px;
-  margin-right: 17px;
+#battery {
+  margin-left: 13px;
+  margin-right: 14px;
 }
 
 #network,
-#bluetooth{
-  margin-right: 10px;
+#bluetooth {
+  margin-right: 6px;
 }
 
-#tray{
+#tray {
   margin-right: 10px;
-}
-
-#clock{
-  padding-right: 5px;
 }

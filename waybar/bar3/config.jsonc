@@ -11,6 +11,7 @@
     "pulseaudio#microphone",
     "network",
     "bluetooth",
+    "idle_inhibitor",
     "battery",
     "tray"
   ],
@@ -38,6 +39,14 @@
       "10": []
     }
   },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " "
+    },
+    "timeout": 30.5
+  },
   "battery": {
     "states": {
       "good": 80,
@@ -51,10 +60,10 @@
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-    "format": "",
+    "format": " ",
     // "format-disabled": "", // an empty format will hide the module
-    "format-connected": "󰂴",
-    "format-disabled": "󰂲",
+    "format-connected": "󰂴 ",
+    "format-disabled": "󰂲 ",
     "tooltip-format": "{controller_alias}",
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
@@ -110,7 +119,7 @@
     "format": "{format_source}",
     "tooltip": true,
     "format-source": " {volume}%",
-    "format-source-muted": " ",
+    "format-source-muted": "",
     "on-click-right": "pamixer --default-source -t",
     "on-click": "pavucontrol -t 4",
     "on-scroll-up": "pamixer --default-source -i 5",
