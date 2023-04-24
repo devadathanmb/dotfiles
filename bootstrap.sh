@@ -43,6 +43,8 @@ hypr_packages=(
 )
 
 devel_packages=(
+    lf-sixel-git
+    chafa
     rsync
     zoxide
     go
@@ -75,11 +77,13 @@ devel_packages=(
     docker
     man
     kitty
+    foot
     jdk-openjdk
 )
 
 necessary_packages=(
     downgrade
+    calcure
     bat-asus-battery-bin
     epson-inkjet-printer-escpr
     epson-inkjet-printer-escpr2
