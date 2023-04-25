@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+# A wrapper script for launching pip stuff using mpv
+filename="$@"
+absolute_path=$(realpath "$@")
+options="float; pin; size 50%; center; noborder"
+hyprctl dispatch exec "[$options]" mpv "\"$absolute_path\""
