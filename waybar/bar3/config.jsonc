@@ -2,7 +2,7 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 29,
+  "height": 30,
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
@@ -11,6 +11,7 @@
     "pulseaudio#microphone",
     "network",
     "bluetooth",
+    "custom/recorder",
     "idle_inhibitor",
     "battery",
     "tray"
@@ -90,7 +91,7 @@
     // "format-wifi": " {essid}",
     "format-wifi": "󰖩 ",
     "format-ethernet": " ",
-    "format-disconnected": "睊",
+    "format-disconnected": "睊 ",
     "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",
     "on-click": "exec ~/dotfiles/scripts/waybar/nmtui-wrapper.sh",
@@ -144,5 +145,12 @@
     "on-click-right": "waybar-mpris --send player-next",
     "on-scroll-down": "waybar-mpris --send prev",
     "escape": true
+  },
+  "custom/recorder": {
+    "format": "  ",
+    "return-type": "json",
+    "interval": 1,
+    "exec": "echo '{\"class\": \"recording\"}'",
+    "exec-if": "pgrep wf-recorder || pgrep obs"
   }
 }
