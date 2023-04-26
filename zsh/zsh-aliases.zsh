@@ -38,7 +38,7 @@ if [[ $TERM == "xterm-kitty" ]]; then
 fi
 
 # Other aliases
-alias ls="lsd"
+# alias ls="lsd"
 alias neofetch="neofetch --config none"
 alias cat="bat"
 alias tldr="tldr --theme base16"
