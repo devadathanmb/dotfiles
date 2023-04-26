@@ -14,6 +14,11 @@ hypr_packages=(
     light
     wireplumber
     pipewire
+    pipewire-alsa
+    pipewire-jack
+    pipewire-pulse
+    pipewire-pulse
+    pipewire-audio
     qt5-wayland
     qt6-wayland
     waybar-hyprland-git
@@ -43,6 +48,8 @@ hypr_packages=(
 )
 
 devel_packages=(
+    exa
+    bat
     lf-sixel-git
     chafa
     rsync
@@ -114,7 +121,6 @@ other_packages=(
     cli-visualizer
     neofetch
     lsd
-    bat
     cowsay
     pipes.sh
 )
