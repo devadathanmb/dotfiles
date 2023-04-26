@@ -89,6 +89,8 @@ devel_packages=(
 )
 
 necessary_packages=(
+    ffmpeg
+    obs-studio
     mtpfs
     jmtpfs
     gvfs-mtp
