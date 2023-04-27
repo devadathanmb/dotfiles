@@ -48,6 +48,7 @@ hypr_packages=(
 )
 
 devel_packages=(
+    inotify-tools
     exa
     bat
     lf-sixel-git
