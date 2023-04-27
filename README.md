@@ -1,6 +1,6 @@
 # My dotfiles 🖤
 
-I can't live without these files :)
+Everything that starts with a dot is probably here.
 
 These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot)
 
