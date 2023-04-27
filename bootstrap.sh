@@ -182,7 +182,11 @@ install_fonts(){
     mkdir -p ~/.local/share/fonts
     cp ~/dotfiles/fonts/* ~/.local/share/fonts
     fc-cache -fv
-    fc-list | grep -i jetbrains
+}
+
+# Setup zap zsh
+setup_zap(){
+    zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 }
 
 # Main
@@ -191,6 +195,7 @@ main(){
     update_mirrors
     install_packages
     install_fonts
+    setup_zap
     clear
     paru --noconfirm
     paru --clean --noconfirm
