@@ -6,6 +6,7 @@ WALL_DIR="$HOME/Pictures/wallpapers/"
 
 cd $WALL_DIR
 
+counter=0
 for file in *.png *.jpeg *.jpg
 do
   filename=$(basename -- "$file")
