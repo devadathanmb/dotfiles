@@ -67,7 +67,7 @@ function genlink(){
   # Check if any arguments are passed
   if [[ $# -eq 0 ]]
   then
-    curl -F "file=@-" https://0x0.st
+    echo "Usage: genlink file"
   else
     curl -F "file=@$1" https://0x0.st
   fi
