@@ -1,0 +1,12 @@
+# Function to post stuff to 0x0.st
+function genlink(){
+  # Check if any arguments are passed
+  if [[ $# -eq 0 ]]
+  then
+    echo "Usage: genlink file"
+  else
+    curl -F "file=@$1" https://0x0.st
+  fi
+}
+
+genlink $@
