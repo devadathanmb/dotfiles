@@ -26,6 +26,7 @@ tooltip {
 
 #workspaces button.active {
   color: #ffffff;
+  border: none;
 }
 
 #workspaces button:hover {
