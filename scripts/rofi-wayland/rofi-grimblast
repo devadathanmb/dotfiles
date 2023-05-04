@@ -33,4 +33,4 @@ case "$chosen" in
     *)         exit 1 ;;
 esac
 
-sleep 0.5 && grimblast copysave $extra_args $FILENAME && notify-send "🖼️ Screenshot taken and saved to $SCREENSHOT_DIR"
+sleep 0.5 && grimblast copysave $extra_args $FILENAME && notify-send "🖼️ Screenshot taken and saved"
