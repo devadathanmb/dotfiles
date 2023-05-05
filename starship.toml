@@ -1,4 +1,4 @@
-add_newline = true
+add_newline = false
 format = "$directory$git_branch$git_status$character"
 # right_format = """$all"""
 # right_format = """
