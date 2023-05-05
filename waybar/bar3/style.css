@@ -50,11 +50,11 @@ tooltip {
 }
 
 #backlight {
-  margin-right: 17px;
+  margin-right: 16px;
 }
 
 #pulseaudio {
-  margin-right: 17px;
+  margin-right: 16px;
 }
 
 #battery {
@@ -69,6 +69,10 @@ tooltip {
 
 #tray {
   margin-right: 10px;
+}
+
+#memory{
+  margin-right: 16px;
 }
 
 #custom-recorder{

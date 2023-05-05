@@ -6,6 +6,7 @@
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
+    "memory",
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
@@ -73,10 +74,14 @@
     "on-click": "",
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": ["", "", ""],
+    // "format-icons": ["", "", ""],
+    "format-icons": ["󰖨"],
     // "format-icons": ["󰃜", "󰃛", "󰃚"],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"
+  },
+  "memory": {
+    "format": " {}%"
   },
   "clock": {
     "interval": 1,
