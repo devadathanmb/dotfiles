@@ -1,6 +1,5 @@
 #!/bin/sh
 
-alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
 
 
@@ -48,7 +47,6 @@ alias lsa="ls -la"
 alias down="cd ~/Downloads/"
 alias work="cd ~/Documents/"
 alias hypr="nvim ~/.config/hypr"
-alias repos="cd $HOME/repos/"
 
 # Function to open pdf files in zathura
 function pdf(){
@@ -86,14 +84,23 @@ function nv(){
 # Lazy git
 alias lgit="lazygit"
 
+# Fzf repos
+function repos(){
+  z $(find $HOME/repos -maxdepth 1 -type d | fzf)
+}
+
 # Notes
 alias notes="cd $HOME/notes"
-alias notesup="cd $HOME/notes;git commit -am \"Update notes\"; git push origin master"
+alias notesup="cd $HOME/notes && git add . && git commit -m \"Update notes\" && git push origin master"
 
 # Dotfiles
 alias dotdir="cd $HOME/dotfiles/"
-alias dots="nvim $HOME/dotfiles/"
 alias vimdots="nvim $HOME/entevim/"
+
+# Fzf dots
+function dots(){
+  nvim $(find $HOME/dotfiles -maxdepth 1 | fzf)
+}
 
 # Use pywal generated colors for cava 
 if [[ -e ~/.cache/wal/cava ]]
