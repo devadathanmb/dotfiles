@@ -7,7 +7,10 @@ export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
 # nvm, node, npm binary path
-export PATH="$HOME/.nvm/versions/node/v19.6.0/bin/":$PATH
+export PATH="$HOME/.nvm/versions/node/v20.1.0/bin/":$PATH
+
+# Bat cat theme
+export BAT_THEME="Visual Studio Dark+"
 
 # Flutter 
 if [[ -e "/opt/flutter" ]]

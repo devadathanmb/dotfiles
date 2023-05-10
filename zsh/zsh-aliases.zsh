@@ -86,7 +86,7 @@ alias lgit="lazygit"
 
 # Fzf repos
 function repos(){
-  z $(find $HOME/repos -maxdepth 1 -type d | fzf)
+  cd $(find $HOME/repos -maxdepth 1 -type d | fzf)
 }
 
 # Notes
