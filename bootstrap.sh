@@ -5,6 +5,7 @@ hypr_packages=(
     hyprland
     qt5ct
     qt6ct
+    cliphist
     qt4ct
     swayidle
     swaylock-effects
@@ -28,6 +29,7 @@ hypr_packages=(
     wlogout
     swaybg
     swayimg
+    nwg-look-bin
     vimiv
     rofi-lbonn-wayland-git
     rofi-emoji
@@ -43,11 +45,11 @@ hypr_packages=(
     polkit-kde-agent
     udisks2
     udiskie
-    # thunar
     nautilus
 )
 
 devel_packages=(
+    socat
     inotify-tools
     exa
     bat
