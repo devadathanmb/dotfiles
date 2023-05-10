@@ -706,5 +706,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "[python]": {
     "editor.formatOnType": true
-  }
+  },
+  "editor.minimap.enabled": false
 }

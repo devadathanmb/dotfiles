@@ -8,3 +8,5 @@
     pom = push origin main
     po = push origin
 
+[safe]
+	directory = /opt/flutter

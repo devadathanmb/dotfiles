@@ -1,5 +1,6 @@
 hypr_packages=(
     adwaita-qt-git
+    orchis-theme-git
     adwaita-gtk
     hyprland
     qt5ct
@@ -32,7 +33,6 @@ hypr_packages=(
     rofi-emoji
     rofi-calc
     hyprpicker
-    ly
     gnome-themes-extra
     adwaita-qt5
     adwaita-qt6

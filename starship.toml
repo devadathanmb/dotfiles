@@ -1,82 +1,82 @@
 add_newline = false
 format = "$directory$git_branch$git_status$character"
 # right_format = """$all"""
-# right_format = """
-# $localip\
-# $shlvl\
-# $singularity\
-# $kubernetes\
-# $vcsh\
-# $fossil_branch\
-# $hg_branch\
-# $pijul_channel\
-# $docker_context\
-# $package\
-# $c\
-# $cmake\
-# $cobol\
-# $daml\
-# $dart\
-# $deno\
-# $dotnet\
-# $elixir\
-# $elm\
-# $erlang\
-# $fennel\
-# $golang\
-# $guix_shell\
-# $haskell\
-# $haxe\
-# $helm\
-# $java\
-# $julia\
-# $kotlin\
-# $gradle\
-# $lua\
-# $nim\
-# $nodejs\
-# $ocaml\
-# $opa\
-# $perl\
-# $php\
-# $pulumi\
-# $purescript\
-# $python\
-# $raku\
-# $rlang\
-# $red\
-# $ruby\
-# $rust\
-# $scala\
-# $swift\
-# $terraform\
-# $vlang\
-# $vagrant\
-# $zig\
-# $buf\
-# $nix_shell\
-# $conda\
-# $meson\
-# $spack\
-# $memory_usage\
-# $aws\
-# $gcloud\
-# $openstack\
-# $azure\
-# $env_var\
-# $crystal\
-# $custom\
-# $sudo\
-# $cmd_duration\
-# $line_break\
-# $jobs\
-# $battery\
-# $time\
-# $status\
-# $os\
-# $container\
-# $shell\
-# """
+right_format = """
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$vcsh\
+$fossil_branch\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+"""
 #
 [character]
 success_symbol = "[»](green)"
@@ -86,8 +86,8 @@ vicmd_symbol = "[«](green)"
 [directory]
 format = "[$path]($style)[  ](bold blue)[$read_only](bold #DCDCAA)($read_only_style) "
 truncation_length = 1
-home_symbol = "  "
-read_only = "  "
+home_symbol = ""
+read_only = " "
 
 [git_branch]
 style = "bold #569CD6"

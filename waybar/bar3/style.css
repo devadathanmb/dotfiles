@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.68);
 }
 
 tooltip {
@@ -62,9 +62,14 @@ tooltip {
   margin-right: 14px;
 }
 
+#idle_inhibitor{
+  margin-right: 0;
+  margin-left: 0;
+}
+
 #network,
 #bluetooth {
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 #tray {
