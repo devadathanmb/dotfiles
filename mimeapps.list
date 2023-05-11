@@ -1,0 +1,10 @@
+[Default Applications]
+x-scheme-handler/postman=Postman.desktop
+image/png=vimiv.desktop
+image/jpeg=vimiv.desktop
+image/jpg=vimiv.desktop
+image/svg+xml=vimiv.desktop
+image/svg=vimiv.desktop
+application/pdf=org.pwmt.zathura.desktop
+image/webp=vimiv.desktop
+image/gif=mpv.desktop

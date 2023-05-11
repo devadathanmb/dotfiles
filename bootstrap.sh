@@ -124,7 +124,6 @@ other_packages=(
     cava
     cli-visualizer
     neofetch
-    lsd
     cowsay
     pipes.sh
 )
@@ -190,6 +189,16 @@ setup_zap(){
     zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 }
 
+# Tmux plugin manger
+setup_tmux(){
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+}
+
+# Setup scripts
+setup_scripts(){
+  ln -s ~/dotfiles/scripts/* ~/.local/bin/
+}
+
 # Main
 main(){
     clear
@@ -197,6 +206,8 @@ main(){
     install_packages
     install_fonts
     setup_zap
+    setup_tmux
+    setup_scripts
     clear
     paru --noconfirm
     paru --clean --noconfirm
