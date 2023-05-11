@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0.68);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 tooltip {
@@ -18,9 +18,8 @@ tooltip {
 }
 
 #workspaces button {
-  padding: 0px 1px;
+  padding: 0px 3px;
   color: #c9c9c9;
-  margin-right: 4px;
   border: none;
 }
 

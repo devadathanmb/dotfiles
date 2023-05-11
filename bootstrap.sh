@@ -1,5 +1,4 @@
 hypr_packages=(
-    adwaita-qt-git
     orchis-theme-git
     adwaita-gtk
     hyprland
