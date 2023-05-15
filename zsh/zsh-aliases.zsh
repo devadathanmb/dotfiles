@@ -89,8 +89,12 @@ function repos(){
   cd $(find $HOME/repos -maxdepth 1 -type d | fzf)
 }
 
+# Fzf notes
+function notes(){
+  cd $(find $HOME/notes -type d -not -path "*/.*" | fzf)
+}
+
 # Notes
-alias notes="cd $HOME/notes"
 alias notesup="cd $HOME/notes && git add . && git commit -m \"Update notes\" && git push origin master"
 
 # Dotfiles

@@ -48,6 +48,8 @@ hypr_packages=(
 )
 
 devel_packages=(
+    qrencode
+    ranger
     socat
     inotify-tools
     exa
@@ -120,12 +122,10 @@ necessary_packages=(
 )
 
 other_packages=(
-    cmatrix
     cava
     cli-visualizer
     neofetch
     cowsay
-    pipes.sh
 )
 
 
