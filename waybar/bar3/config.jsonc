@@ -6,6 +6,7 @@
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
+    "tray",
     "memory",
     "backlight",
     "pulseaudio",
@@ -14,12 +15,16 @@
     "bluetooth",
     "custom/recorder",
     "idle_inhibitor",
-    "battery",
-    "tray"
+    "battery"
+    // "custom/exit"
   ],
   // Modules
   "hyprland/window": {
     "max-length": 30
+  },
+  "custom/exit": {
+    "format": "⏻ ",
+    "on-click": "~/dotfiles/scripts/hypr/wlogout.sh"
   },
   "wlr/workspaces": {
     "disable-scroll": false,
@@ -89,14 +94,32 @@
     "format-alt": "{:%A, %d/%m/%Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
     "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
-    "format-calendar-weeks": "<span color='#99ffdd'><b>W{:%U}</b></span>",
-    "format-calendar-weekdays": "<span color='#ffcc66'><b>{}</b></span>"
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 6,
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
   },
   "network": {
     // "format-wifi": " {essid}",
     "format-wifi": "󰖩 ",
-    "format-ethernet": " ",
-    "format-disconnected": "睊 ",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰖪  ",
     "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",
     "on-click": "exec ~/dotfiles/scripts/waybar/nmtui-wrapper.sh",
@@ -118,14 +141,14 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", "墳", ""]
+      "default": ["", "", "󰕾 ", ""]
     }
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "tooltip": true,
-    "format-source": " {volume}%",
-    "format-source-muted": "",
+    "format-source": " {volume}%",
+    "format-source-muted": " ",
     "on-click-right": "pamixer --default-source -t",
     "on-click": "pavucontrol -t 4",
     "on-scroll-up": "pamixer --default-source -i 5",
@@ -133,12 +156,13 @@
     "scroll-step": 5
   },
   "tray": {
-    "icon-size": 18,
+    "format": "<span rise=''>{}</span>",
+    "icon-size": 19,
     "spacing": 10
   },
   "custom/waybar-mpris": {
     "return-type": "json",
-    "exec": "waybar-mpris --position --autofocus",
+    "exec": "waybar-mpris --position --autofocus --play   --pause 󰏤",
     "on-click": "waybar-mpris --send toggle",
     "max-length": 35,
     // This option will switch between players on right click.
@@ -152,10 +176,14 @@
     "escape": true
   },
   "custom/recorder": {
-    "format": "  ",
+    "format": " ",
+    "tooltip" : false,
     "return-type": "json",
-    "interval": 1,
+    // "interval": 1,
+    "interval": "once",
     "exec": "echo '{\"class\": \"recording\"}'",
+    "signal" : 8,
     "exec-if": "pgrep wf-recorder || pgrep obs"
+
   }
 }
