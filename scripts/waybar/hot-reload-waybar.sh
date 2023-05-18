@@ -2,6 +2,8 @@
 
 CONFIG_FILES="$HOME/dotfiles/waybar/bar3/config.jsonc $HOME/dotfiles/waybar/bar3/style.css"
 
+killall waybar
+
 trap "killall waybar" EXIT
 
 while true; do
