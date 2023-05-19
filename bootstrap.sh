@@ -17,6 +17,7 @@ hypr_packages=(
     pipewire-pulse
     pipewire-pulse
     pipewire-audio
+    pamixer
     qt5-wayland
     qt6-wayland
     waybar-mpris-git
