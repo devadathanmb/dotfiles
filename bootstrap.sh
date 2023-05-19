@@ -1,16 +1,13 @@
 hypr_packages=(
     orchis-theme-git
+    nautilus
     adwaita-gtk
-    hyprland
     qt5ct
     qt6ct
     cliphist
     qt4ct
-    swayidle
-    swaylock-effects
     nwg-look
     wl-clipboard
-    xdg-desktop-portal-hyprland-git
     dunst
     light
     wireplumber
@@ -22,7 +19,6 @@ hypr_packages=(
     pipewire-audio
     qt5-wayland
     qt6-wayland
-    waybar-hyprland-git
     waybar-mpris-git
     mpv-mpris-git
     wlogout
@@ -44,10 +40,15 @@ hypr_packages=(
     polkit-kde-agent
     udisks2
     udiskie
-    nautilus
+    hyprland
+    xdg-desktop-portal-hyprland
+    waybar-hyprland
+    swayidle
+    swaylock-effects
 )
 
 devel_packages=(
+    beautysh
     qrencode
     ranger
     socat
@@ -93,6 +94,7 @@ devel_packages=(
 )
 
 necessary_packages=(
+    playerctl
     ffmpeg
     obs-studio
     mtpfs
@@ -196,7 +198,7 @@ setup_tmux(){
 
 # Setup scripts
 setup_scripts(){
-  ln -s ~/dotfiles/scripts/* ~/.local/bin/
+  ln -s ~/dotfiles/scripts/general/* ~/.local/bin/
 }
 
 # Main
