@@ -58,6 +58,8 @@ tooltip label {
 #network,
 #backlight,
 #bluetooth,
+#memory,
+#idle_inhibitor,
 #pulseaudio,
 #pulseaudio.microphone,
 #battery {
