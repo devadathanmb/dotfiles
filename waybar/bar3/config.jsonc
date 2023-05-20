@@ -141,7 +141,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", "󰕾 ", ""]
+      "default": ["", "", "󰕾", ""]
     }
   },
   "pulseaudio#microphone": {
