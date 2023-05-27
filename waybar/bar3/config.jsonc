@@ -19,6 +19,9 @@
     // "custom/exit"
   ],
   // Modules
+  "custom/separator": {
+    "format": "|"
+  },
   "hyprland/window": {
     "max-length": 30
   },
@@ -158,7 +161,7 @@
   "tray": {
     "format": "<span rise=''>{}</span>",
     "icon-size": 19,
-    "spacing": 10
+    "spacing": 5,
   },
   "custom/waybar-mpris": {
     "return-type": "json",
@@ -177,13 +180,12 @@
   },
   "custom/recorder": {
     "format": " ",
-    "tooltip" : false,
+    "tooltip": false,
     "return-type": "json",
     // "interval": 1,
     "interval": "once",
     "exec": "echo '{\"class\": \"recording\"}'",
-    "signal" : 8,
+    "signal": 8,
     "exec-if": "pgrep wf-recorder || pgrep obs"
-
   }
 }
