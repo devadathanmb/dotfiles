@@ -2,7 +2,7 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{name}";
-  font: "JetBrains Mono";
+  font: "JetBrainsMono Nerd Font";
   modi: "window,run,drun,emoji,calc";
   kb-remove-to-eol:"";
   kb-accept-entry: "Return,KP_Enter";

@@ -592,7 +592,7 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "window.menuBarVisibility": "toggle",
   "python.dataScience.alwaysTrustNotebooks": true,
   "python.formatting.provider": "black",
