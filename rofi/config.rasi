@@ -15,7 +15,7 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #252629;
+  bg: #1e1e1e;
   bg-alt: #D4D4D4;
 
 
