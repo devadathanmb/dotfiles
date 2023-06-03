@@ -12,11 +12,11 @@ fi
 OUTPUT_DIR="$HOME/Videos/recordings/"
 OUTPUT_FILE="$OUTPUT_DIR$(date +%Y-%m-%d_%H-%M-%S).mp4"
 
-record_screen_with_audio="󰽟  Record screen with audio"
-record_screen_without_audio="󰽠  Record screen without audio"
-record_selection_with_audio="󰒉  Record selection with audio"
-record_selection_without_audio="󱟃  Record selection without audio"
-stop_recording="  Stop recording"
+record_screen_with_audio="󰽟   Record screen with audio"
+record_screen_without_audio="󰽠   Record screen without audio"
+record_selection_with_audio="󰒉   Record selection with audio"
+record_selection_without_audio="󱟃   Record selection without audio"
+stop_recording="   Stop recording"
 
 chosen=$(printf "%s\n%s\n%s\n%s\n%s\n" "$record_screen_with_audio" "$record_screen_without_audio" "$record_selection_with_audio" "$record_selection_without_audio" "$stop_recording"\
         | rofi -dmenu -l 5 -p "Record screen:"\
