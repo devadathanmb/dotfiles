@@ -4,18 +4,19 @@
   min-height: 0;
   /* font-family: "RobotoMono Nerd Font"; */
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 14;
+  font-size: 13;
   font-weight: 500;
 }
 
 window#waybar {
-  background: rgba(13, 13, 13, 0.93);
+  background: rgba(20, 20, 20, 1);
 }
 
 tooltip {
   margin: 10px;
   border-radius: 10px;
   border: 1px solid white;
+  background: rgba(20, 20, 20, 1);
 }
 
 tooltip label {

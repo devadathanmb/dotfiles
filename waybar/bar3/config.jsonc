@@ -50,7 +50,7 @@
     }
   },
   "idle_inhibitor": {
-    "format": "{icon}",
+    "format": "<span color=\"#ffffff\">{icon}</span>",
     "format-icons": {
       "activated": " ",
       "deactivated": " "
@@ -63,9 +63,9 @@
       "warning": 30,
       "critical": 20
     },
-    "format": "{icon}  {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format": "<span color=\"#ffffff\">{icon}</span>  {capacity}%",
+    "format-charging": "<span color=\"#ffffff\"></span> {capacity}%",
+    "format-plugged": "<span color=\"#ffffff\"></span> {capacity}%",
     "format-icons": ["", "", "", "", ""]
   },
   "bluetooth": {
@@ -81,7 +81,7 @@
   "backlight": {
     "on-click": "",
     "device": "intel_backlight",
-    "format": "{icon} {percent}%",
+    "format": "<span color=\"#ffffff\">{icon}</span> {percent}%",
     // "format-icons": ["", "", ""],
     "format-icons": ["󰖨"],
     // "format-icons": ["󰃜", "󰃛", "󰃚"],
@@ -89,7 +89,7 @@
     "on-scroll-down": "light -U 1%-"
   },
   "memory": {
-    "format": " {}%"
+    "format": "<span color=\"#ffffff\"></span> {}%"
   },
   "clock": {
     "interval": 1,
@@ -120,9 +120,9 @@
   },
   "network": {
     // "format-wifi": " {essid}",
-    "format-wifi": "󰖩 ",
+    "format-wifi": "<span color=\"#ffffff\">󰖩</span> ",
     "format-ethernet": "󰈀 ",
-    "format-disconnected": "󰖪  ",
+    "format-disconnected": "<span color=\"#F44747\">{icon}</span>󰖪  ",
     "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",
     "on-click": "exec ~/dotfiles/scripts/waybar/nmtui-wrapper.sh",
@@ -130,7 +130,7 @@
     "max-length": 20
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "<span color=\"#ffffff\">{icon}</span> {volume}%",
     "format-muted": " ",
     "format-bluetooth": "{icon}  {volume}%",
     "format-bluetooth-muted": "  ",
@@ -150,7 +150,7 @@
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "tooltip": true,
-    "format-source": " {volume}%",
+    "format-source": "<span color=\"#ffffff\"></span> {volume}%",
     "format-source-muted": " ",
     "on-click-right": "pamixer --default-source -t",
     "on-click": "pavucontrol -t 4",
@@ -161,7 +161,7 @@
   "tray": {
     "format": "<span rise=''>{}</span>",
     "icon-size": 19,
-    "spacing": 5,
+    "spacing": 5
   },
   "custom/waybar-mpris": {
     "return-type": "json",
