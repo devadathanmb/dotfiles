@@ -122,7 +122,7 @@
     // "format-wifi": " {essid}",
     "format-wifi": "<span color=\"#ffffff\">󰖩</span> ",
     "format-ethernet": "󰈀 ",
-    "format-disconnected": "<span color=\"#F44747\">{icon}</span>󰖪  ",
+    "format-disconnected": "<span color=\"#F44747\">{icon}</span>󰖪 ",
     "tooltip-format-wifi": "{essid}",
     // "on-click": "wofi-wifi-menu",
     "on-click": "exec ~/dotfiles/scripts/waybar/nmtui-wrapper.sh",
