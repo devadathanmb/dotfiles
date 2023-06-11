@@ -702,7 +702,6 @@
   },
   "workbench.editor.showTabs": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "workbench.colorTheme": "Visual Studio Dark",
   "security.workspace.trust.untrustedFiles": "open",
   "[python]": {
     "editor.formatOnType": true

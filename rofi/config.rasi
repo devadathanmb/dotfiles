@@ -1,106 +1,157 @@
 configuration {
-  display-drun: "Applications:";
-  display-window: "Windows:";
-  drun-display-format: "{name}";
-  font: "JetBrainsMono Nerd Font";
-  modi: "window,run,drun,emoji,calc";
-  kb-remove-to-eol:"";
-  kb-accept-entry: "Return,KP_Enter";
-  kb-secondary-copy: "";
-  kb-cancel: "Escape,Control+c";
-  kb-row-up: "Control+k,Up";
-  kb-row-down: "Control+j,Down";
+    modi: "drun,run";
+    font: "JetBrains Mono Nerd Font Bold 12";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    disable-history: false;
+    hide-scrollbar: true;
+    sidebar-mode: true;
+    display-drun: " 󰀘  Apps ";
+    display-run: "   Command ";
+    display-window: "   Window ";
+    kb-remove-to-eol:"";
+    kb-accept-entry: "Return,KP_Enter";
+    kb-secondary-copy: "";
+    kb-cancel: "Escape,Control+c";
+    kb-row-up: "Control+k,Up";
+    kb-row-down: "Control+j,Down";
+    kb-mode-complete: "";
+    kb-remove-char-back: "BackSpace";
+    kb-mode-previous: "Control+h";
+    kb-mode-next: "Control+l";
 }
 
-@theme "/dev/null"
+@theme "themes/darkplus"
 
-* {
-  bg: #1e1e1e;
-  bg-alt: #D4D4D4;
+element-text {
+    background-color: #00000000;
+    text-color: inherit;
+}
 
+element-text selected {
+    background-color: #00000000;
+    text-color: inherit;
+}
 
-  fg: #FFFFFF;
-  fg-alt: #808080;
-
-  background-color: @bg;
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+mode-switcher {
+    background-color: #00000000;
 }
 
 window {
-  width: 30%;
-  border-radius: 20px;
-  border-size: 1px;
-}
-
-element {
-  padding: 8 0;
-  text-color: @fg-alt;
-}
-
-element selected {
-  text-color: @fg;
-}
-
-element-text {
-  text-color: inherit;
-  vertical-align: 0.5;
-}
-
-element-icon {
-  size: 29;
-  padding: 0 10 0 0;
-}
-
-entry {
-  background-color: @bg-alt;
-  padding: 12;
-  text-color: #1D1D2D;
-  font: "RobotoMono Nerd Font Regular 16";
-}
-
-inputbar {
-  children: [prompt, entry];
-
-}
-
-listview {
-  padding: 8 12;
-  background-color: @bg;
-  columns: 1;
-  lines: 8;
-  margin: 2px;
+    height: 500px;
+    width: 40%;
+    border: 0px;
+    border-radius: 5px;
+    border: 0px 0px 8px 0px;
+    border-color: @window-underline;
+    background-color: @window;
+    padding: 0px 0px 0px 0px;
+    fullscreen: false;
 }
 
 mainbox {
-  background-color: @bg;
-  children: [inputbar, message, listview];  // add message as a child here
-  /* border: 3px; */
-  border-color: #9CDCFE;
-  /* border-radius: 4px; */
+    background-color: #00000000;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: #00000000;
+    border-radius: 3px;
+    padding: 2px;
 }
 
 prompt {
-  background-color: @bg-alt;
-  enabled: true;
-  padding: 12 0 0 12;
-  text-color: #1D1D2D;
-  font: "RobotoMono Nerd Font Bold 16";
+    background-color: @button;
+    padding: 12px;
+    text-color: @bg-col;
+    border-radius: 3px;
+    margin: 8px 0px 0px 8px;
+    border: 0px 0px 8px 0px;
+    border-color: @button-underline;
 }
 
-textbox{
-  text-color: @fg;
-  padding: 15;
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 12px 13px -4px 11px;
+    margin: 8px 8px 0px 8px;
+    text-color: @fg-col;
+    background-color: @blank;
+    border-radius: 3px;
+    border: 0px 0px 8px 0px;
+    border-color: @blank-underline;
+}
+
+listview {
+    border: 0px 0px 0px;
+    margin: 27px 10px -13px 10px;
+    background-color: #00000000;
+    columns: 1;
+}
+
+element {
+    padding: 12px 12px 12px 12px;
+    background-color: @blank;
+    text-color: @fg-col;
+    margin: 0px 0px 8px 0px;
+    border-radius: 3px;
+    border: 0px 0px 8px 0px;
+    border-color: @blank-underline;
+}
+
+element-icon {
+    size: 25px;
+    background-color: #00000000;
+}
+
+element selected {
+    background-color: @button;
+    text-color: @fg-col2;
+    border-radius: 3px;
+    border: 0px 0px 8px 0px;
+    border-color: @button-underline;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 12px;
+    margin: 10px;
+    background-color: @blank;
+    text-color: @tab;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+    border-radius: 3px;
+    border: 0px 0px 8px 0px;
+    border-color: @blank-underline;
+}
+
+button selected {
+    background-color: @bg-col-light;
+    text-color: @tab-selected;
+    border-radius: 3px;
+    border: 0px 0px 8px 0px;
+    border-color: @button-underline;
 }
 
 message {
-  text-color: @fg;
-  background-color: @bg;
+  text-color: @fg-col;
+  background-color: @bg-col;
   border: 1px;
   border-radius: 4px;
   margin: 8px;
   border-color: white;
+}
+
+textbox{
+  text-color: @fg-col;
+  background-color: @bg-col;
+  padding: 15;
 }
