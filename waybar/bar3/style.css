@@ -3,20 +3,20 @@
   border-radius: 0;
   min-height: 0;
   /* font-family: "RobotoMono Nerd Font"; */
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "FiraCode Nerd Font Med";
   font-size: 13;
   font-weight: 500;
 }
 
 window#waybar {
-  background: rgba(20, 20, 20, 1);
+  background: rgba(8, 7, 7, 0.95);
 }
 
 tooltip {
   margin: 10px;
   border-radius: 10px;
   border: 1px solid white;
-  background: rgba(20, 20, 20, 1);
+  background: rgba(8, 7, 7, 0.95);
 }
 
 tooltip label {
