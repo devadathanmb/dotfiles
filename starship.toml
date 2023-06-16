@@ -87,7 +87,7 @@ vicmd_symbol = "[«](green)"
 format = "[$path]($style)[  ](bold blue)[$read_only](bold #DCDCAA)($read_only_style) "
 truncation_length = 1
 home_symbol = ""
-read_only = " "
+read_only = " "
 
 [git_branch]
 style = "bold #569CD6"

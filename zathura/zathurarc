@@ -2,6 +2,8 @@ set font "JetBrainsMono 13"
 
 set selection-clipboard clipboard
 
+map <C-i> recolor
+
 # vscode dark zathura colorscheme
 set default-bg                  "#121111"
 set default-fg                  "#d4d4d4"
