@@ -96,7 +96,7 @@
     "format": "{:%R}",
     "format-alt": "{:%A, %d/%m/%Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
-    "today-format": "<span color='#ff6699'><b><u>{}</u></b></span>",
+    "today-format": "<span color='#4EC9B0'><b><u>{}</u></b></span>",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 6,
@@ -107,7 +107,7 @@
         "days": "<span color='#ecc6d9'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+        "today": "<span color='#4EC9B0'><b><u>{}</u></b></span>"
       }
     },
     "actions": {
