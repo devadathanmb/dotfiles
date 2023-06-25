@@ -12,7 +12,8 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 <br>
 
-![2023-06-17-T-11-31-42](https://github.com/devadathanmb/dotfiles/assets/84301852/3d708053-3ee0-4c86-b76e-641a2ee02fca)
+![2023-06-17-T-16-15-12](https://github.com/devadathanmb/dotfiles/assets/84301852/5d846bdb-f014-40ff-8bc7-9b4808f02ccf)
+
 
 <br>
 
