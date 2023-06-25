@@ -9,14 +9,14 @@
 }
 
 window#waybar {
-  background: rgba(8, 7, 7, 0.6);
+  background: rgba(8, 7, 7, 0.7);
 }
 
 tooltip {
   margin: 10px;
   border-radius: 10px;
   border: 1px solid white;
-  background: rgba(8, 7, 7, 0.95);
+  background: rgba(8, 7, 7, 0.8);
 }
 
 tooltip label {
@@ -32,7 +32,7 @@ tooltip label {
 #workspaces button.active {
   color: #ffffff;
   border: none;
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
 }
 
 #workspaces button:hover {

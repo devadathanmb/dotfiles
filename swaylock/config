@@ -4,10 +4,10 @@ indicator
 indicator-radius=100
 indicator-thickness=7
 effect-blur=3x3
-effect-vignette=0.5:0.1
+effect-vignette=0.1:0.8
 ring-color=00000000
-key-hl-color=5DA9DE
+key-hl-color=9CDCFE
 line-color=00000000
-inside-color=00000088
+inside-color=000000FA
 separator-color=00000000
 fade-in=0.2

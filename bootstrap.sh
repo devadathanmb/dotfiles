@@ -1,4 +1,5 @@
 hypr_packages=(
+    seatd
     orchis-theme-git
     nautilus
     adwaita-gtk
@@ -43,7 +44,7 @@ hypr_packages=(
     udiskie
     hyprland
     xdg-desktop-portal-hyprland
-    waybar-hyprland
+    waybar-hyprland-git
     swayidle
     swaylock-effects
 )
@@ -83,7 +84,7 @@ devel_packages=(
     network-manager-applet
     fzf
     visual-studio-code-bin
-    google-chrome
+    # google-chrome
     brave-bin
     ngrok
     zsh
@@ -146,7 +147,7 @@ install_paru (){
         sudo pacman -S --noconfirm --needed base-devel
         git clone https://aur.archlinux.org/paru-bin.git $HOME/paru-bin
         cd ~/paru-bin
-        makepkg -si
+        makepkg -si --noconfirm
         cd ..
         rm -rf ~/paru-bin
     fi
@@ -180,6 +181,11 @@ install_packages(){
     done
 }
 
+# Setup groups
+setup_groups(){
+    usermod -aG cups,docker,seat,video,audio devadathan
+}
+
 # Setup fonts
 install_fonts(){
     mkdir -p ~/.local/share/fonts
@@ -194,12 +200,21 @@ setup_zap(){
 
 # Tmux plugin manger
 setup_tmux(){
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 }
 
 # Setup scripts
 setup_scripts(){
-  ln -s ~/dotfiles/scripts/general/* ~/.local/bin/
+    ln -s ~/dotfiles/scripts/general/* ~/.local/bin/
+}
+
+# Setup backlight
+setup_backlight(){
+    if [[ ! -d "/etc/udev/rules.d/" ]]
+    then
+        sudo mkdir /etc/udev/rules.d
+    fi
+    sudo cp $HOME/dotfiles/backlight.rules /etc/udev/rules.d/backlight.rules
 }
 
 # Main
