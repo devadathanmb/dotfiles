@@ -46,19 +46,6 @@ set noesckeys
 "leader key
 let mapleader = " "
 
-" Do not yank for d or c
-nnoremap d "_d
-nnoremap D "_D
-
-nnoremap "*d "*d
-nnoremap "*D "*D
-
-nnoremap c "_c
-nnoremap C "_C
-
-nnoremap "*c "*c
-nnoremap "*C "*C
-
 " Change cursor hack
 
 let &t_SI = "\e[6 q"
@@ -69,35 +56,6 @@ augroup myCmds
 au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
-
-
-"install vimplug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" Plugins go here 
-call plug#begin('~/.vim/plugged')
-
-Plug 'tomasiser/vim-code-dark'
-Plug 'scrooloose/nerdtree'
-
-Plug 'https://github.com/machakann/vim-highlightedyank'
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-call plug#end()
-
-" Colorscheme
-let g:codedark_transparent=1
-colorscheme codedark
-set background=dark
-let g:airline_theme = 'codedark'
-" Activates italicized comments (make sure your terminal supports italics)
-let g:codedark_italics=1
 
 " Nerdtree keymappings
 
