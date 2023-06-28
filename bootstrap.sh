@@ -117,7 +117,6 @@ necessary_packages=(
     ventoy-bin
     deluge
     deluge-gtk
-    alacritty
     noto-fonts
     noto-fonts-extra
     noto-fonts-emoji
@@ -181,9 +180,19 @@ install_packages(){
     done
 }
 
-# Setup groups
-setup_groups(){
+# System level configs
+config_system(){
+
+    # Setup groups
     usermod -aG cups,docker,seat,video,audio devadathan
+
+    # Backlight
+    if [[ ! -d "/etc/udev/rules.d/" ]]
+    then
+        sudo mkdir /etc/udev/rules.d
+    fi
+    sudo cp $HOME/dotfiles/backlight.rules /etc/udev/rules.d/backlight.rules
+
 }
 
 # Setup fonts
@@ -208,15 +217,6 @@ setup_scripts(){
     ln -s ~/dotfiles/scripts/general/* ~/.local/bin/
 }
 
-# Setup backlight
-setup_backlight(){
-    if [[ ! -d "/etc/udev/rules.d/" ]]
-    then
-        sudo mkdir /etc/udev/rules.d
-    fi
-    sudo cp $HOME/dotfiles/backlight.rules /etc/udev/rules.d/backlight.rules
-}
-
 # Main
 main(){
     clear
@@ -226,6 +226,7 @@ main(){
     setup_zap
     setup_tmux
     setup_scripts
+    config_system
     clear
     paru --noconfirm
     paru --clean --noconfirm
