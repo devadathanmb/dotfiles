@@ -4,12 +4,12 @@
   min-height: 0;
   /* font-family: "RobotoMono Nerd Font"; */
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 14;
+  font-size: 15;
   font-weight: 500;
 }
 
 window#waybar {
-  background: rgba(8, 7, 7, 0.7);
+  background: rgba(8, 7, 7, 0.83);
 }
 
 tooltip {
@@ -24,14 +24,15 @@ tooltip label {
 }
 
 #workspaces button {
-  padding: 0px 3px;
+  padding: 0px 4px;
   color: #c9c9c9;
   border: none;
 }
 
 #workspaces button.active {
   color: #ffffff;
-  border: none;
+  border-top: 1px solid #32C8F0;
+  /* box-shadow: inset 0 5px #ffffff; */
   /* border-top: 1px solid white; */
 }
 
@@ -74,7 +75,7 @@ tooltip label {
 }
 
 #backlight {
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 #pulseaudio {
@@ -82,12 +83,12 @@ tooltip label {
 }
 
 #battery {
-  margin-left: 11px;
+  /* margin-left: 11px; */
   margin-right: 1px;
 }
 
 #idle_inhibitor {
-  margin-right: 0;
+  /* margin-right: 11px; */
   margin-left: 0;
 }
 
@@ -99,24 +100,26 @@ tooltip label {
 #tray {
   margin-right: 10px;
   padding-right: 10px;
-  background-image: linear-gradient(white);
+  background-image: linear-gradient(#abb0ab);
   background-size: 1px 50%;
-  background-position: 100% 50%;
+  background-position: 95% 50%;
   background-repeat: no-repeat;
 }
 
 #custom-separator {
   margin: 0px;
   padding: 0px;
-  margin-right: 13px;
+  margin-right: 11px;
+  margin-left: 11px;
+  color: #abb0ab;
 }
 
 #pulseaudio.microphone {
-  margin-right: 15px;
+  margin-right: 0px;
 }
 
 #memory {
-  margin-right: 15px;
+  margin-right: 0px;
 }
 
 #custom-recorder {

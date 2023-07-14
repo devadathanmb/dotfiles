@@ -36,6 +36,7 @@ set splitbelow splitright
 
 "Stop auto commenting
 set formatoptions-=cro
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 "search as characters are entered
 set incsearch

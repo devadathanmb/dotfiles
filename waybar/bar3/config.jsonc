@@ -2,19 +2,23 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 31,
+  "height": 33,
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "memory",
+    "custom/separator",
     "backlight",
+    "custom/separator",
     "pulseaudio",
     "pulseaudio#microphone",
+    "custom/separator",
     "network",
     "bluetooth",
     "custom/recorder",
     "idle_inhibitor",
+    "custom/separator",
     "battery"
     // "custom/exit"
   ],
@@ -76,7 +80,7 @@
     "format-disabled": "󰂲 ",
     "tooltip-format": "{controller_alias}",
     "tooltip-format-connected": "{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    "tooltip-format-enumerate-connected": " {device_alias} {device_battery_percentage}%"
   },
   "backlight": {
     "on-click": "",
@@ -84,6 +88,7 @@
     "format": "<span color=\"#ffffff\">{icon}</span> {percent}%",
     // "format-icons": ["", "", ""],
     "format-icons": ["󰖨"],
+    "tooltip-format": "{percent}%",
     // "format-icons": ["󰃜", "󰃛", "󰃚"],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"

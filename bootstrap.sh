@@ -93,6 +93,9 @@ devel_packages=(
     kitty
     foot
     jdk-openjdk
+    python-virtualenv
+    python-neovim
+    python-black
 )
 
 necessary_packages=(
