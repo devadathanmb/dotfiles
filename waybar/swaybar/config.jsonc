@@ -2,8 +2,8 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 33,
-  "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
+  "height": 35,
+  "modules-left": ["sway/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -33,25 +33,11 @@
     "format": "⏻ ",
     "on-click": "~/dotfiles/scripts/hypr/wlogout.sh"
   },
-  "wlr/workspaces": {
+  "sway/workspaces": {
     "disable-scroll": false,
-    "all-outputs": true,
+    "all-outputs": false,
     "on-click": "activate",
     "format": "{icon}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "persistent_workspaces": {
-      "01": [],
-      "02": [],
-      "03": [],
-      "04": [],
-      "05": [],
-      "06": [],
-      "07": [],
-      "08": [],
-      "09": [],
-      "10": []
-    }
   },
   "idle_inhibitor": {
     "format": "<span color=\"#ffffff\">{icon}</span>",
@@ -104,15 +90,15 @@
     "today-format": "<span color='#4EC9B0'><b><u>{}</u></b></span>",
     "calendar": {
       "mode": "month",
-      "mode-mon-col": 3,
+      "mode-mon-col": 6,
       "on-scroll": 1,
       "on-click-right": "mode",
       "format": {
         "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='white'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#2BC7EB'><b><u>{}</u></b></span>"
+        "today": "<span color='#4EC9B0'><b><u>{}</u></b></span>"
       }
     },
     "actions": {
