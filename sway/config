@@ -25,7 +25,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wallpapers/anothawave.png fill
+output * bg ~/Pictures/wallpapers/wallhaven-7pr36e.jpg fill
 #
 # Example configuration:
 #
@@ -74,6 +74,9 @@ input type:keyboard xkb_options caps:escape
 
     # Start your launcher
     bindsym $mod+d exec ~/dotfiles/scripts/rofi-wayland/applauncher.sh
+
+    # Toggle waybar
+    bindsym $mod+b exec ~/dotfiles/scripts/waybar/hide-swaybar.sh
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -141,16 +144,9 @@ input type:keyboard xkb_options caps:escape
 #
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
-
-    # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+   # Switch the current container between different layout styles
+    bindsym $mod+shift+t layout tabbed
+    bindsym $mod+shift+s layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -201,21 +197,21 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position bottom
-    font = "RobotoMono Nerd Font 15 \`wght`=200"
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
-
+# bar {
+#     position bottom
+#     font = "RobotoMono Nerd Font 15 \`wght`=200"
+#
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+#
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+#
 # Set gaps between windows
 gaps inner 3
 gaps outer 5
