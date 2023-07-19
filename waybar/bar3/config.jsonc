@@ -2,7 +2,7 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 33,
+  "height": 34,
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [

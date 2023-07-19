@@ -4,7 +4,7 @@
   min-height: 0;
   /* font-family: "RobotoMono Nerd Font"; */
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 14;
+  font-size: 15;
   font-weight: 500;
 }
 
@@ -24,7 +24,7 @@ tooltip label {
 }
 
 #workspaces button {
-  padding: 0px 4px;
+  padding: 0px 5px;
   color: #c9c9c9;
   border: none;
 }
@@ -108,8 +108,8 @@ tooltip label {
 #custom-separator {
   margin: 0px;
   padding: 0px;
-  margin-right: 11px;
-  margin-left: 11px;
+  margin-right: 10px;
+  margin-left: 10px;
   color: #abb0ab;
 }
 
