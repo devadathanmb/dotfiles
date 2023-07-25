@@ -1,0 +1,28 @@
+#! /usr/bin/env bash
+
+LOFI_LINK="https://www.youtube.com/watch?v=jfKfPfyJRdk"
+SYNTHWAVE_LINK="https://www.youtube.com/watch?v=4xDzrJKXOOY"
+
+# mpv $STREAM_LINK --no-video 2>/dev/null
+
+function lofi(){
+    notify-send "Lofi time 🎹"
+    mpv $LOFI_LINK --no-video --msg-level=all=no,statusline=status --volume=30
+}
+
+function synthwave(){
+    notify-send "Synthwave time 🎹"
+    mpv $SYNTHWAVE_LINK --no-video --msg-level=all=no,statusline=status --volume=30
+}
+
+function main(){
+    if [[ $1 == "synthwave" ]]; then
+        synthwave
+    elif [[ $1 == "lofi" ]]; then
+        lofi
+    else
+        echo "Usage: beats [synthwave|lofi]"
+    fi
+}
+
+main $1
