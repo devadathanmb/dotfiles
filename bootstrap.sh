@@ -89,6 +89,7 @@ devel_packages=(
     ngrok
     zsh
     docker
+    docker-compose
     man
     kitty
     foot
