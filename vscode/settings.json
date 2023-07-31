@@ -707,5 +707,5 @@
     "editor.formatOnType": true
   },
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Default High Contrast"
+  "workbench.colorTheme": "Default Dark Modern"
 }

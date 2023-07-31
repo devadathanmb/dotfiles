@@ -2,7 +2,7 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 34,
+  "height": 33,
   "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
@@ -100,7 +100,7 @@
     "interval": 1,
     "format": "{:%R}",
     "format-alt": "{:%A, %d/%m/%Y}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
     "today-format": "<span color='#4EC9B0'><b><u>{}</u></b></span>",
     "calendar": {
       "mode": "month",

@@ -26,9 +26,9 @@ set wildmenu
 set wildmode=list:longest
 
 " Tab settings
-set tabstop=4 "tabs expand to 4 spaces
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2 "tabs expand to 4 spaces
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Split properly
@@ -60,4 +60,4 @@ augroup END
 
 " Nerdtree keymappings
 
-nmap <leader>e :NERDTreeToggle<CR>
+nmap <leader>e :Vexplore<CR>

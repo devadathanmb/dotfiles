@@ -4,19 +4,21 @@
   min-height: 0;
   /* font-family: "RobotoMono Nerd Font"; */
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 15;
+  /* font-family: "ComicCodeLigatures Nerd Font Medium"; */
+  font-size: 14;
   font-weight: 500;
 }
 
 window#waybar {
-  background: rgba(8, 7, 7, 0.83);
+  /* background: rgba(8, 7, 7, 0.83); */
+  background: #000000;
 }
 
 tooltip {
   margin: 10px;
   border-radius: 10px;
   border: 1px solid white;
-  background: rgba(8, 7, 7, 0.8);
+  background: #000000;
 }
 
 tooltip label {
@@ -31,6 +33,8 @@ tooltip label {
 
 #workspaces button.active {
   color: #ffffff;
+  background-color: #636362;
+  border-radius: 5px;
   /* box-shadow: inset 0 5px #ffffff; */
   /* border-top: 1px solid white; */
 }
@@ -38,6 +42,8 @@ tooltip label {
 #workspaces button:hover {
   color: #f0f0f0;
   background: inherit;
+  background-color: #636362;
+  border-radius: 5px;
 }
 
 @keyframes blink {
@@ -108,8 +114,8 @@ tooltip label {
 #custom-separator {
   margin: 0px;
   padding: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 9px;
+  margin-left: 9px;
   color: #abb0ab;
 }
 
