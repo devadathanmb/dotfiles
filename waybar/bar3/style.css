@@ -6,7 +6,7 @@
   font-family: "JetBrainsMono Nerd Font";
   /* font-family: "ComicCodeLigatures Nerd Font Medium"; */
   font-size: 14;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 window#waybar {

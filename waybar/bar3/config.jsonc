@@ -3,7 +3,7 @@
   "layer": "top",
   "position": "top",
   "height": 33,
-  "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
+  "modules-left": ["wlr/workspaces", "custom/separator", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -57,8 +57,8 @@
   "idle_inhibitor": {
     "format": "<span color=\"#ffffff\">{icon}</span>",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated": "",
+      "deactivated": " "
     },
     "timeout": 30.5
   },
