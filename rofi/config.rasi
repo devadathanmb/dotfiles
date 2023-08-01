@@ -42,10 +42,9 @@ mode-switcher {
 window {
     height: 500px;
     width: 30%;
-    border: 0px;
     border-radius: 5px;
-    border: 0px 0px 8px 0px;
-    border-color: @window-underline;
+    border: 2px;
+    border-color: #569CD6;
     background-color: @window;
     padding: 0px 0px 0px 0px;
     fullscreen: false;
@@ -83,13 +82,13 @@ entry {
     text-color: @fg-col;
     background-color: @blank;
     border-radius: 3px;
-    border: 0px 0px 8px 0px;
-    border-color: @blank-underline;
+    border: 0px 0px 0px 0px;
+    border-color: none;
 }
 
 listview {
     border: 0px 0px 0px;
-    margin: 27px 10px -13px 10px;
+    margin: 10px 10px -13px 10px;
     background-color: #00000000;
     columns: 1;
 }
