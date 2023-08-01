@@ -34,7 +34,8 @@ function set_wallpaper(){
   then
     killall swaybg
   fi
-  notify-send -t 350 "🐧 Changing wallpaper"
+  # notify-send -t 350 "🐧 Changing wallpaper"
+  dunstify -I "$CACHE_DIR/current-wall" -t 350 "🐧 Changing wallpaper"
   swaybg -i "$CACHE_DIR/current-wall" --mode fill &
 }
 
