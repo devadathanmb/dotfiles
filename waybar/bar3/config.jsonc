@@ -24,7 +24,8 @@
   ],
   // Modules
   "custom/separator": {
-    "format": "|"
+    "format": "|",
+    "tooltip": false
   },
   "hyprland/window": {
     "max-length": 30
