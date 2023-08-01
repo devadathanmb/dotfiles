@@ -82,7 +82,6 @@ devel_packages=(
     system-config-printer
     network-manager-applet
     fzf
-    visual-studio-code-bin
     # google-chrome
     brave-bin
     ngrok
@@ -90,6 +89,7 @@ devel_packages=(
     docker
     docker-compose
     man
+    man-pages
     kitty
     foot
     jdk-openjdk
@@ -114,6 +114,7 @@ necessary_packages=(
     htop
     btop
     telegram-desktop-bin
+    webcord-bin
     mpv
     yt-dlp
     timeshift
@@ -129,7 +130,6 @@ necessary_packages=(
 
 other_packages=(
     cava
-    cli-visualizer
     neofetch
     cowsay
 )
