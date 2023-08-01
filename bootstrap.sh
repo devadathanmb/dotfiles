@@ -1,6 +1,5 @@
 hypr_packages=(
     seatd
-    orchis-theme-git
     nautilus
     adwaita-gtk
     qt5ct
@@ -42,7 +41,7 @@ hypr_packages=(
     polkit-kde-agent
     udisks2
     udiskie
-    hyprland
+    hyprland-git
     xdg-desktop-portal-hyprland
     waybar-hyprland-git
     swayidle
