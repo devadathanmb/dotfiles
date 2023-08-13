@@ -9,10 +9,10 @@
     tab-selected: #121111;
     fg-col: #d4d4d4;
     fg-col2: #121111;
-    blank: #1f2223;
+    blank: #272727;
     blank-underline: #191c1d;
     button: #0A7ACA;
     button-underline: #0A7ACA;
-    window: #303030;
+    window: #0f0f0f;
     window-underline: #272727;
 }
