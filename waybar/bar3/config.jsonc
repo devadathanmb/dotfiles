@@ -3,7 +3,7 @@
   "layer": "top",
   "position": "top",
   "height": 33,
-  "modules-left": ["wlr/workspaces", "custom/separator", "custom/waybar-mpris"],
+  "modules-left": ["wlr/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -26,6 +26,11 @@
   "custom/separator": {
     "format": "|",
     "tooltip": false
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5} {usage:>2}%",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
   },
   "hyprland/window": {
     "max-length": 30
@@ -171,7 +176,7 @@
   },
   "custom/waybar-mpris": {
     "return-type": "json",
-    "exec": "waybar-mpris --position --autofocus --play   --pause 󰏤",
+    "exec": "waybar-mpris --autofocus --position --play   --pause 󰏤",
     "on-click": "waybar-mpris --send toggle",
     "max-length": 35,
     // This option will switch between players on right click.
