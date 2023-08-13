@@ -1,0 +1,38 @@
+#! /usr/bin/env bash
+
+# Set screenshot directory
+SCREENSHOT_DIR="$HOME/Pictures/Screenshots/"
+if [[ ! -d $SCREENSHOT_DIR ]]
+then
+    mkdir -p "$SCREENSHOT_DIR"
+fi
+
+# Set filename
+FILENAME="$SCREENSHOT_DIR/$(date +%Y-%m-%d-T-%H-%M-%S).png"
+
+# Wrapper script to take screenshots
+FILENAME="$SCREENSHOT_DIR/$(date +%Y-%m-%d-T-%H-%M-%S).png"
+
+function area(){
+    grimblast copysave area $FILENAME && dunstify -I "$FILENAME" "Screenshot taken and saved"
+}
+
+function screen(){
+    grimblast copysave screen $FILENAME && dunstify -I "$FILENAME" "Screenshot taken and saved"
+}
+
+function main(){
+    case $1 in
+        area)
+            area
+            ;;
+        screen)
+            screen
+            ;;
+        *)
+            echo "Usage: screenshot [area|screen]"
+            ;;
+    esac
+}
+
+main $1

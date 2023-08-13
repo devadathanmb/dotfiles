@@ -47,22 +47,22 @@ function count_down(){
 function start_recording(){
     if [[ "$chosen" == "$record_screen_with_audio" ]]; then
         count_down
-	pkill -RTMIN+8 waybar
-        wf-recorder -f "$OUTPUT_FILE" --audio=alsa_output.pci-0000_03_00.6.analog-stereo.monitor
+        pkill -RTMIN+8 waybar
+        wf-recorder -t -f "$OUTPUT_FILE" --audio=alsa_output.pci-0000_03_00.6.analog-stereo.monitor
     elif [[ "$chosen" == "$record_screen_without_audio" ]]; then
         count_down
-	pkill -RTMIN+8 waybar
-        wf-recorder -f "$OUTPUT_FILE"
+        pkill -RTMIN+8 waybar
+        wf-recorder -t -f "$OUTPUT_FILE"
     elif [[ "$chosen" == "$record_selection_with_audio" ]]; then
         geometry="$(slurp)"
         count_down
-	pkill -RTMIN+8 waybar
-        wf-recorder -g "$geometry" -f "$OUTPUT_FILE" --audio=alsa_output.pci-0000_03_00.6.analog-stereo.monitor
+        pkill -RTMIN+8 waybar
+        wf-recorder -t -g "$geometry" -f "$OUTPUT_FILE" --audio=alsa_output.pci-0000_03_00.6.analog-stereo.monitor
     elif [[ "$chosen" == "$record_selection_without_audio" ]]; then
         geometry="$(slurp)"
         count_down
-	pkill -RTMIN+8 waybar
-        wf-recorder -g "$geometry" -f "$OUTPUT_FILE"
+        pkill -RTMIN+8 waybar
+        wf-recorder -t -g "$geometry" -f "$OUTPUT_FILE"
     elif [[ "$chosen" == "$stop_recording" ]]; then
         stop_recording
     fi
