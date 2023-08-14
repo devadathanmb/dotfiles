@@ -99,6 +99,8 @@ devel_packages=(
 )
 
 necessary_packages=(
+    bluez
+    bluez-utils
     playerctl
     ffmpeg
     obs-studio
