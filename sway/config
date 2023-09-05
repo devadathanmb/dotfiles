@@ -25,7 +25,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wallpapers/wallhaven-7pr36e.jpg fill
+output * bg ~/.cache/current-wall fill
 #
 # Example configuration:
 #
@@ -144,10 +144,6 @@ input type:keyboard xkb_options caps:escape
 #
 # Layout stuff:
 #
-   # Switch the current container between different layout styles
-    bindsym $mod+shift+t layout tabbed
-    bindsym $mod+shift+s layout toggle split
-
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 

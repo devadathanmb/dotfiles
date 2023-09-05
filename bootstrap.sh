@@ -43,7 +43,8 @@ hypr_packages=(
     udiskie
     hyprland-git
     xdg-desktop-portal-hyprland
-    waybar-hyprland-git
+    # waybar-hyprland-git
+    waybar
     swayidle
     swaylock-effects
 )
