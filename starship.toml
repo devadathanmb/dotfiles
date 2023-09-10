@@ -91,6 +91,7 @@ read_only = " "
 
 [git_branch]
 style = "bold #569CD6"
+symbol = " "
 
 [git_metrics]
 disabled = false
