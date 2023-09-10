@@ -8,11 +8,16 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 <br>
 
-![2023-06-17-T-11-29-26](https://github.com/devadathanmb/dotfiles/assets/84301852/8716a640-74e7-4134-9fca-92ca9da75d6d)
+![2023-06-17-T-11-29-26](https://i.imgur.com/JzH27SL.png)
 
 <br>
 
-![2023-06-17-T-16-15-12](https://github.com/devadathanmb/dotfiles/assets/84301852/5d846bdb-f014-40ff-8bc7-9b4808f02ccf)
+![2023-06-17-T-16-15-12](https://i.imgur.com/su9sDzt.png)
+
+<br>
+
+![2023-06-17-T-16-15-12](https://i.imgur.com/AfPGjfa.png)
+
 
 
 <br>
