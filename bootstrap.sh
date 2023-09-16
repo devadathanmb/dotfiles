@@ -1,6 +1,6 @@
 hypr_packages=(
     seatd
-    nautilus
+    nemo
     adwaita-gtk
     qt5ct
     qt6ct

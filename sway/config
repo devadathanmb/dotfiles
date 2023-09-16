@@ -5,6 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 exec --no-startup-id autotiling
+exec --no-startup-id dunst
 
 ### Variables
 #
@@ -103,6 +104,8 @@ input type:keyboard xkb_options caps:escape
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
+
+    bindsym $mod+n workspace next_on_output
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left

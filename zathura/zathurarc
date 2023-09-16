@@ -5,19 +5,19 @@ set selection-clipboard clipboard
 map <C-i> recolor
 
 # vscode dark zathura colorscheme
-set default-bg                  "#0f0f0f"
+set default-bg                  "#121213"
 set default-fg                  "#d4d4d4"
 
-set statusbar-bg                "#0f0f0f"
+set statusbar-bg                "#121213"
 set statusbar-fg                "#808080"
 
-set inputbar-bg                 "#0f0f0f"
+set inputbar-bg                 "#121213"
 set inputbar-fg                 "#d4d4d4"
 
-set notification-error-bg       "#0f0f0f"
+set notification-error-bg       "#121213"
 set notification-error-fg       "#f44747"
 
-set notification-warning-bg     "#0f0f0f"
+set notification-warning-bg     "#121213"
 set notification-warning-fg     "#d7ba7d"
 
 set highlight-color             "#007acc"
@@ -26,17 +26,17 @@ set highlight-active-color      "#d4d4d4"
 set completion-highlight-fg     "#56b6c2"
 set completion-highlight-bg     false
 
-set completion-bg               "#0f0f0f"
+set completion-bg               "#121213"
 set completion-fg               "#d4d4d4"
 
-set notification-bg             "#0f0f0f"
+set notification-bg             "#121213"
 set notification-fg             "#d4d4d4"
 
-set recolor-lightcolor          "#0f0f0f"
+set recolor-lightcolor          "#121213"
 set recolor-darkcolor           "#d4d4d4"
 
 set index-fg                    "#d4d4d4"
-set index-bg                    "#0f0f0f"
+set index-bg                    "#121213"
 
 set index-active-fg             "#56b6c2"
 set index-active-bg             false

@@ -19,7 +19,7 @@ plug "hlissner/zsh-autopair"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/exa"
 plug "zap-zsh/vim"
-plug "zap-zsh/zap-prompt"
+# plug "zap-zsh/zap-prompt"
 plug "zap-zsh/fzf"
 plug "zsh-users/zsh-syntax-highlighting"
 # plug "Freed-Wu/fzf-tab-source"
@@ -43,7 +43,7 @@ export BROWSER="brave"
 # Set colors with pywal
 # (/bin/cat ~/.cache/wal/sequences &)
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
 
@@ -62,4 +62,4 @@ function nvims() {
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
