@@ -97,6 +97,7 @@ devel_packages=(
     python-virtualenv
     python-neovim
     python-black
+    dnsutils
 )
 
 necessary_packages=(

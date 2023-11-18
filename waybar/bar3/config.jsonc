@@ -2,7 +2,7 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 33,
+  "height": 31,
   "modules-left": ["hyprland/workspaces", "custom/waybar-mpris"],
   "modules-center": ["clock"],
   "modules-right": [
@@ -15,7 +15,7 @@
     "pulseaudio#microphone",
     "custom/separator",
     "network",
-    "bluetooth",
+    // "bluetooth",
     "custom/recorder",
     "idle_inhibitor",
     "custom/separator",
@@ -81,9 +81,9 @@
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
     "format": " ",
-    // "format-disabled": "", // an empty format will hide the module
+    "format-disabled": "", // an empty format will hide the module
     "format-connected": "󰂴 ",
-    "format-disabled": "󰂲 ",
+    // "format-disabled": "󰂲 ",
     "tooltip-format": "{controller_alias}",
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": " {device_alias} {device_battery_percentage}%"
@@ -93,9 +93,9 @@
     "device": "intel_backlight",
     "format": "<span color=\"#ffffff\">{icon}</span> {percent}%",
     // "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
-    // "format-icons": ["󰖨"],
+    "format-icons": ["󰖨"],
     "tooltip-format": "{percent}%",
-    "format-icons": ["󰃜", "󰃛", "󰃚"],
+    // "format-icons": ["󰃜", "󰃛", "󰃚"],
     "on-scroll-up": "light -A 1%+",
     "on-scroll-down": "light -U 1%-"
   },

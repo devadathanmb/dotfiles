@@ -33,7 +33,7 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 
 # Use kitten to ssh if using kitty
 if [[ $TERM == "xterm-kitty" ]]; then
-  alias ssh="kitty +kitten ssh"
+    alias ssh="kitty +kitten ssh"
 fi
 
 # Other aliases
@@ -50,35 +50,35 @@ alias hypr="nvim ~/.config/hypr"
 
 # Function to open pdf files in zathura
 function pdf(){
-  zathura "$@" &;
-  disown;
+    zathura "$@" &;
+    disown;
 }
 
 # Function to open pptx files in zaread
 function ppt(){
-  zaread "$@" &;
-  disown;
+    zaread "$@" &;
+    disown;
 }
 
 # Function to post stuff to 0x0.st
 function genlink(){
-  # Check if any arguments are passed
-  if [[ $# -eq 0 ]]
-  then
-    echo "Usage: genlink file"
-  else
-    curl -F "file=@$1" https://0x0.st
-  fi
+    # Check if any arguments are passed
+    if [[ $# -eq 0 ]]
+    then
+        echo "Usage: genlink file"
+    else
+        curl -F "file=@$1" https://0x0.st
+    fi
 }
 
-# Launch neovim 
+# Launch neovim
 function nv(){
-  if [[ $# -eq 0 ]]
-  then
-    nvim $(pwd)
-  else
-    nvim $1
-  fi
+    if [[ $# -eq 0 ]]
+    then
+        nvim $(pwd)
+    else
+        nvim $1
+    fi
 }
 
 # Lazy git
@@ -86,12 +86,12 @@ alias lgit="lazygit"
 
 # Fzf repos
 function repos(){
-  cd $(find $HOME/repos -maxdepth 1 -type d | fzf)
+    cd $(find $HOME/repos -maxdepth 1 -type d | fzf)
 }
 
 # Fzf notes
 function notes(){
-  cd $(find $HOME/notes -type d -not -path "*/.*" | fzf)
+    cd $(find $HOME/notes -type d -not -path "*/.*" | fzf)
 }
 
 # Notes
@@ -101,12 +101,15 @@ alias notesup="cd $HOME/notes && git add . && git commit -m \"Update notes\" && 
 alias dotdir="cd $HOME/dotfiles/"
 alias vimdots="nvim $HOME/entevim/"
 
+# leetcode backup
+alias leetback="cd $HOME/repos/leetcode/ && git add . && git commit -m \"backup\" && git push origin main"
+
 # Fzf dots
 function dots(){
-  nvim $(find $HOME/dotfiles -maxdepth 1 | fzf)
+    nvim $(find $HOME/dotfiles -maxdepth 1 | fzf)
 }
 
-# Use pywal generated colors for cava 
+# Use pywal generated colors for cava
 if [[ -e ~/.cache/wal/cava ]]
 then alias cava="cava -p ~/.cache/wal/cava"
 fi

@@ -10,14 +10,18 @@
 }
 
 window#waybar {
-  background: rgba(8, 7, 7, 1);
+  /* background: rgba(0, 0, 0, 0.9); */
+  /* background: #0a0a0a; */
+  background: #000000;
 }
 
 tooltip {
   margin: 3px;
   border-radius: 3px;
   border: 2px solid white;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.5);
+  background: #0a0a0a;
+  /* background: #000000; */
 }
 
 tooltip label {

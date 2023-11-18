@@ -97,9 +97,9 @@ element {
     padding: 12px 12px 12px 12px;
     background-color: @blank;
     text-color: @fg-col;
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 5px 0px;
     border-radius: 3px;
-    border: 0px 0px 8px 0px;
+    border: 0px 0px 0px 0px;
     border-color: @blank-underline;
 }
 

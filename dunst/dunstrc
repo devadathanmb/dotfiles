@@ -90,7 +90,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ffffff"
+    frame_color = "#d4d4d4"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a korder
@@ -245,7 +245,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 3
+    corner_radius = 8
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -407,6 +407,10 @@
 #[espeak]
 #    summary = "*"
 #    script = dunst_espeak.sh
+
+[skip-rule] 
+appname=Spotify
+skip_display=true
 
 #[script-test]
 #    summary = "*script*"

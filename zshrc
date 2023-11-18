@@ -27,7 +27,7 @@ plug "zsh-users/zsh-syntax-highlighting"
 # plug "zap-zsh/atmachine-prompt"
 plug "Rishabh672003/zsh-autoswitch-virtualenv"
 # plug "romkatv/powerlevel10k"
-# plug "devadathanmb/arch-prompt"
+plug "devadathanmb/arch-prompt"
 
 # Normal files to source
 plug "$HOME/.config/zsh/zsh-exports.zsh"
@@ -43,7 +43,7 @@ export BROWSER="brave"
 # Set colors with pywal
 # (/bin/cat ~/.cache/wal/sequences &)
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
 
@@ -63,3 +63,6 @@ function nvims() {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
