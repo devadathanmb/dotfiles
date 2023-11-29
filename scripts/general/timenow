@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 time_now=$(date +"%T")
-notify-send "Time now is $time_now"
+today=$(date -u +%d-%m-%Y)
+notify-send "Time now is $time_now ($today)"
