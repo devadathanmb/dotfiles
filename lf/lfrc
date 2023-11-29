@@ -20,9 +20,17 @@ cmd copypicture ${{
   wl-copy --type image/png < $f
 }}
 
+cmd upload ${{
+  link=$(genlink $f)
+  echo "$link"
+  wl-copy $link
+  notify-send "File successfully uploaded. Available at $link"
+}}
+
 # Functions
 map bg setwallpaper
 map bc copypicture
+map up upload
 
 # Movement
 map gd cd ~/Downloads
