@@ -3,7 +3,7 @@ schemes:
   codelight: &light
     primary:
       background: '#ffffff'
-      foreground: '#1e1e1e'
+      foreground: '#000000'
 
     cursor:
       text: '#d4d4d4'
@@ -32,7 +32,7 @@ schemes:
   codedark: &dark
 
     primary:
-      background: '#1e1e1e'
+      background: '#000000'
       foreground: '#d4d4d4'
 
     cursor:

@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-OPACITY="0.86"
+OPACITY="0.89"
 
 turn_on_blur(){
   # Change background opacity of kitty
