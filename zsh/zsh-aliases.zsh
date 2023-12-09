@@ -65,18 +65,23 @@ function genlink(){
     # Check if any arguments are passed
     if [[ $# -eq 0 ]]
     then
-        echo "Usage: genlink file"
+        echo "Usage: genlink <file> [--secret]"
     else
-      url=$(curl -F "file=@$1" https://0x0.st --silent)
-      if [ $? -eq 0 ]
-      then
-        notify-send "Link generated : $url"
-        echo $url | wl-copy
-        qrc
-      else
-        notify-send "Error while generating link"
-        echo "Error while generating link"
-      fi
+        if [[ "$2" == "--secret" ]]; then
+            url=$(curl -F "file=@$1" -Fsecret= https://0x0.st --silent)
+        else
+            url=$(curl -F "file=@$1" https://0x0.st --silent)
+        fi
+
+        if [ $? -eq 0 ]
+        then
+            notify-send "Link generated: $url"
+            echo $url | wl-copy
+            qrc
+        else
+            notify-send "Error while generating link"
+            echo "Error while generating link"
+        fi
     fi
 }
 
