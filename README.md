@@ -8,17 +8,23 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 <br>
 
-![2023-06-17-T-11-29-26](https://i.imgur.com/JzH27SL.png)
+![image](https://i.imgur.com/eeSAL7y.png)
 
 <br>
 
-![2023-06-17-T-16-15-12](https://i.imgur.com/su9sDzt.png)
+![image](https://i.imgur.com/bAL5Cb1.png)
 
 <br>
 
-![2023-06-17-T-16-15-12](https://i.imgur.com/AfPGjfa.png)
+![image](https://i.imgur.com/aaqCvBc.png)
 
+<br>
 
+![image](https://i.imgur.com/rVpdIl5.png)
+
+<br>
+
+![image](https://i.imgur.com/djHMRw2.png)
 
 <br>
 
@@ -41,9 +47,9 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 - [Mpv](https://github.com/mpv-player/mpv) - Video player
 - [Dunst](https://github.com/dunst-project/dunst) - A light weight notification daemon
 - [Zathura](https://github.com/pwmt/zathura) - Document viewer
-- [Ranger](https://github.com/ranger/ranger) - TUI filemanager
-- [Nautilus](https://gitlab.gnome.org/GNOME/nautilus) - GUI filemanager
-- [Neovim](https://github.com/neovim/neovim) - Text editor
+- [lf](https://github.com/gokcehan/lf) - TUI filemanager
+- [Nemo](https://github.com/linuxmint/nemo) - GUI filemanager
+- [Neovim](https://github.com/neovim/neovim) - Text editor / IDE
 - [ly](https://github.com/fairyglade/ly) - A simple TUI display manager
 
 ## Hyprland Keybindings Cheatsheet
@@ -53,7 +59,7 @@ This cheatsheet contains all the keybindings that I use in my hyprland config. M
 ### General
 
 - `SUPER + Enter` - Launch terminal
-- `SUPER + T` - Launch terminal
+- `SUPER + T` - Notify time and date
 - `SUPER + space` - Toggle between tiling and floating mode
 - `SUPER + q` - Close active window
 - `SUPER + [1-9]` - Move to nth workspace
