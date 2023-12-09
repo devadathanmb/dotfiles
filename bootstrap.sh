@@ -191,7 +191,7 @@ install_packages(){
 config_system(){
 
     # Setup groups
-    usermod -aG cups,docker,seat,video,audio devadathan
+    sudo usermod -aG cups,docker,seat,video,audio devadathan
 
     # Backlight
     if [[ ! -d "/etc/udev/rules.d/" ]]
