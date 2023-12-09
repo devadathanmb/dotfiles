@@ -67,7 +67,16 @@ function genlink(){
     then
         echo "Usage: genlink file"
     else
-        curl -F "file=@$1" https://0x0.st
+      url=$(curl -F "file=@$1" https://0x0.st --silent)
+      if [ $? -eq 0 ]
+      then
+        notify-send "Link generated : $url"
+        echo $url | wl-copy
+        qrc
+      else
+        notify-send "Error while generating link"
+        echo "Error while generating link"
+      fi
     fi
 }
 
