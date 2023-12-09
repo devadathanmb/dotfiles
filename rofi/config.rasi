@@ -67,7 +67,7 @@ prompt {
     text-color: @bg-col;
     border-radius: 3px;
     margin: 8px 0px 0px 8px;
-    border: 0px 0px 8px 0px;
+    border: 0px 0px 0px 0px;
     border-color: @button-underline;
 }
 
@@ -112,7 +112,7 @@ element selected {
     background-color: @button;
     text-color: @fg-col2;
     border-radius: 3px;
-    border: 0px 0px 8px 0px;
+    border: 0px 0px 0px 0px;
     border-color: @button-underline;
 }
 
@@ -128,7 +128,7 @@ button {
     vertical-align: 0.5; 
     horizontal-align: 0.5;
     border-radius: 3px;
-    border: 0px 0px 8px 0px;
+    border: 0px 0px 0px 0px;
     border-color: @blank-underline;
 }
 
@@ -136,7 +136,7 @@ button selected {
     background-color: @bg-col-light;
     text-color: @tab-selected;
     border-radius: 3px;
-    border: 0px 0px 8px 0px;
+    border: 0px 0px 0px 0px;
     border-color: @button-underline;
 }
 
