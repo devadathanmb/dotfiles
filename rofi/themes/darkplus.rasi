@@ -2,17 +2,17 @@
     bg-col:  #121111;
     bg-col-transparent:  #121111dd;
     bg-col-element:  #121111df;
-    bg-col-light: #0A7ACA;
-    border-col: #0A7ACA;
-    selected-col: #0A7ACA;
-    tab: #0A7ACA;
+    bg-col-light: #bababa;
+    border-col: #bababa;
+    selected-col: #bababa;
+    tab: #bababa;
     tab-selected: #121111;
-    fg-col: #d4d4d4;
+    fg-col: #bababa;
     fg-col2: #121111;
     blank: #272727;
     blank-underline: #191c1d;
-    button: #0A7ACA;
-    button-underline: #0A7ACA;
+    button: #bababa;
+    button-underline: #bababa;
     window: #0f0f0f;
     window-underline: #272727;
 }
