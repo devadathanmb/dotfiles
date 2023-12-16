@@ -42,9 +42,9 @@ mode-switcher {
 window {
     height: 500px;
     width: 30%;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px;
-    border-color: #ffffff;
+    border-color: #d4d4d4;
     background-color: @window;
     padding: 0px 0px 0px 0px;
     fullscreen: false;
