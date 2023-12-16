@@ -27,7 +27,7 @@ hypr_packages=(
     swayimg
     nwg-look-bin
     vimiv
-    rofi-lbonn-wayland-git
+    rofi-lbonn-wayland
     rofi-emoji
     rofi-calc
     hyprpicker
@@ -46,7 +46,7 @@ hypr_packages=(
     # waybar-hyprland-git
     waybar
     swayidle
-    swaylock-effects
+    swaylock-effects-git
 )
 
 devel_packages=(
@@ -83,9 +83,8 @@ devel_packages=(
     system-config-printer
     network-manager-applet
     fzf
-    # google-chrome
+    google-chrome
     brave-bin
-    ngrok
     zsh
     docker
     docker-compose
