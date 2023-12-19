@@ -1,12 +1,14 @@
 hypr_packages=(
     seatd
+    wev
     nemo
     adwaita-gtk
+    papirus-icon-theme
+    bibata-cursor-theme
     qt5ct
     qt6ct
     cliphist
     qt4ct
-    nwg-look
     wl-clipboard
     dunst
     light
@@ -41,9 +43,8 @@ hypr_packages=(
     polkit-kde-agent
     udisks2
     udiskie
-    hyprland-git
+    hyprland
     xdg-desktop-portal-hyprland
-    # waybar-hyprland-git
     waybar
     swayidle
     swaylock-effects-git
