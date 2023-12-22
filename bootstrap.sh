@@ -101,6 +101,8 @@ devel_packages=(
 )
 
 necessary_packages=(
+    qrc
+    acpi
     bluez
     bluez-utils
     playerctl
@@ -199,7 +201,7 @@ config_system(){
         sudo mkdir /etc/udev/rules.d
     fi
     sudo cp $HOME/dotfiles/backlight.rules /etc/udev/rules.d/backlight.rules
-
+    sudo cp $HOME/dotfiles/power.rules /etc/udev/rules.d/power.rules
 }
 
 # Setup fonts
