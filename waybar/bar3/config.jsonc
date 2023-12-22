@@ -10,7 +10,6 @@
     "memory",
     "custom/separator",
     "backlight",
-    "custom/separator",
     "pulseaudio",
     "pulseaudio#microphone",
     "custom/separator",
