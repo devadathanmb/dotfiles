@@ -32,19 +32,19 @@ function music(){
     if [[ "$chosen" == "$play_lofi" ]]
     then
         notify-send "🎹 Playing lofi girl"
-        exec -a "rofi-music" mpv --no-video $LOFI_STREAM --volume=70
+        exec -a "rofi-music" mpv --script=/usr/share/mpv/scripts/mpris.so --no-video $LOFI_STREAM --volume=70
     elif [[ "$chosen" == "$play_chill_hits" ]]
     then
         notify-send "🎹 Playing all time chill hits"
-        exec -a "rofi-music" mpv --no-video "$ALL_TIME_CHILL_HITS" --shuffle --volume=70
+        exec -a "rofi-music" mpv --script=/usr/share/mpv/scripts/mpris.so --no-video "$ALL_TIME_CHILL_HITS" --shuffle --volume=70
     elif [[ "$chosen" == "$play_malayalam_hits" ]]
     then
         notify-send "🎹 Playing malayalam hits"
-        exec -a "rofi-music" mpv --no-video "$ALL_TIME_MALAYALAM_HITS" --shuffle --volume=70
+        exec -a "rofi-music" mpv --script=/usr/share/mpv/scripts/mpris.so --no-video "$ALL_TIME_MALAYALAM_HITS" --shuffle --volume=70
     elif [[ "$chosen" == "$play_hand_picked_hits" ]]
     then
         notify-send "🎹 Playing hand picked hits"
-        exec -a "rofi-music" mpv --no-video "$HAND_PICKED_HITS" --shuffle --volume=70
+        exec -a "rofi-music" mpv --script=/usr/share/mpv/scripts/mpris.so --no-video "$HAND_PICKED_HITS" --shuffle --volume=70
     fi
 }
 
