@@ -12,7 +12,7 @@
 window#waybar {
   /* background: rgba(0, 0, 0, 0.8); */
   /* background: #0a0a0a; */
-  background: #000000;
+  background: #0d0b0b;
 }
 
 tooltip {
@@ -24,13 +24,9 @@ tooltip {
   /* background: #000000; */
 }
 
-tooltip label {
-  /* padding: 5px; */
-}
-
 #workspaces button {
   padding: 0px 5px;
-  color: #c9c9c9;
+  color: #d5c4a1;
   border: none;
 }
 
@@ -75,7 +71,7 @@ tooltip label {
 #pulseaudio,
 #pulseaudio.microphone,
 #battery {
-  color: #ffffff;
+  color: #fbf1c7;
 }
 
 #custom-waybar-mpris {
@@ -137,7 +133,7 @@ tooltip label {
 
 #custom-arch {
   margin-right: 3px;
-  color: #168eca;
+  color: #3abdb0;
   font-weight: bold;
 }
 
