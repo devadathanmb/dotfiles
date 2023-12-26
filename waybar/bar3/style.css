@@ -10,8 +10,6 @@
 }
 
 window#waybar {
-  /* background: rgba(0, 0, 0, 0.8); */
-  /* background: #0a0a0a; */
   background: #0d0b0b;
   /* background: #0f0c0c; */
 }
@@ -19,9 +17,9 @@ window#waybar {
 tooltip {
   margin: 3px;
   border-radius: 3px;
-  border: 2px solid white;
+  border: 2px solid #fbf1c7;
   background: #0d0b0b;
-  /* background: #000000; */
+  color: #fbf1c7;
 }
 
 #workspaces button {
