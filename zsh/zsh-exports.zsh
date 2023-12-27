@@ -10,9 +10,9 @@ export MANWIDTH=999
 export PATH="$HOME/.nvm/versions/node/v21.4.0/bin/":$PATH
 
 # Bat cat theme
-export BAT_THEME="Visual Studio Dark+"
+export BAT_THEME="gruvbox-dark"
 
-# # Flutter 
+# # Flutter
 # if [[ -e "/opt/flutter" ]]
 # then
 #     export PATH=$PATH:"/opt/flutter/bin"
