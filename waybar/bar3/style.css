@@ -12,15 +12,15 @@
 window#waybar {
   /* background: rgba(0, 0, 0, 0.8); */
   /* background: #0a0a0a; */
-  background: #000000;
+  /* background: #000000; */
+  background: #04070d;
 }
 
 tooltip {
   margin: 3px;
   border-radius: 3px;
   border: 2px solid white;
-  background: rgba(0, 0, 0, 0.5);
-  background: #0a0a0a;
+  background: #04070d;
   /* background: #000000; */
 }
 
@@ -98,6 +98,10 @@ tooltip label {
 #idle_inhibitor {
   /* margin-right: 11px; */
   margin-left: 0;
+}
+
+#custom-arch {
+  color: #409eff;
 }
 
 #network,

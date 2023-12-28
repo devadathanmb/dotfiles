@@ -23,7 +23,7 @@ configuration {
     kb-mode-next: "Control+l";
 }
 
-@theme "themes/darkplus"
+@theme "themes/github"
 
 element-text {
     background-color: #00000000;
@@ -44,7 +44,7 @@ window {
     width: 30%;
     border-radius: 3px;
     border: 1px;
-    border-color: #d4d4d4;
+    border-color: #58A6FF;
     background-color: @window;
     padding: 0px 0px 0px 0px;
     fullscreen: false;

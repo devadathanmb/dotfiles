@@ -2,17 +2,17 @@
     bg-col:  #121111;
     bg-col-transparent:  #121111dd;
     bg-col-element:  #121111df;
-    bg-col-light: #bababa;
-    border-col: #bababa;
-    selected-col: #bababa;
-    tab: #bababa;
+    bg-col-light: #409EFF;
+    border-col: #409EFF;
+    selected-col: #409EFF;
+    tab: #409EFF;
     tab-selected: #121111;
-    fg-col: #bababa;
-    fg-col2: #121111;
-    blank: #272727;
+    fg-col: #409EFF;
+    fg-col2: #0D1117;
+    blank: #0D1117;
     blank-underline: #191c1d;
-    button: #bababa;
-    button-underline: #bababa;
+    button: #409EFF;
+    button-underline: #409EFF;
     window: #0f0f0f;
-    window-underline: #272727;
+    window-underline: #ffffff;
 }
