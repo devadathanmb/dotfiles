@@ -176,9 +176,9 @@ source = auto
  gradient = 1
  gradient_count = 3
 
-gradient_color_1 = "#777777"
-gradient_color_2 = "#bbbbbb"
-gradient_color_3 = "#d4d4d4"
+gradient_color_1 = "#409EFF"
+gradient_color_2 = "#B87FFF"
+gradient_color_3 = "#EF6EB1"
 # 333333, #555555, #777777, #999999, #BBBBBB, #DDDDDD
 # gradient_color_1 = "#569cd6"
 # gradient_color_2 = "#2CC4DD"

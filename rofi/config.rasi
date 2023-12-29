@@ -80,7 +80,7 @@ entry {
     padding: 12px 13px -4px 11px;
     margin: 8px 8px 0px 8px;
     text-color: @fg-col;
-    background-color: @blank;
+    background-color: @entry;
     border-radius: 3px;
     border: 0px 0px 0px 0px;
     border-color: none;

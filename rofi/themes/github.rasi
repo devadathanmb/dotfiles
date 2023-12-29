@@ -15,4 +15,5 @@
     button-underline: #218BFF;
     window: #04070D;
     window-underline: #ffffff;
+    entry: #0D1117;
 }
