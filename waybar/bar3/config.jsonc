@@ -30,7 +30,10 @@
   "custom/arch": {
     "format": "  ",
     "tooltip": false,
-    "on-click": "sleep 0.1 && ~/dotfiles/scripts/rofi-wayland/applauncher.sh"
+    "on-click": "sleep 0.1 && ~/dotfiles/scripts/rofi-wayland/applauncher.sh",
+    "on-click-right": "exec ~/dotfiles/scripts/hypr/wallpaper.sh -r",
+    "on-scroll-up": "exec ~/dotfiles/scripts/hypr/wallpaper.sh -c",
+    "on-scroll-down": "exec ~/dotfiles/scripts/hypr/wallpaper.sh -b"
   },
   "cpu": {
     "interval": 1,
