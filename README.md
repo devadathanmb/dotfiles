@@ -8,32 +8,22 @@ These dotfiles are managed using [Dotbot](https://github.com/anishathalye/dotbot
 
 <br>
 
-![image](https://i.imgur.com/eeSAL7y.png)
+![image](https://i.imgur.com/2KFtjAz.png)
 
 <br>
 
-![image](https://i.imgur.com/bAL5Cb1.png)
+![image](https://i.imgur.com/Dd3NGrg.png)
 
 <br>
 
-![image](https://i.imgur.com/aaqCvBc.png)
+![image](https://i.imgur.com/ZnQ2wTf.png)
 
 <br>
-
-![image](https://i.imgur.com/rVpdIl5.png)
-
-<br>
-
-![image](https://i.imgur.com/djHMRw2.png)
-
-<br>
-
 
 ## Stuff I use
 
 - [Hyprland](https://hyprland.org/) - An awesome wl-roots based wayland compositor
 - [Waybar](https://github.com/Alexays/Waybar) - Bar for wl-roots based wayland compositors
-- [Kitty](https://sw.kovidgoyal.net/kitty/) - Terminal emulator
 - [Foot](https://codeberg.org/dnkl/foot) - A minimal wayland native terminal emulator
 - [Zsh](https://www.zsh.org/) - Shell
 - [Zap Zsh](https://github.com/zap-zsh/zap) - Zsh plugin manager
@@ -76,8 +66,8 @@ This cheatsheet contains all the keybindings that I use in my hyprland config. M
 - `SUPER + SHIFT + n` - Move active window to next free workspace
 - `SUPER + p` - Screenshot menu
 - `SUPER + SHIFT + r` - Screen recording menu
-- `SUPER + {h, j, k, l}` - Move window focus (Vim style) 
-- `SUPER + SHIFT + {h, j, k, l}` - Move window (Vim style) 
+- `SUPER + {h, j, k, l}` - Move window focus (Vim style)
+- `SUPER + SHIFT + {h, j, k, l}` - Move window (Vim style)
 - `SUPER + F` - Toggle fullscreen
 - `SUPER + b` - Toggle waybar
 - `SUPER + SHIFT + b` - Reload waybar
@@ -96,7 +86,7 @@ This cheatsheet contains all the keybindings that I use in my hyprland config. M
 - `SUPER + ALT + l` - Lock screen
 - `CTRL + SUPER + h` - Move to first existing workspace
 - `CTRL + SUPER + h` - Move to last existing workspace
-- `SUPER + V` - Rofi clipboard 
+- `SUPER + V` - Rofi clipboard
 - `SUPER + SHIFT + o` - Reorganize windows to lower workspaces
 
 ### Submaps
@@ -104,23 +94,22 @@ This cheatsheet contains all the keybindings that I use in my hyprland config. M
 - All submaps are reset using `ESC`
 
 - `SUPER + G` - Gaps submap
-  - `t` - Toggle gaps 
-  - `i` - Increase inner gaps 
-  - `u` - Decrease inner gaps 
-  - `k` - Increase outer gaps 
-  - `j` - Decrease outer gaps 
+  - `t` - Toggle gaps
+  - `i` - Increase inner gaps
+  - `u` - Decrease inner gaps
+  - `k` - Increase outer gaps
+  - `j` - Decrease outer gaps
 
-<br> 
+<br>
 
 - `SUPER + M` - Music script submap
   - `m` - Rofi music menu
-  - `i` - Increase volume 
+  - `i` - Increase volume
   - `u` - Decrease volume
   - `k` - Pause
   - `s` - Stop music
   - `n` - Next track
   - `p` - Prev track
-
 
 ## Quick setup:
 
@@ -130,7 +119,7 @@ _These dotfiles are configured to work on my system, these may or may not work t
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/devadathanmb/dotfiles
+git clone https://github.com/devadathanmb/dotfiles.git
 ```
 
 2. Setup the symlinks:
