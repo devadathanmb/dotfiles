@@ -68,6 +68,7 @@ devel_packages=(
     lazygit
     firefox
     ripgrep
+    fd
     stylua
     python-pip
     unzip
