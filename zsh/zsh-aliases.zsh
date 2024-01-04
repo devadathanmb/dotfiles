@@ -51,14 +51,14 @@ alias cvim="nvim --clean"
 
 # Function to open pdf files in zathura
 function pdf(){
-    zathura "$@" &;
-    disown;
+    zathura "$@" &> /dev/null &;
+    disown &> /dev/null;
 }
 
 # Function to open pptx files in zaread
 function ppt(){
-    zaread "$@" &;
-    disown;
+    zaread "$@" &> /dev/null &;
+    disown &> /dev/null;
 }
 
 # Function to post stuff to 0x0.st
@@ -119,12 +119,10 @@ alias vimdots="nvim $HOME/entevim/"
 # leetcode backup
 alias leetback="cd $HOME/repos/leetcode/ && git add . && git commit -m \"backup\" && git push origin main"
 
+# Mpv mpris
+alias mpv="mpv --script=/usr/share/mpv/scripts/mpris.so"
+
 # Fzf dots
 function dots(){
     nvim $(find $HOME/dotfiles -maxdepth 1 | fzf)
 }
-
-# Use pywal generated colors for cava
-if [[ -e ~/.cache/wal/cava ]]
-then alias cava="cava -p ~/.cache/wal/cava"
-fi
