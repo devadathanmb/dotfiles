@@ -83,7 +83,7 @@ tooltip label {
 }
 
 #backlight {
-  /* margin-right: 15px; */
+  margin-right: 15px;
 }
 
 #pulseaudio {
@@ -124,6 +124,8 @@ tooltip label {
   margin-right: 9px;
   margin-left: 9px;
   color: #abb0ab;
+  color: #9ea7b3;
+  /* color: #7a828e; */
 }
 
 #pulseaudio.microphone {
