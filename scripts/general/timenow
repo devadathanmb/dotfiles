@@ -4,4 +4,4 @@ time_now=$(date +"%T")
 today=$(date -u +%d-%m-%Y)
 battery_capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 battery_status=$(cat /sys/class/power_supply/BAT0/status)
-notify-send "Quck stats" "\nTime now is $time_now ($today)\n\nBattery: $battery_capacity% ($battery_status)"
+notify-send "Quick stats" "\nTime now is $time_now ($today)\n\nBattery: $battery_capacity% ($battery_status)"
