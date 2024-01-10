@@ -2,17 +2,23 @@
 
 LOFI_LINK="https://www.youtube.com/watch?v=jfKfPfyJRdk"
 SYNTHWAVE_LINK="https://www.youtube.com/watch?v=4xDzrJKXOOY"
-
+UPBEATS_LINK="https://www.youtube.com/watch?v=wELOA2U7FPQ"
+VOLUME=30
 # mpv $STREAM_LINK --no-video 2>/dev/null
 
 function lofi(){
-    notify-send "Lofi time 🎹"
-    mpv $LOFI_LINK --no-video --msg-level=all=no,statusline=status --volume=30
+    notify-send "Lofi time 🎶"
+    mpv $LOFI_LINK --no-video --msg-level=all=no,statusline=status --volume=$VOLUME
 }
 
 function synthwave(){
-    notify-send "Synthwave time 🎹"
-    mpv $SYNTHWAVE_LINK --no-video --msg-level=all=no,statusline=status --volume=30
+    notify-send "Synthwave time 🎧"
+    mpv $SYNTHWAVE_LINK --no-video --msg-level=all=no,statusline=status --volume=$VOLUME
+}
+
+function upbeats(){
+    notify-send "Upbeats time ⚡"
+    mpv $UPBEATS_LINK --no-video --msg-level=all=no,statusline=status --volume=$VOLUME
 }
 
 function main(){
@@ -20,8 +26,10 @@ function main(){
         synthwave
     elif [[ $1 == "lofi" ]]; then
         lofi
+    elif [[ $1 == "upbeats" ]]; then
+        upbeats
     else
-        echo "Usage: beats [synthwave|lofi]"
+        echo "Usage: beats [synthwave|lofi|upbeats]"
     fi
 }
 
