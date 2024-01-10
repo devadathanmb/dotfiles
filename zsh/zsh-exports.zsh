@@ -10,7 +10,7 @@ export MANWIDTH=999
 export PATH="$HOME/.nvm/versions/node/v21.4.0/bin/":$PATH
 
 # Bat cat theme
-export BAT_THEME="GitHub"
+export BAT_THEME="base16-256"
 
 # # Flutter
 # if [[ -e "/opt/flutter" ]]
