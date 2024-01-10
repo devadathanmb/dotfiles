@@ -49,6 +49,18 @@ alias work="cd ~/Documents/"
 alias hypr="nvim ~/.config/hypr"
 alias cvim="nvim --clean"
 
+
+# Good git aliases
+alias gaa="git add ."
+alias ga="git add"
+alias gac="git add . && git commit"
+alias gacm="git add . && git commit -m"
+alias gcm="git commit -m"
+alias gc="git commit"
+alias gpm="git push origin main"
+alias gp="git push origin"
+
+
 # Function to open pdf files in zathura
 function pdf(){
     zathura "$@" &> /dev/null &;
