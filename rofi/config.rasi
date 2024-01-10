@@ -3,7 +3,7 @@ configuration {
     font: "JetBrains Mono Nerd Font Bold 14";
     show-icons: true;
     icon-theme: "Papirus-Dark";
-    terminal: "alacritty";
+    terminal: "foot";
     drun-display-format: "{icon} {name}";
     disable-history: false;
     hide-scrollbar: true;
