@@ -82,6 +82,7 @@ devel_packages=(
     tmux
     zathura
     zathura-pdf-mupdf
+    zaread
     system-config-printer
     network-manager-applet
     fzf
