@@ -67,11 +67,17 @@ function pdf(){
     disown &> /dev/null;
 }
 
+# Fuzzy find pdfs
+alias pdfs="find . -type f -name '*.pdf' | pdf \$(fzf)"
+
 # Function to open pptx files in zaread
 function ppt(){
     zaread "$@" &> /dev/null &;
     disown &> /dev/null;
 }
+
+# Fuzzy find ppts
+alias ppts="find . -type f -name '*.ppt*' | ppt \$(fzf)"
 
 # Function to post stuff to 0x0.st
 function genlink(){
