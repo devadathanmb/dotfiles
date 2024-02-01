@@ -94,7 +94,7 @@ listview {
 }
 
 element {
-    padding: 12px 12px 12px 12px;
+    padding: 8px 10px 8px 10px;
     background-color: @blank;
     text-color: @fg-col;
     margin: 0px 0px 5px 0px;
@@ -121,7 +121,7 @@ mode-switcher {
 }
 
 button {
-    padding: 12px;
+    padding: 10px;
     margin: 10px;
     background-color: @blank;
     text-color: @tab;
@@ -129,7 +129,8 @@ button {
     horizontal-align: 0.5;
     border-radius: 3px;
     border: 0px 0px 0px 0px;
-    border-color: @blank-underline;
+    border-color: #58A6FF;
+    border: 1px;
 }
 
 button selected {
@@ -146,7 +147,7 @@ message {
   border: 1px;
   border-radius: 4px;
   margin: 8px;
-  border-color: white;
+  //border-color: white;
 }
 
 textbox{

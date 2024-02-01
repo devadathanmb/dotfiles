@@ -2,8 +2,13 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 28,
-  "modules-left": ["custom/arch", "hyprland/workspaces", "custom/waybar-mpris"],
+  "height": 26,
+  "modules-left": [
+    // "custom/arch",
+    // "custom/separator",
+    "hyprland/workspaces",
+    "custom/waybar-mpris"
+  ],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
