@@ -38,8 +38,8 @@ plug "$HOME/.config/zsh/zsh-keybindings.zsh"
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export TERMINAL="kitty"
-export BROWSER="brave"
+export TERMINAL="foot"
+export BROWSER="floorp"
 
 # Set colors with pywal
 # (/bin/cat ~/.cache/wal/sequences &)
@@ -67,3 +67,11 @@ function nvims() {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm
+export PNPM_HOME="/home/devadathan/.local/share/pnpm"
+case ":$PATH:" in
+    *":$PNPM_HOME:"*) ;;
+    *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

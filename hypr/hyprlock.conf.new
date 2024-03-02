@@ -1,0 +1,109 @@
+
+
+# {{{ Variables
+# {{{ Colors
+# {{{ Colorscheme
+source       = ~/.config/hypr/colorschemes/catpucchin-mocha.conf
+# }}}
+
+# {{{ Generic
+$font   = $text
+$bg     = $base
+$select = $blue
+# }}}
+# }}}
+# }}}
+
+# {{{ General
+general {
+    #grace               = 10
+}
+# }}}
+
+# {{{ Background
+background {
+    monitor =
+    color   = rgb($bg)
+    path    = /home/andy3153h/.local/share/wallpaper-lock.png #screenshot
+
+    # {{{ Blur
+    #size                 = 7
+    #passes               = 2
+    #noise                = 0.01
+    #
+    #contrast             = 1 #0.9
+    #brightness           = 1 #0.8
+    #vibrancy             = 0 #0.17
+    #vibrancy_darkness    = 0 #0.0
+    # }}}
+}
+# }}}
+
+# {{{ Password field
+input-field {
+    monitor           =
+    fade_on_empty     = true
+    hide_input        = false
+    placeholder_text  =
+
+    position          = 0, -50
+    halign            = center
+    valign            = center
+
+    size              = 250, 50
+    dots_size         = 0.1
+    dots_spacing      = 0.3
+    dots_center       = true
+
+    outline_thickness = 2
+
+    inner_color       = rgb($bg)
+    outer_color       = rgb($select)
+    font_color        = rgb($font)
+}
+# }}}
+
+# {{{ Time
+label {
+    monitor     =
+    text        = $TIME
+    font_size   = 70
+    font_family = Cantarell
+
+    color       = rgb($font)
+
+    position    = 0, 350
+    halign      = center
+    valign      = center
+}
+# }}}
+
+# {{{ Date
+label {
+    monitor     =
+    text        = cmd[update:1000] date "+%A, %d %B %Y"
+    font_size   = 25
+    font_family = Cantarell
+
+    color       = rgb($font)
+
+    position    = 0, 250
+    halign      = center
+    valign      = center
+}
+# }}}
+
+# {{{ Splash
+label {
+    monitor     =
+    text        = cmd[update:0] hyprctl splash
+    font_size   = 11
+    font_family = Sans
+
+    color       = 0xffffffff
+
+    position    = 0, -30
+    halign      = center
+    valign      = bottom
+}
+# }}}

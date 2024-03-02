@@ -127,6 +127,11 @@ function notes(){
     cd $(find $HOME/notes -type d -not -path "*/.*" | fzf)
 }
 
+# unset hisstory
+function incognito(){
+    export HISTFILE="/dev/null"
+}
+
 # Notes
 alias notesup="cd $HOME/notes && git add . && git commit -m \"Update notes\" && git push origin master"
 
