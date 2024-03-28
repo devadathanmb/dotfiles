@@ -47,7 +47,7 @@ hypr_packages=(
     xdg-desktop-portal-hyprland
     waybar
     swayidle
-    swaylock-effects-git
+    hyprlock
 )
 
 devel_packages=(
@@ -64,9 +64,8 @@ devel_packages=(
     zoxide
     go
     luals
-    obsidian
     lazygit
-    firefox
+    floorp-bin
     ripgrep
     fd
     stylua
@@ -78,7 +77,6 @@ devel_packages=(
     httpie
     libreoffice-fresh
     neovim
-    vim
     tmux
     zathura
     zathura-pdf-mupdf
@@ -121,7 +119,7 @@ necessary_packages=(
     epson-inkjet-printer-escpr2
     htop
     btop
-    telegram-desktop-bin
+    telegram-desktop
     webcord-bin
     mpv
     yt-dlp
