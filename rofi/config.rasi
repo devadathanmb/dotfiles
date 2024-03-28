@@ -1,157 +1,100 @@
 configuration {
-    modi: "drun,run";
-    font: "JetBrains Mono Nerd Font Bold 14";
-    show-icons: true;
-    icon-theme: "Papirus-Dark";
-    terminal: "foot";
-    drun-display-format: "{icon} {name}";
-    disable-history: false;
-    hide-scrollbar: true;
-    sidebar-mode: true;
-    display-drun: " 󰀘  Apps ";
-    display-run: "   Command ";
-    display-window: "   Window ";
-    kb-remove-to-eol:"";
-    kb-accept-entry: "Return,KP_Enter";
-    kb-secondary-copy: "";
-    kb-cancel: "Escape,Control+c";
-    kb-row-up: "Control+k,Up";
-    kb-row-down: "Control+j,Down";
-    kb-mode-complete: "";
-    kb-remove-char-back: "BackSpace";
-    kb-mode-previous: "Control+h";
-    kb-mode-next: "Control+l";
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  font: "JetBrains Mono Nerd Font Bold 14";
+  modi: "window,run,drun,emoji,calc";
+  kb-remove-to-eol:"";
+  drun-display-format: "{icon} {name}";
+  kb-accept-entry: "Return,KP_Enter";
+  kb-secondary-copy: "";
+  kb-cancel: "Escape,Control+c";
+  kb-row-up: "Control+k,Up";
+  kb-row-down: "Control+j,Down";
+  kb-mode-complete: "";
+  kb-remove-char-back: "BackSpace";
+  kb-mode-previous: "Control+h";
+  kb-mode-next: "Control+l";
+  
+  // enabling the icons
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
 }
 
-@theme "themes/github"
+@theme "/dev/null"
 
-element-text {
-    background-color: #00000000;
-    text-color: inherit;
-}
+* {
+  bg: #04070D70;
+  bg-alt: #585b7066;
+  bg-selected: #31324466;
 
-element-text selected {
-    background-color: #00000000;
-    text-color: inherit;
-}
-
-mode-switcher {
-    background-color: #00000000;
+  fg: #ffffff;
+  fg-alt: #7f849c; 
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
 }
 
 window {
-    height: 500px;
-    width: 30%;
-    border-radius: 3px;
-    border: 1px;
-    border-color: #58A6FF;
-    background-color: @window;
-    padding: 0px 0px 0px 0px;
-    fullscreen: false;
-}
-
-mainbox {
-    background-color: #00000000;
-}
-
-inputbar {
-    children: [prompt,entry];
-    background-color: #00000000;
-    border-radius: 3px;
-    padding: 2px;
-}
-
-prompt {
-    background-color: @button;
-    padding: 12px;
-    text-color: @bg-col;
-    border-radius: 3px;
-    margin: 8px 0px 0px 8px;
-    border: 0px 0px 0px 0px;
-    border-color: @button-underline;
-}
-
-textbox-prompt-colon {
-    expand: false;
-    str: ":";
-}
-
-entry {
-    padding: 12px 13px -4px 11px;
-    margin: 8px 8px 0px 8px;
-    text-color: @fg-col;
-    background-color: @entry;
-    border-radius: 3px;
-    border: 0px 0px 0px 0px;
-    border-color: none;
-}
-
-listview {
-    border: 0px 0px 0px;
-    margin: 10px 10px -13px 10px;
-    background-color: #00000000;
-    columns: 1;
+  width: 35%;
+  background-color: @bg;
+  border: 1px;
+  border-radius: 5px;
+  border-color: #58A6FF;
 }
 
 element {
-    padding: 8px 10px 8px 10px;
-    background-color: @blank;
-    text-color: @fg-col;
-    margin: 0px 0px 5px 0px;
-    border-radius: 3px;
-    border: 0px 0px 0px 0px;
-    border-color: @blank-underline;
-}
-
-element-icon {
-    size: 25px;
-    background-color: #00000000;
+  padding: 8 8;
+  background-color: transparent;
+  text-color: @fg-alt;
 }
 
 element selected {
-    background-color: @button;
-    text-color: @fg-col2;
-    border-radius: 3px;
-    border: 0px 0px 0px 0px;
-    border-color: @button-underline;
+  text-color: @fg;
+  background-color: @bg-selected;
 }
 
-mode-switcher {
-    spacing: 0;
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+  vertical-align: 0.5;
 }
 
-button {
-    padding: 10px;
-    margin: 10px;
-    background-color: @blank;
-    text-color: @tab;
-    vertical-align: 0.5; 
-    horizontal-align: 0.5;
-    border-radius: 3px;
-    border: 0px 0px 0px 0px;
-    border-color: #58A6FF;
-    border: 1px;
+element-icon {
+  size: 24;
+  padding: 0 10 0 0;
+  background-color: transparent;
 }
 
-button selected {
-    background-color: @bg-col-light;
-    text-color: @tab-selected;
-    border-radius: 3px;
-    border: 0px 0px 0px 0px;
-    border-color: @button-underline;
+entry {
+  padding: 12;
+  background-color: @bg-alt;
+  text-color: @fg;
 }
 
-message {
-  text-color: @fg-col;
-  background-color: @bg-col;
-  border: 1px;
-  border-radius: 4px;
-  margin: 8px;
-  //border-color: white;
+inputbar {
+  children: [prompt, entry];
+  background-color: @bg;
 }
 
-textbox{
-  text-color: @fg-col;
-  background-color: @bg-col;
-  padding: 15;
+listview {
+  padding: 8px;
+  background-color: @bg;
+  columns: 1;
+  lines: 10;
 }
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: @bg;
+}
+
+prompt {
+  enabled: true;
+  padding: 12 0 0 12;
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+/* vim: ft=sass

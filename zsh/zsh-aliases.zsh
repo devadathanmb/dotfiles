@@ -130,6 +130,7 @@ function notes(){
 # unset hisstory
 function incognito(){
     export HISTFILE="/dev/null"
+    echo "🕵 Incognito mode activated"
 }
 
 # Notes

@@ -10,9 +10,11 @@
 }
 
 window#waybar {
-  /* background: rgba(0, 0, 0, 0.9); */
+  background: rgba(0, 0, 0, 1);
+  /* background: rgba(4, 7, 13, 0.75); */
+  /* background: rgba(4, 7, 13, 1); */
   /* background: #0a0a0a; */
-  background: #000000;
+  /* background: #000000; */
   /* background: #04070d; */
   /* background: #010103; */
   /* background: #010103; */
@@ -21,8 +23,8 @@ window#waybar {
 tooltip {
   margin: 3px;
   border-radius: 1px;
-  border: 1px solid white;
-  background: #04070d;
+  border: 2px solid #58a6ff;
+  background: rgba(4, 7, 13, 0.7);
   /* background: #000000; */
 }
 
