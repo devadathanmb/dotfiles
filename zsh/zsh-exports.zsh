@@ -7,19 +7,7 @@ export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
 # nvm, node, npm binary path
-export PATH="$HOME/.nvm/versions/node/v20.11.0/bin/":$PATH
+export PATH="$HOME/.nvm/versions/node/v20.12.0/bin/":$PATH
 
 # Bat cat theme
 export BAT_THEME="base16-256"
-
-# # Flutter
-# if [[ -e "/opt/flutter" ]]
-# then
-#     export PATH=$PATH:"/opt/flutter/bin"
-# fi
-#
-# # Spicetify
-# if [[ -e "$HOME/.spicetify/" ]]
-# then
-#     export PATH=$PATH:"$HOME/.spicetify/"
-# fi
