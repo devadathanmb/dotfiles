@@ -3,15 +3,19 @@
 
 
 # Get the current gaps values
-gaps_in=$(hyprctl getoption general:gaps_in -j | jq ".int")
-gaps_out=$(hyprctl getoption general:gaps_out -j | jq ".int")
+# gaps_in=$(hyprctl getoption general:gaps_in -j | jq ".int")
+# gaps_out=$(hyprctl getoption general:gaps_out -j | jq ".int")
+#
+
+gaps_in=$(hyprctl getoption general:gaps_in -j | jq ".custom" | sed 's/"//g' | cut -d " " -f 1)
+gaps_out=$(hyprctl getoption general:gaps_out -j | jq ".custom" | sed 's/"//g' | cut -d " " -f 1)
 
 # Toggle gaps
 
 toggle_gaps(){
     if [[ $gaps_in == "0" ]]
     then
-        hyprctl keyword general:gaps_in 3
+        hyprctl keyword general:gaps_in 2
         hyprctl keyword general:gaps_out 3
     else
         hyprctl keyword general:gaps_in 0

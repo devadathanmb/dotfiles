@@ -3,14 +3,15 @@
   border-radius: 0;
   min-height: 0;
   /* font-family: "RobotoMono Nerd Font"; */
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono NF Medium";
   /* font-family: "ComicCodeLigatures Nerd Font Medium"; */
   font-size: 14;
   font-weight: bold;
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 1);
+  /* background: rgba(0, 0, 0, 1); */
+  background: #020408;
   /* background: rgba(4, 7, 13, 0.75); */
   /* background: rgba(4, 7, 13, 1); */
   /* background: #0a0a0a; */
@@ -21,10 +22,9 @@ window#waybar {
 }
 
 tooltip {
-  margin: 3px;
-  border-radius: 1px;
+  border-radius: 5px;
   border: 2px solid #58a6ff;
-  background: rgba(4, 7, 13, 0.7);
+  background: rgba(4, 7, 13, 1);
   /* background: #000000; */
 }
 
@@ -134,6 +134,10 @@ tooltip {
 
 #pulseaudio.microphone {
   margin-right: 0px;
+}
+
+#cpu {
+  margin-right: 15px;
 }
 
 #memory {

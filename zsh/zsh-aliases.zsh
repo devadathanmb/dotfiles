@@ -133,6 +133,9 @@ function incognito(){
     echo "🕵 Incognito mode activated"
 }
 
+# Temp things
+alias cdtmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
+
 # Notes
 alias notesup="cd $HOME/notes && git add . && git commit -m \"Update notes\" && git push origin master"
 

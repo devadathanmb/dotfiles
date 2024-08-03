@@ -2,7 +2,7 @@
   // Global configuration
   "layer": "top",
   "position": "top",
-  "height": 27,
+  "height": 26,
   "modules-left": [
     "custom/arch",
     // "custom/separator",
@@ -13,7 +13,6 @@
   "modules-right": [
     "tray",
     "cpu",
-    "custom/separator",
     "memory",
     "custom/separator",
     "backlight",
@@ -22,7 +21,7 @@
     "pulseaudio#microphone",
     "custom/separator",
     "network",
-    // "bluetooth",
+    "bluetooth",
     "custom/recorder",
     "idle_inhibitor",
     "custom/separator",
@@ -48,7 +47,8 @@
     // "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
     "interval": 10,
     "format-icons": "󰓅",
-    "format": "{icon0} {}%",
+    // "format-icons" : "",
+    "format": "<span color='#f5c2e7'>{icon0}</span> {}%",
     "max-length": 10
   },
   "hyprland/window": {
@@ -81,8 +81,8 @@
   "idle_inhibitor": {
     "format": "<span>{icon}</span>",
     "format-icons": {
-      "activated": "",
-      "deactivated": " "
+      "activated": " ",
+      "deactivated": " "
     },
     "timeout": 30.5
   },
@@ -93,14 +93,15 @@
       "critical": 20
     },
     "format": "<span>{icon}</span>  {capacity}%",
-    "format-charging": "<span></span> {capacity}%",
-    "format-plugged": "<span></span> {capacity}%",
+    "format-charging": "<span color='#02E344'></span> {capacity}%",
+    "format-plugged": "<span color='#02E344'></span> {capacity}%",
     "format-icons": ["", "", "", "", ""]
   },
   "bluetooth": {
     // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
     "format": " ",
-    "format-disabled": "", // an empty format will hide the module
+    "format-no-controller" : "",
+    "format-off": "", // an empty format will hide the module
     "format-connected": "󰂴 ",
     // "format-disabled": "󰂲 ",
     "tooltip-format": "{controller_alias}",
@@ -110,7 +111,7 @@
   "backlight": {
     "on-click": "",
     "device": "intel_backlight",
-    "format": "<span>{icon}</span> {percent}%",
+    "format": "<span color='#cdd6f4'>{icon}</span> {percent}%",
     // "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
     // "format-icons": ["󰖨"],
     "format-icons": ["󰃟"],
@@ -120,7 +121,7 @@
     "on-scroll-down": "light -U 1%-"
   },
   "memory": {
-    "format": "<span ></span> {}%"
+    "format": "<span color='#F6CA02' ></span> {}%"
   },
   "clock": {
     "interval": 1,
@@ -161,28 +162,23 @@
     "max-length": 20
   },
   "pulseaudio": {
-    "format": "<span>{icon}</span> {volume}%",
-    "format-muted": " ",
+    "format": "<span color='#cba6f7'>{icon}</span>{volume}%",
+    "format-muted": "<span color='#cba6f7'> </span>",
     "format-bluetooth": "{icon}  {volume}%",
-    "format-bluetooth-muted": "  ",
+    "format-bluetooth-muted": " ",
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 1,
     "format-icons": {
-      "headphone": "󰋋",
-      // "hands-free": "",
-      // "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", "󰕾", ""]
+      "headphone": "󰋋 ",
+      "default": [" ", " ", "󰕾 ", "  "]
     }
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "tooltip": true,
-    "format-source": "<span></span> {volume}%",
-    "format-source-muted": " ",
+    "format-source": "<span color='#cba6f7'></span> {volume}%",
+    "format-source-muted": "<span color='#cba6f7'> </span>",
     "on-click-right": "pamixer --default-source -t",
     "on-click": "pavucontrol -t 4",
     "on-scroll-up": "pamixer --default-source -i 5",
